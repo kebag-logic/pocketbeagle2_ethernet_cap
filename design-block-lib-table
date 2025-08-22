@@ -1,0 +1,6 @@
+(design_block_lib_table
+  (version 7)
+  (lib (name "DF40GB_48DP_0_4V_58_")(type "KiCad")(uri "/home/alex/prjs/ames/electronic/libraries/footporint_manual/DF40GB_48DP_0_4V_58_")(options "")(descr ""))
+  (lib (name "footporint_manual")(type "KiCad")(uri "/home/alex/prjs/ames/electronic/libraries/footporint_manual")(options "")(descr ""))
+  (lib (name "DP83867.pretty")(type "KiCad")(uri "/home/alex/prjs/ames/electronic/libraries/footporint_manual/DP83867/DP83867.pretty")(options "")(descr ""))
+)
