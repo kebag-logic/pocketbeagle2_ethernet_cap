@@ -49,13 +49,13 @@
       "conflict_shadows",
       "shapes"
     ],
-    "visible_layers": "00000000_00000000_00000008_82002227",
+    "visible_layers": "00000000_00000000_00000002_2200888d",
     "zone_display_mode": 0
   },
   "git": {
-    "repo_type": "",
-    "repo_username": "",
-    "ssh_key": ""
+    "repo_type": "ssh",
+    "repo_username": "git",
+    "ssh_key": "/home/alex/.ssh/id_rsa_github_kl"
   },
   "meta": {
     "filename": "pocketbeagle2 revA_241205.kicad_prl",
