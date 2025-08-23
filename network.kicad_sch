@@ -3153,6 +3153,10 @@
 		(uuid "16431266-e8e7-4425-a631-d54c8609d792")
 	)
 	(no_connect
+		(at 200.66 35.56)
+		(uuid "17797f3e-f6cc-4f7e-941c-21683496c64c")
+	)
+	(no_connect
 		(at 133.35 132.08)
 		(uuid "17ede62c-4638-4933-bb17-d4f2ea75369e")
 	)
@@ -4854,6 +4858,26 @@
 		)
 		(uuid "00051d9a-b520-456f-8ed2-0afcd85a864c")
 	)
+	(label "MD2_P"
+		(at 218.44 58.42 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0c2d013a-928a-45fd-b9de-fb44d8b1aea0")
+	)
+	(label "MD2_N"
+		(at 218.44 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "10f0557f-0032-4a9e-9a6a-99b27450fbe8")
+	)
 	(label "LED2"
 		(at 262.89 148.59 180)
 		(effects
@@ -4864,6 +4888,16 @@
 		)
 		(uuid "25a7caea-3e7f-4439-91a4-cde27fef19a9")
 	)
+	(label "MD0_P"
+		(at 218.44 43.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2b9d0a76-4edb-405d-9798-1b288dc88b0d")
+	)
 	(label "LED1"
 		(at 236.22 148.59 180)
 		(effects
@@ -4873,6 +4907,16 @@
 			(justify right bottom)
 		)
 		(uuid "312590dc-65f3-43d1-ba9b-5cffe0cb6f62")
+	)
+	(label "MD0_N"
+		(at 218.44 45.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3221b1bf-41c6-4e38-8da3-708ffc46105f")
 	)
 	(label "3V3"
 		(at 20.32 106.68 180)
@@ -4964,6 +5008,16 @@
 		)
 		(uuid "8fa3701c-accf-4c16-94b7-8cf464c53353")
 	)
+	(label "MD3_N"
+		(at 218.44 68.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9492280d-fc84-4dcc-847f-db6318197d07")
+	)
 	(label "X_IN"
 		(at 198.12 121.92 0)
 		(effects
@@ -4994,6 +5048,16 @@
 		)
 		(uuid "9c257d8e-5f0a-424d-97a1-9c0b79e172e2")
 	)
+	(label "MD3_P"
+		(at 218.44 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9e2efc5a-de9b-4a27-bafa-014327f56ed1")
+	)
 	(label "3V3"
 		(at 124.46 22.86 0)
 		(effects
@@ -5003,6 +5067,26 @@
 			(justify left bottom)
 		)
 		(uuid "b113589b-befd-4629-9ace-b8b62e0b8537")
+	)
+	(label "MD1_N"
+		(at 218.44 53.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b3616719-e725-4671-ba7e-6b0ea9c56b60")
+	)
+	(label "MD1_P"
+		(at 218.44 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c605fe01-63a4-4ff2-9cad-2d1cb184e029")
 	)
 	(label "RX_D7"
 		(at 128.27 111.76 180)
@@ -5457,37 +5541,6 @@
 		)
 		(property "Component Class" ""
 			(at -180.34 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 222.25 68.58 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "59cea720-ccef-4424-a3bb-d00f45dc1649")
-		(property "Netclass" "MDI_DIFF_PAIR"
-			(at 222.9485 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at -152.4 -1.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5957,73 +6010,6 @@
 				(font
 					(size 1.27 1.27)
 					(italic yes)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 200.66 35.56 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "004412da-d39d-46f1-980a-926e62924a14")
-		(property "Reference" "TP3"
-			(at 205.74 34.2899 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 205.74 36.8299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 200.66 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 200.66 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 200.66 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "35f57812-15b3-4e8d-8d7a-a2e1e1d72279")
-		)
-		(instances
-			(project "pocketbeagle2 revA_241205"
-				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
-					(reference "TP3")
-					(unit 1)
 				)
 			)
 		)

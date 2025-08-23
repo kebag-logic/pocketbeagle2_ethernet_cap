@@ -1524,6 +1524,162 @@
 		(color 0 0 0 0)
 		(uuid "109449e0-7dad-4b01-80ba-c771174b155d")
 	)
+	(no_connect
+		(at 43.18 62.23)
+		(uuid "09991f91-fb86-410a-ab49-30164de1410c")
+	)
+	(no_connect
+		(at 43.18 52.07)
+		(uuid "0ab5d5af-ce49-485b-acd9-02beb835eff8")
+	)
+	(no_connect
+		(at 91.44 92.71)
+		(uuid "10e0d901-c54d-4fbd-9740-70bb95030f69")
+	)
+	(no_connect
+		(at 91.44 115.57)
+		(uuid "12b66517-1fa6-44f0-9b80-89204943baf3")
+	)
+	(no_connect
+		(at 62.23 26.67)
+		(uuid "13bdabd0-0478-4253-920f-bda11cf70667")
+	)
+	(no_connect
+		(at 82.55 26.67)
+		(uuid "2677fb46-1280-4db0-9f20-17f6d882b10f")
+	)
+	(no_connect
+		(at 43.18 92.71)
+		(uuid "272d4e62-fc12-4f1f-9598-9a9db27f7168")
+	)
+	(no_connect
+		(at 43.18 64.77)
+		(uuid "2a872c40-69a2-4e34-b85d-43101c3cd3b9")
+	)
+	(no_connect
+		(at 95.25 87.63)
+		(uuid "2fba296a-c060-4f26-9096-b126f2107abb")
+	)
+	(no_connect
+		(at 69.85 138.43)
+		(uuid "4badf91f-2eaf-4630-b04f-e9e04d3f6f93")
+	)
+	(no_connect
+		(at 91.44 72.39)
+		(uuid "4ca70117-070b-46f1-9601-9ee526f00d10")
+	)
+	(no_connect
+		(at 91.44 41.91)
+		(uuid "5280b3ea-cb36-48e4-973d-0708696ff9d3")
+	)
+	(no_connect
+		(at 91.44 85.09)
+		(uuid "56b5c05c-bf82-45e4-94f8-b375c80aa489")
+	)
+	(no_connect
+		(at 43.18 69.85)
+		(uuid "60f289f1-d653-4d8b-b8ca-f09fea0cbf09")
+	)
+	(no_connect
+		(at 43.18 54.61)
+		(uuid "6986811b-99ae-4720-882b-61973ada7301")
+	)
+	(no_connect
+		(at 52.07 26.67)
+		(uuid "698b7b55-45cb-4c68-b68a-547f2ec628fa")
+	)
+	(no_connect
+		(at 91.44 95.25)
+		(uuid "6b9b8ce9-9393-4a52-a21b-b7904812dff0")
+	)
+	(no_connect
+		(at 80.01 26.67)
+		(uuid "6c4f1306-c0e2-46a4-955b-1c8ddd7d9b48")
+	)
+	(no_connect
+		(at 91.44 59.69)
+		(uuid "6ddd5f90-db1d-4d6c-be24-bf4980ba9a3b")
+	)
+	(no_connect
+		(at 67.31 26.67)
+		(uuid "71101369-949e-4ea1-9626-bc98ad07246e")
+	)
+	(no_connect
+		(at 43.18 67.31)
+		(uuid "99175688-6bcd-4a7b-817f-09659a84c1be")
+	)
+	(no_connect
+		(at 43.18 36.83)
+		(uuid "9fda4a9b-10f5-4a94-a18b-acb814c32b7d")
+	)
+	(no_connect
+		(at 43.18 113.03)
+		(uuid "a1179f0f-c0eb-4690-840e-f07ae4babe9b")
+	)
+	(no_connect
+		(at 91.44 44.45)
+		(uuid "a5431bb3-bbe4-4301-af94-3ca39d1bd8f6")
+	)
+	(no_connect
+		(at 43.18 72.39)
+		(uuid "a80985cd-c87e-4649-9107-6ec1f374c278")
+	)
+	(no_connect
+		(at 43.18 49.53)
+		(uuid "a92fca2c-5131-41ea-a390-a633af6c8942")
+	)
+	(no_connect
+		(at 91.44 69.85)
+		(uuid "b0b99837-e6af-4d52-a1de-c431ce959278")
+	)
+	(no_connect
+		(at 43.18 59.69)
+		(uuid "b8e4be64-8050-43ba-9765-a7a199d7aad6")
+	)
+	(no_connect
+		(at 43.18 115.57)
+		(uuid "c7497412-07c5-4222-9405-70e2bed0372f")
+	)
+	(no_connect
+		(at 43.18 118.11)
+		(uuid "ca97ec0b-fb12-446a-a0a0-574b10510a2f")
+	)
+	(no_connect
+		(at 91.44 36.83)
+		(uuid "cf66ac84-6e9d-4ed3-85dc-84ee90277fc3")
+	)
+	(no_connect
+		(at 43.18 107.95)
+		(uuid "d92ebd63-60a6-4c53-a53a-2ef33f4f0689")
+	)
+	(no_connect
+		(at 43.18 110.49)
+		(uuid "e7c9fc46-8f0b-455f-9ab1-259dd65d21e3")
+	)
+	(no_connect
+		(at 43.18 130.81)
+		(uuid "e7dcd334-510e-4460-bd7b-b027386c16d3")
+	)
+	(no_connect
+		(at 57.15 26.67)
+		(uuid "eb1e9e08-cc60-4916-bc54-d4b9ae1a1dcb")
+	)
+	(no_connect
+		(at 43.18 46.99)
+		(uuid "ed92b2b5-0c9f-457a-9f71-cac24c6b0a17")
+	)
+	(no_connect
+		(at 43.18 125.73)
+		(uuid "f24040ea-4329-4733-a6d2-6c37c29d3d72")
+	)
+	(no_connect
+		(at 43.18 105.41)
+		(uuid "fa348738-ec95-4853-9b0c-5fdae550cef6")
+	)
+	(no_connect
+		(at 91.44 39.37)
+		(uuid "faef64c8-f50b-4c0e-9a4c-7cedffd3c980")
+	)
 	(wire
 		(pts
 			(xy 176.53 25.4) (xy 177.8 25.4)
@@ -1843,16 +1999,6 @@
 			(type default)
 		)
 		(uuid "8560e7f3-7411-4ce8-a968-486f6442861c")
-	)
-	(wire
-		(pts
-			(xy 91.44 85.09) (xy 96.52 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "93baaaa0-9273-4aaf-9791-437006b355de")
 	)
 	(wire
 		(pts
@@ -2604,28 +2750,6 @@
 			)
 		)
 	)
-	(global_label "I2C2_SCL"
-		(shape output)
-		(at 96.52 85.09 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "715b80ec-7091-464a-ac30-b8cb86aa1961")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 108.2742 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "RGMII_RD0"
 		(shape output)
 		(at 172.72 49.53 180)
@@ -3348,28 +3472,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "I2C2_SDA"
-		(shape bidirectional)
-		(at 95.25 87.63 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f0bcb64a-3166-4230-a80c-ffc6076acedf")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 108.176 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)

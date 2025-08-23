@@ -38,8 +38,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 1.27,
-          "width": 1.27
+          "height": 4.600001,
+          "width": 4.600001
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -187,7 +187,10 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.325,
+        0.4,
+        0.8
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -495,7 +498,7 @@
         "microvia_drill": 0.1,
         "name": "2V5",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.35,
         "via_diameter": 0.8,
@@ -504,7 +507,7 @@
       {
         "name": "3V3",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
+        "priority": 3,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.35
       },
@@ -516,22 +519,28 @@
         "microvia_drill": 0.1,
         "name": "GND",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.35,
         "via_diameter": 0.8,
         "via_drill": 0.4
       },
       {
+        "name": "MDIX",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
         "name": "RGMII_RX",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 3,
+        "priority": 4,
         "schematic_color": "rgba(0, 0, 0, 0.000)"
       },
       {
         "name": "RGMII_TX",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 4,
+        "priority": 5,
         "schematic_color": "rgba(0, 0, 0, 0.000)"
       }
     ],
@@ -540,6 +549,30 @@
     },
     "net_colors": null,
     "netclass_assignments": {
+      "/Network/MD0_N": [
+        "MDI"
+      ],
+      "/Network/MD0_P": [
+        "MDI"
+      ],
+      "/Network/MD1_N": [
+        "MDI"
+      ],
+      "/Network/MD1_P": [
+        "MDI"
+      ],
+      "/Network/MD2_N": [
+        "MDI"
+      ],
+      "/Network/MD2_P": [
+        "MDI"
+      ],
+      "/Network/MD3_N": [
+        "MDI"
+      ],
+      "/Network/MD3_P": [
+        "MDI"
+      ],
       "/Network/RGMII_RD0": [
         "RGMII_RX"
       ],
