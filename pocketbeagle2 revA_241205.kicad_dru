@@ -1,0 +1,9 @@
+(version 1)
+(rule "skew matching RGMII_TX"
+(constraint length (min 3mm) (max 3mm))
+(condition "A.NetClass == 'RGMII_TX'")
+(severity error))
+(rule "skew matching RGMII_RX"
+(constraint length (min 3mm) (max 3mm))
+(condition "A.NetClass == 'RGMII_RX'")
+(severity error))
