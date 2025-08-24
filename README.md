@@ -11,3 +11,6 @@ Front Picture:
 
 Back picture:
 ![3D Image Front](res/images/pocketbeagle2_revA_241205_back.png)
+
+Side:
+![3D Image Side](res/images/pocketbeagle2_revA_241205_3_4.png)
