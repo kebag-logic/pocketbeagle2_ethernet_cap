@@ -16,4 +16,8 @@
 	(lib (name "KL_LED") (type "KiCad") (uri "${KIPRJMOD}/kebag_logic_kicad_library/symbols/KL_LED.kicad_sym") (options "") (descr ""))
 	(lib (name "KL_Conn_RF") (type "KiCad") (uri "${KIPRJMOD}/kebag_logic_kicad_library/symbols/KL_Conn_RF.kicad_sym") (options "") (descr ""))
 	(lib (name "KL_Mechanical") (type "KiCad") (uri "${KIPRJMOD}/kebag_logic_kicad_library/symbols/KL_Mechanical.kicad_sym") (options "") (descr ""))
+	(lib (name "KL_Transistor") (type "KiCad") (uri "${KIPRJMOD}/kebag_logic_kicad_library/symbols/KL_Transistor.kicad_sym") (options "") (descr ""))
+	(lib (name "KL_Oscillator") (type "KiCad") (uri "${KIPRJMOD}/kebag_logic_kicad_library/symbols/KL_Oscillator.kicad_sym") (options "") (descr ""))
+	(lib (name "KL_PHY") (type "KiCad") (uri "${KIPRJMOD}/kebag_logic_kicad_library/symbols/KL_PHY.kicad_sym") (options "") (descr ""))
+	(lib (name "KL_Module") (type "KiCad") (uri "${KIPRJMOD}/kebag_logic_kicad_library/symbols/KL_Module.kicad_sym") (options "") (descr ""))
 )
