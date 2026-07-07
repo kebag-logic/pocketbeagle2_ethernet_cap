@@ -527,7 +527,7 @@
         "via_drill": 0.4
       },
       {
-        "name": "MDIX",
+        "name": "MDI",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)"
@@ -550,74 +550,22 @@
     },
     "net_colors": null,
     "netclass_assignments": {
-      "/Network/MD0_N": [
-        "MDI"
+      "RGMII_TD0_CPU_to_PHY": [
+        "RGMII_TX"
       ],
-      "/Network/MD0_P": [
-        "MDI"
+      "RGMII_TD1_CPU_to_PHY": [
+        "RGMII_TX"
       ],
-      "/Network/MD1_N": [
-        "MDI"
+      "RGMII_TD2_CPU_to_PHY": [
+        "RGMII_TX"
       ],
-      "/Network/MD1_P": [
-        "MDI"
+      "RGMII_TD3_CPU_to_PHY": [
+        "RGMII_TX"
       ],
-      "/Network/MD2_N": [
-        "MDI"
+      "RGMII_TX_CLK_CPU_to_PHY": [
+        "RGMII_TX"
       ],
-      "/Network/MD2_P": [
-        "MDI"
-      ],
-      "/Network/MD3_N": [
-        "MDI"
-      ],
-      "/Network/MD3_P": [
-        "MDI"
-      ],
-      "/Network/RGMII_RD0": [
-        "RGMII_RX"
-      ],
-      "/Network/RGMII_RD1": [
-        "RGMII_RX"
-      ],
-      "/Network/RGMII_RD2": [
-        "RGMII_RX"
-      ],
-      "/Network/RGMII_RD3": [
-        "RGMII_RX"
-      ],
-      "/Network/RGMII_RX_CLK": [
-        "RGMII_RX"
-      ],
-      "/Network/RGMII_RX_CTRL": [
-        "RGMII_RX"
-      ],
-      "Net-(J1-MD0+)": [
-        "MDI"
-      ],
-      "Net-(J1-MD0-)": [
-        "MDI"
-      ],
-      "Net-(J1-MD1+)": [
-        "MDI"
-      ],
-      "Net-(J1-MD1-)": [
-        "MDI"
-      ],
-      "Net-(J1-MD2+)": [
-        "MDI"
-      ],
-      "Net-(J1-MD2-)": [
-        "MDI"
-      ],
-      "Net-(J1-MD3+)": [
-        "MDI"
-      ],
-      "Net-(J1-MD3-)": [
-        "MDI",
-        "MDI_DIFF_PAIR"
-      ],
-      "Net-(U2-GTX_CLK)": [
+      "RGMII_TX_CTRL_CPU_to_PHY": [
         "RGMII_TX"
       ],
       "Net-(U2-TX_D0)": [
@@ -632,43 +580,43 @@
       "Net-(U2-TX_D3)": [
         "RGMII_TX"
       ],
+      "Net-(U2-GTX_CLK)": [
+        "RGMII_TX"
+      ],
       "Net-(U2-TX_EN_TX_CTRL)": [
         "RGMII_TX"
       ],
-      "Net-(U3-GTX_CLK)": [
-        "RGMII_TX"
-      ],
-      "Net-(U3-TX_D0)": [
-        "RGMII_TX"
-      ],
-      "Net-(U3-TX_D1)": [
-        "RGMII_TX"
-      ],
-      "Net-(U3-TX_D2)": [
-        "RGMII_TX"
-      ],
-      "Net-(U3-TX_D3)": [
-        "RGMII_TX"
-      ],
-      "Net-(U3-TX_EN_TX_CTRL)": [
-        "RGMII_TX"
-      ],
-      "RGMII_RD0": [
+      "RGMII_RD0_PHY_to_CPU": [
         "RGMII_RX"
       ],
-      "RGMII_RD1": [
+      "RGMII_RD1_PHY_to_CPU": [
         "RGMII_RX"
       ],
-      "RGMII_RD2": [
+      "RGMII_RD2_PHY_to_CPU": [
         "RGMII_RX"
       ],
-      "RGMII_RD3": [
+      "RGMII_RD3_PHY_to_CPU": [
         "RGMII_RX"
       ],
-      "RGMII_RX_CLK": [
+      "RGMII_RX_CLK_PHY_to_CPU": [
         "RGMII_RX"
       ],
-      "RGMII_RX_CTRL": [
+      "RGMII_RX_CTRL_PHY_to_CPU": [
+        "RGMII_RX"
+      ],
+      "Net-(U2-RX_D0)": [
+        "RGMII_RX"
+      ],
+      "Net-(U2-RX_D1)": [
+        "RGMII_RX"
+      ],
+      "Net-(U2-RX_D2)": [
+        "RGMII_RX"
+      ],
+      "Net-(U2-RX_D3)": [
+        "RGMII_RX"
+      ],
+      "Net-(U2-RX_CLK)": [
         "RGMII_RX"
       ]
     },
