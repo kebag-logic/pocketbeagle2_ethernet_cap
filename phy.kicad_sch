@@ -3257,7 +3257,7 @@
 							)
 						)
 					)
-					(pin unspecified line
+					(pin passive line
 						(at 30.48 5.08 180)
 						(length 5.08)
 						(name "RBIAS"
@@ -3491,7 +3491,7 @@
 							)
 						)
 					)
-					(pin unspecified line
+					(pin input line
 						(at 30.48 -43.18 180)
 						(length 5.08)
 						(name "XI"
@@ -5629,7 +5629,7 @@
 		(uuid "7c998954-42f7-41e1-812e-008bedf5c6b5")
 	)
 	(no_connect
-		(at 133.35 125.73)
+		(at 133.35 127)
 		(uuid "94fd489c-912e-4ca4-af61-1539484110ed")
 	)
 	(no_connect

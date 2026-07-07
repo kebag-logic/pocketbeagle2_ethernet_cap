@@ -908,7 +908,7 @@
 							)
 						)
 					)
-					(pin power_in line
+					(pin power_out line
 						(at -2.54 -55.88 90)
 						(length 2.54)
 						(name "GND"
@@ -1052,7 +1052,7 @@
 							)
 						)
 					)
-					(pin power_out line
+					(pin passive line
 						(at 7.62 55.88 270)
 						(length 2.54)
 						(name "3.3V"
@@ -4498,6 +4498,10 @@
 			(justify right)
 		)
 		(uuid "55cf8a6d-b50a-4551-8d74-73574ab930f2")
+	)
+	(no_connect
+		(at 43.18 97.79)
+		(uuid "550a5ee1-bb6b-4ab4-be96-b4705eec58e7")
 	)
 	(sheet_instances
 		(path "/"
