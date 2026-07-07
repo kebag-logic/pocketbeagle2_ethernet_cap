@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "KL_Footprints")(type "KiCad")(uri "${KIPRJMOD}/kebag_logic_kicad_library/footprints/KL_Footprints.pretty")(options "")(descr ""))
+)
