@@ -3666,7 +3666,7 @@
 		
 	(sheet
 		(at 198.12 138.43)
-		(size 12.7 7.62)
+		(size 25.4 7.62)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -3728,7 +3728,7 @@
 	)
 	(sheet
 		(at 198.12 151.13)
-		(size 12.7 7.62)
+		(size 25.4 7.62)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -3790,7 +3790,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 140.97) (xy 198.12 140.97)
+			(xy 182.88 140.97) (xy 198.12 140.97)
 		)
 		(stroke
 			(width 0)
@@ -3800,7 +3800,7 @@
 	)
 	(global_label "VDD_3V3"
 		(shape input)
-		(at 190.5 140.97 180)
+		(at 182.88 140.97 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3811,7 +3811,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 143.51) (xy 198.12 143.51)
+			(xy 182.88 143.51) (xy 198.12 143.51)
 		)
 		(stroke
 			(width 0)
@@ -3821,7 +3821,7 @@
 	)
 	(global_label "VDD_1V1"
 		(shape output)
-		(at 190.5 143.51 180)
+		(at 182.88 143.51 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3832,7 +3832,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 153.67) (xy 198.12 153.67)
+			(xy 182.88 153.67) (xy 198.12 153.67)
 		)
 		(stroke
 			(width 0)
@@ -3842,7 +3842,7 @@
 	)
 	(global_label "VDD_3V3"
 		(shape input)
-		(at 190.5 153.67 180)
+		(at 182.88 153.67 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3853,7 +3853,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 156.21) (xy 198.12 156.21)
+			(xy 182.88 156.21) (xy 198.12 156.21)
 		)
 		(stroke
 			(width 0)
@@ -3863,7 +3863,7 @@
 	)
 	(global_label "VDD_2V5"
 		(shape output)
-		(at 190.5 156.21 180)
+		(at 182.88 156.21 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3951,14 +3951,24 @@
 	)
 	(global_label "AIN_VREF_N"
 		(shape bidirectional)
-		(at 69.85 138.43 270)
+		(at 69.85 143.51 270)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "ccc8ccc7-2083-498e-9a61-beaf065a20c6")
+		(uuid "650f7a7a-1eee-40de-afcd-495a4fc133ab")
+	)
+	(wire
+		(pts
+			(xy 69.85 138.43) (xy 69.85 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "787bc85b-315c-4e3e-8c85-83ff3787b798")
 	)
 	(global_label "AIN_VREF_P"
 		(shape bidirectional)
@@ -4313,7 +4323,7 @@
 		(uuid "b0730e24-e99d-42fb-86ae-976d314a9555")
 	)
 	(sheet
-		(at 198.12 165.1)
+		(at 137.16 158.75)
 		(size 25.4 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4329,7 +4339,7 @@
 		)
 		(uuid "dfc0d9ea-92ee-4019-ab1c-eca4c3fda1e2")
 		(property "Sheetname" "expansion"
-			(at 198.12 164.3884 0)
+			(at 137.16 158.0384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4338,7 +4348,7 @@
 			)
 		)
 		(property "Sheetfile" "expansion.kicad_sch"
-			(at 198.12 178.5116 0)
+			(at 137.16 172.1616 0)
 			(effects
 				(font
 					(size 1.27 1.27)

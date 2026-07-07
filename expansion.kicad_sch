@@ -1687,50 +1687,6 @@
 		)
 		(uuid "d38d110d-4768-49fd-b3a2-dc70294d952d")
 	)
-	(symbol
-		(lib_id "KL_Flags:PWR_FLAG")
-		(at 68.58 83.82 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "54531e41-d002-44c4-b201-af1c0d338e41")
-		(property "Reference" "#FLG0910"
-			(at 68.58 78.74 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 68.58 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "784a1783-ca96-4097-91d3-8e992515eba4")
-		)
-		(instances
-			(project "pocketbeagle2_ethernet_cap"
-				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/dfc0d9ea-92ee-4019-ab1c-eca4c3fda1e2"
-					(reference "#FLG0910")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(junction
-		(at 68.58 83.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d3c3f061-0b09-43e6-866e-0e1a9d50eca2")
-	)
 	(wire
 		(pts
 			(xy 86.36 83.82) (xy 91.44 83.82)
@@ -1856,50 +1812,6 @@
 			(justify right)
 		)
 		(uuid "343dc153-0536-4112-b2e4-b7ce8d5a8ddd")
-	)
-	(symbol
-		(lib_id "KL_Flags:PWR_FLAG")
-		(at 68.58 91.44 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0448088b-ed59-4b76-8d27-ac315fa8435b")
-		(property "Reference" "#FLG0911"
-			(at 68.58 86.36 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 68.58 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d09fc679-81ed-423b-bdb1-c66671988429")
-		)
-		(instances
-			(project "pocketbeagle2_ethernet_cap"
-				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/dfc0d9ea-92ee-4019-ab1c-eca4c3fda1e2"
-					(reference "#FLG0911")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(junction
-		(at 68.58 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "27d552de-8c8c-48e9-ac97-ef61e000d390")
 	)
 	(wire
 		(pts
@@ -2111,50 +2023,6 @@
 		)
 		(uuid "e9997b35-454e-45cf-90fb-be6e2bf8599f")
 	)
-	(symbol
-		(lib_id "KL_Flags:PWR_FLAG")
-		(at 68.58 104.14 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "86e16ef8-7f1d-49f6-ba53-dce72abf5452")
-		(property "Reference" "#FLG0912"
-			(at 68.58 99.06 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 68.58 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7710af79-e44e-41c6-a026-d9cf70dd7ad8")
-		)
-		(instances
-			(project "pocketbeagle2_ethernet_cap"
-				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/dfc0d9ea-92ee-4019-ab1c-eca4c3fda1e2"
-					(reference "#FLG0912")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(junction
-		(at 68.58 104.14)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "82f234cd-e66c-4f7a-9153-292176b7613c")
-	)
 	(wire
 		(pts
 			(xy 86.36 104.14) (xy 91.44 104.14)
@@ -2175,50 +2043,6 @@
 			(justify left)
 		)
 		(uuid "3a69df73-8ccc-42db-b4ce-65f732925982")
-	)
-	(symbol
-		(lib_id "KL_Flags:PWR_FLAG")
-		(at 91.44 104.14 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d8b58761-a038-4ae3-95cc-065c8949ea1d")
-		(property "Reference" "#FLG0913"
-			(at 91.44 99.06 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 91.44 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9e8c2c6c-e8bc-4285-9090-ab6606685f76")
-		)
-		(instances
-			(project "pocketbeagle2_ethernet_cap"
-				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/dfc0d9ea-92ee-4019-ab1c-eca4c3fda1e2"
-					(reference "#FLG0913")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(junction
-		(at 91.44 104.14)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a95aa535-d40b-42c2-8dac-d3b7dca3c582")
 	)
 	(wire
 		(pts
@@ -3142,50 +2966,6 @@
 		)
 		(uuid "7ad7d09c-3e77-4015-942b-34ef9c9c95c4")
 	)
-	(symbol
-		(lib_id "KL_Flags:PWR_FLAG")
-		(at 203.2 99.06 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "19bf590f-6075-4936-8e10-42e6a8247f37")
-		(property "Reference" "#FLG0914"
-			(at 203.2 93.98 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 203.2 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f9c58a0c-8e5a-4e5d-9940-57175659cf7e")
-		)
-		(instances
-			(project "pocketbeagle2_ethernet_cap"
-				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/dfc0d9ea-92ee-4019-ab1c-eca4c3fda1e2"
-					(reference "#FLG0914")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(junction
-		(at 203.2 99.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "df1280e1-26aa-48cf-81c4-bb399a250639")
-	)
 	(wire
 		(pts
 			(xy 185.42 101.6) (xy 180.34 101.6)
@@ -3647,6 +3427,312 @@
 			(justify left)
 		)
 		(uuid "e35823a2-59b8-44da-9d1d-a5dc2693fed0")
+	)
+	(text "Power inputs a stacked module may drive:"
+		(exclude_from_sim no)
+		(at 63.5 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "60cfe7f3-3c1e-4885-ba5b-6eabfaf1bbdf")
+	)
+	(symbol
+		(lib_id "KL_Flags:PWR_FLAG")
+		(at 63.5 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8db70fc0-b1ea-4a9a-bca4-bb3d189d3240")
+		(property "Reference" "#FLG0920"
+			(at 63.5 141.0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 63.5 143.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "10773865-53a8-48d4-a0d5-ea95a0cbe590")
+		)
+		(instances
+			(project "pocketbeagle2_ethernet_cap"
+				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/dfc0d9ea-92ee-4019-ab1c-eca4c3fda1e2"
+					(reference "#FLG0920")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 63.5 147.32) (xy 63.5 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae238e80-9232-4c45-ab0d-32102527ae3b")
+	)
+	(global_label "VIN"
+		(shape bidirectional)
+		(at 63.5 149.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2d4aae0f-c43d-463f-99f7-3d95f51b1597")
+	)
+	(symbol
+		(lib_id "KL_Flags:PWR_FLAG")
+		(at 96.52 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ccaada03-b31e-4417-b075-3804cb3195cc")
+		(property "Reference" "#FLG0921"
+			(at 96.52 141.0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 96.52 143.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b6e5e9a7-9ec4-40a5-89ab-1899da879891")
+		)
+		(instances
+			(project "pocketbeagle2_ethernet_cap"
+				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/dfc0d9ea-92ee-4019-ab1c-eca4c3fda1e2"
+					(reference "#FLG0921")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 96.52 147.32) (xy 96.52 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5ee0d40-df67-40cc-9823-365a5ba11523")
+	)
+	(global_label "USB1_VIN"
+		(shape bidirectional)
+		(at 96.52 149.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "398fdda7-3207-40f6-a0cf-52ca3af6af70")
+	)
+	(symbol
+		(lib_id "KL_Flags:PWR_FLAG")
+		(at 129.54 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6903c153-ff1b-4a1d-8eb3-71187405dc5a")
+		(property "Reference" "#FLG0922"
+			(at 129.54 141.0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 129.54 143.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fcedf23a-ee64-45ef-ba5c-dc7357b2cc7d")
+		)
+		(instances
+			(project "pocketbeagle2_ethernet_cap"
+				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/dfc0d9ea-92ee-4019-ab1c-eca4c3fda1e2"
+					(reference "#FLG0922")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 129.54 147.32) (xy 129.54 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb14a3fe-83d3-45ba-9a57-a96b9de348db")
+	)
+	(global_label "BAT_VIN"
+		(shape bidirectional)
+		(at 129.54 149.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ae6d8e3c-892b-40ac-bd0f-064e47d135dc")
+	)
+	(symbol
+		(lib_id "KL_Flags:PWR_FLAG")
+		(at 162.56 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7905af3e-4394-49ef-a5ef-94780f8ec584")
+		(property "Reference" "#FLG0923"
+			(at 162.56 141.0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 162.56 143.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "77c94726-963f-4292-80f3-4f9b2596377b")
+		)
+		(instances
+			(project "pocketbeagle2_ethernet_cap"
+				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/dfc0d9ea-92ee-4019-ab1c-eca4c3fda1e2"
+					(reference "#FLG0923")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 162.56 147.32) (xy 162.56 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d75750f9-416e-47a0-ae4e-ea080062598e")
+	)
+	(global_label "AIN_VREF_P"
+		(shape bidirectional)
+		(at 162.56 149.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cc28c94d-cc94-4d4e-9494-b32abac9081f")
+	)
+	(symbol
+		(lib_id "KL_Flags:PWR_FLAG")
+		(at 195.58 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "87b52963-d7c5-45dc-80cd-778b021840e6")
+		(property "Reference" "#FLG0924"
+			(at 195.58 141.0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 195.58 143.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5d124341-27bd-4874-bbe9-ddaa85d969e4")
+		)
+		(instances
+			(project "pocketbeagle2_ethernet_cap"
+				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/dfc0d9ea-92ee-4019-ab1c-eca4c3fda1e2"
+					(reference "#FLG0924")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 195.58 147.32) (xy 195.58 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efc87c48-b776-4215-9ec1-7b8a1dc79a99")
+	)
+	(global_label "AIN_VREF_N"
+		(shape bidirectional)
+		(at 195.58 149.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "34150855-fc08-49e5-8702-1adad70b760e")
 	)
 	(embedded_fonts no)
 )

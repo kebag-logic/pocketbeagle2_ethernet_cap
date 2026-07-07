@@ -964,21 +964,19 @@
 		(dnp no)
 		(uuid "fb826734-3655-41f4-92a6-ebb3fb38000b")
 		(property "Reference" "Y1"
-			(at 104.14 85.09 0)
+			(at 100.33 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "25M"
-			(at 104.14 87.63 0)
+			(at 100.33 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "KL_Footprints:ECS-2520MV"
@@ -1157,6 +1155,7 @@
 		(uuid "d7f1276b-4bd1-4aa2-ba62-89954728daaf")
 		(property "Reference" "#PWR0920"
 			(at 104.14 95.25 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1399,16 +1398,6 @@
 		)
 		(uuid "b809cd90-d02c-4840-ada1-070433ce1541")
 	)
-	(label "CLK_25M_OSC_to_PHY"
-		(at 120.65 73.66 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "392839f8-9f6e-4669-8219-524c00edec47")
-	)
 	(hierarchical_label "CLK_25M_OSC_to_PHY"
 		(shape output)
 		(at 133.35 73.66 0)
@@ -1601,6 +1590,7 @@
 		(uuid "7deabc6e-717a-46d1-8972-3d4f63012a72")
 		(property "Reference" "#PWR0921"
 			(at 129.54 82.55 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1679,6 +1669,7 @@
 		)
 		(property "Value" "TestPoint_SMD"
 			(at 133.35 67.31 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1746,7 +1737,7 @@
 	)
 	(symbol
 		(lib_id "KL_C:C_100n_35V_10pct_X7R_0402")
-		(at 92.71 80.01 0)
+		(at 78.74 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1890,7 +1881,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 76.2) (xy 92.71 73.66)
+			(xy 78.74 76.2) (xy 78.74 73.66)
 		)
 		(stroke
 			(width 0)
@@ -1899,7 +1890,7 @@
 		(uuid "0183bc30-5752-44f3-a603-d1e7a0ad7f1f")
 	)
 	(label "VDD_3V3"
-		(at 92.71 73.66 0)
+		(at 78.74 73.66 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1910,7 +1901,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 83.82) (xy 92.71 86.36)
+			(xy 78.74 83.82) (xy 78.74 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1920,7 +1911,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 92.71 86.36 0)
+		(at 78.74 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1929,6 +1920,7 @@
 		(uuid "fa2d1681-18ec-465e-8011-df55d73c4487")
 		(property "Reference" "#PWR0922"
 			(at 96.52 82.55 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)

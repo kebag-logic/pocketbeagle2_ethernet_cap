@@ -1015,21 +1015,19 @@
 		(dnp no)
 		(uuid "0ef3fd85-f0a0-4c41-9614-81dd4b4d3a3d")
 		(property "Reference" "U4"
-			(at 144.78 86.36 0)
+			(at 140.97 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "TPS7A2025PDBVR"
-			(at 144.78 88.9 0)
+			(at 140.97 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "KL_Footprints:SOT-23-5"
@@ -1260,6 +1258,7 @@
 		(uuid "e37a9bc9-d866-4fdc-abec-02bee3444081")
 		(property "Reference" "#PWR0910"
 			(at 166.37 92.71 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1527,6 +1526,7 @@
 		(uuid "5d39e058-f958-4223-8fe4-313db8eb42b4")
 		(property "Reference" "#PWR0911"
 			(at 104.14 133.35 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1770,6 +1770,7 @@
 		(uuid "6f7dbf54-00cb-4c8c-af89-0fd3714de301")
 		(property "Reference" "#PWR0912"
 			(at 119.38 133.35 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2013,6 +2014,7 @@
 		(uuid "788d955e-d82c-4337-8029-af2ef3cda68d")
 		(property "Reference" "#PWR0913"
 			(at 134.62 133.35 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2091,6 +2093,7 @@
 		)
 		(property "Value" "TestPoint_SMD"
 			(at 104.14 58.419999999999995 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2180,6 +2183,7 @@
 		)
 		(property "Value" "TestPoint_SMD"
 			(at 119.38 58.419999999999995 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
