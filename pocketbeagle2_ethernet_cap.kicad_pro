@@ -468,7 +468,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "pocketbeagle2 revA_241205.kicad_pro",
+    "filename": "pocketbeagle2_ethernet_cap.kicad_pro",
     "version": 3
   },
   "net_settings": {
