@@ -8,6 +8,7 @@
 		(symbol "KL_Header:Header_18x02_2.54mm_2.54mm_Straight"
 				(pin_names
 					(offset 1.016)
+					(hide yes)
 				)
 				(exclude_from_sim no)
 				(in_bom yes)
