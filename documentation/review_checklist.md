@@ -84,8 +84,9 @@ Check items off here; details live in [library_additions.md](library_additions.m
 | Check | Result |
 |---|---|
 | ERC | 0 errors, 3 waived warnings (baseline was 35 violations) |
-| Netlist vs rev A | identical partitions except documented C30/C32 pin swap + intentional expansion changes |
+| Netlist vs rev A | identical node-sets (incl. power flags); only net *names* re-scoped (pass-through nets now `/io/*`) |
 | IO pass-through | all 72 U1 pins match J2/J3 1:1 (scripted check) |
+| Connectivity | fully hierarchical: 0 global labels, GND via power symbols, inter-sheet via ports |
 | Libraries | 100 % `KL_*` + `power:` symbols, 100 % `KL_Footprints` footprints |
 | BOM export | grouped, with MPN/Mouser/Digikey/LCSC columns |
 | PCB file | byte-identical to tag `revA-routed` (rename only) |

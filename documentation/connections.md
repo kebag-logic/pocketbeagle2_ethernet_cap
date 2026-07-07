@@ -49,16 +49,17 @@ the DP83867IRPAPR gigabit PHY ("PHY") and the RJ45 magjack. Net names follow
 - PHY status LEDs: `LED0_PHY_to_Q1` … `LED2_PHY_to_Q3` drive BSS138 gates (Q1–Q3);
   the FETs sink D1–D3 (0805 green/orange/red) from `VDD_3V3` via 200R (R23/R27/R28).
 
-## Expansion / stacking headers
+## io sheet — PocketBeagle host + stacking headers
 
-Every PocketBeagle 2 IO is routed 1:1 to two 18x02 (36-pin) pass-through headers on
-the `expansion` sheet, so the PB2 + cap stack can sit on top of (or under) other
-modules:
+U1 (PocketBeagle 2) and the two 18x02 (36-pin) pass-through headers live on the `io`
+sheet. Every PB2 IO is routed 1:1 to J2/J3 as **sheet-local nets** so the PB2 + cap
+stack can sit on top of (or under) other modules:
 
 - **J2** mirrors P1 (header pin k = U1 pin k), **J3** mirrors P2 (header pin k =
   U1 pin 36+k). Pin numbering follows the PB2 zigzag convention.
-- Signals used by the cap (RGMII, MDIO, reset/interrupt, rails) pass through under
-  their functional net names - a stacked module sees them and must not drive them.
+- Signals used by the cap (RGMII, MDIO, reset/interrupt, `VDD_3V3`) leave `io` as
+  **hierarchical ports** to the root block diagram, and also pass through to J2/J3 - a
+  stacked module sees them and must not drive them.
 - All other pins carry their PB2 pin-function net names (`GPIO47`, `I2C2_SDA`,
   `UART0_TX`, `SPI0_MOSI`, `MCASP2_ACLKX`, `AIN5`, ...). The former audio PMOD
   circuitry (rev A) was removed; the MCASP/TIMER/EXT_REFCLK pins are now plain

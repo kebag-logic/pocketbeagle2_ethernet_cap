@@ -18,15 +18,23 @@ submodule — no global library setup needed.
 ## Schematic structure
 
 ```
-pocketbeagle2_ethernet_cap.kicad_sch   root: U1 PocketBeagle 2 host module
+pocketbeagle2_ethernet_cap.kicad_sch   root: pure block diagram (sheet symbols only)
+├── io.kicad_sch                       U1 PocketBeagle 2 + J2/J3 IO pass-through headers
 ├── network.kicad_sch                  network domain top
 │   ├── phy.kicad_sch                  U2 DP83867 PHY, straps, decoupling, status LEDs
 │   ├── rj45_connector_port0.kicad_sch J1 RJ45 magjack (integrated magnetics)
 │   └── oscillator.kicad_sch           Y1 25 MHz HCMOS oscillator + clock conditioning
 ├── ldo_2v5.kicad_sch                  U4 TPS7A2025 -> VDD_2V5
-├── ldo_1v1.kicad_sch                  U3 TPS7A2011 -> VDD_1V1
-└── expansion.kicad_sch                J2/J3 full IO pass-through stacking headers
+└── ldo_1v1.kicad_sch                  U3 TPS7A2011 -> VDD_1V1
 ```
+
+The design is fully hierarchical (shish-lan house style): **no global labels**. `GND`
+is distributed via `power:GND` symbols; every other inter-sheet net crosses through
+**hierarchical sheet-pin ports**, so signal flow is traceable through the hierarchy.
+The root is a block diagram: `io` sources the RGMII/MDIO/reset/interrupt signals and
+`VDD_3V3`, `network` consumes them, and the `ldo_*` sheets feed `VDD_2V5`/`VDD_1V1`.
+Inside `io`, the PocketBeagle IOs fan out to the stacking headers as sheet-local nets;
+only the 17 cap-used signals leave the sheet as ports.
 
 ## Documentation
 
