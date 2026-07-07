@@ -5,558 +5,675 @@
 	(uuid "77141deb-7e10-4a76-a94b-795b10b4ef95")
 	(paper "A4")
 	(lib_symbols
-		(symbol "1840888-1:1840888-1"
-					(pin_names
-						(offset 1.016)
-					)
-					(exclude_from_sim no)
-					(in_bom yes)
-					(on_board yes)
-					(property "Reference" "J"
-						(at -10.16 21.082 0)
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-							(justify left bottom)
-						)
-					)
-					(property "Value" "1840888-1"
-						(at -10.16 -27.94 0)
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-							(justify left bottom)
-						)
-					)
-					(property "Footprint" "1840888-1:BEL_1840888-1"
-						(at 0 0 0)
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-							(justify bottom)
-							(hide yes)
-						)
-					)
-					(property "Datasheet" ""
-						(at 0 0 0)
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-							(hide yes)
-						)
-					)
-					(property "Description" ""
-						(at 0 0 0)
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-							(hide yes)
-						)
-					)
-					(property "PARTREV" "5"
-						(at 0 0 0)
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-							(justify bottom)
-							(hide yes)
-						)
-					)
-					(property "STANDARD" "Manufacturer Recommendations"
-						(at 0 0 0)
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-							(justify bottom)
-							(hide yes)
-						)
-					)
-					(property "MAXIMUM_PACKAGE_HEIGHT" "15.85mm"
-						(at 0 0 0)
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-							(justify bottom)
-							(hide yes)
-						)
-					)
-					(property "MANUFACTURER" "BELFUSE"
-						(at 0 0 0)
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-							(justify bottom)
-							(hide yes)
-						)
-					)
-					(symbol "1840888-1_0_0"
-						(rectangle
-							(start -10.16 -25.4)
-							(end 10.16 20.32)
-							(stroke
-								(width 0.254)
-								(type default)
-							)
-							(fill
-								(type background)
-							)
-						)
-						(pin power_in line
-							(at -15.24 17.78 0)
-							(length 5.08)
-							(name "VCC"
-								(effects
-									(font
-										(size 1.016 1.016)
-									)
-								)
-							)
-							(number "1"
-								(effects
-									(font
-										(size 1.016 1.016)
-									)
-								)
-							)
-						)
-						(pin passive line
-							(at -15.24 12.7 0)
-							(length 5.08)
-							(name "MD0+"
-								(effects
-									(font
-										(size 1.016 1.016)
-									)
-								)
-							)
-							(number "2"
-								(effects
-									(font
-										(size 1.016 1.016)
-									)
-								)
-							)
-						)
-						(pin passive line
-							(at -15.24 10.16 0)
-							(length 5.08)
-							(name "MD0-"
-								(effects
-									(font
-										(size 1.016 1.016)
-									)
-								)
-							)
-							(number "3"
-								(effects
-									(font
-										(size 1.016 1.016)
-									)
-								)
-							)
-						)
-						(pin passive line
-							(at -15.24 5.08 0)
-							(length 5.08)
-							(name "MD1+"
-								(effects
-									(font
-										(size 1.016 1.016)
-									)
-								)
-							)
-							(number "4"
-								(effects
-									(font
-										(size 1.016 1.016)
-									)
-								)
-							)
-						)
-						(pin passive line
-							(at -15.24 2.54 0)
-							(length 5.08)
-							(name "MD1-"
-								(effects
-									(font
-										(size 1.016 1.016)
-									)
-								)
-							)
-							(number "5"
-								(effects
-									(font
-										(size 1.016 1.016)
-									)
-								)
-							)
-						)
-						(pin passive line
-							(at -15.24 -2.54 0)
-							(length 5.08)
-							(name "MD2+"
-								(effects
-									(font
-										(size 1.016 1.016)
-									)
-								)
-							)
-							(number "6"
-								(effects
-									(font
-										(size 1.016 1.016)
-									)
-								)
-							)
-						)
-						(pin passive line
-							(at -15.24 -5.08 0)
-							(length 5.08)
-							(name "MD2-"
-								(effects
-									(font
-										(size 1.016 1.016)
-									)
-								)
-							)
-							(number "7"
-								(effects
-									(font
-										(size 1.016 1.016)
-									)
-								)
-							)
-						)
-						(pin passive line
-							(at -15.24 -10.16 0)
-							(length 5.08)
-							(name "MD3+"
-								(effects
-									(font
-										(size 1.016 1.016)
-									)
-								)
-							)
-							(number "8"
-								(effects
-									(font
-										(size 1.016 1.016)
-									)
-								)
-							)
-						)
-						(pin passive line
-							(at -15.24 -12.7 0)
-							(length 5.08)
-							(name "MD3-"
-								(effects
-									(font
-										(size 1.016 1.016)
-									)
-								)
-							)
-							(number "9"
-								(effects
-									(font
-										(size 1.016 1.016)
-									)
-								)
-							)
-						)
-						(pin passive line
-							(at -15.24 -17.78 0)
-							(length 5.08)
-							(name "SHIELD"
-								(effects
-									(font
-										(size 1.016 1.016)
-									)
-								)
-							)
-							(number "S1"
-								(effects
-									(font
-										(size 1.016 1.016)
-									)
-								)
-							)
-						)
-						(pin passive line
-							(at -15.24 -20.32 0)
-							(length 5.08)
-							(name "SHIELD__1"
-								(effects
-									(font
-										(size 1.016 1.016)
-									)
-								)
-							)
-							(number "S2"
-								(effects
-									(font
-										(size 1.016 1.016)
-									)
-								)
-							)
-						)
-						(pin power_in line
-							(at -15.24 -22.86 0)
-							(length 5.08)
-							(name "GND"
-								(effects
-									(font
-										(size 1.016 1.016)
-									)
-								)
-							)
-							(number "10"
-								(effects
-									(font
-										(size 1.016 1.016)
-									)
-								)
-							)
-						)
-					)
-					(embedded_fonts no)
-				)
-		(symbol "Device:R"
-					(pin_numbers
-						(hide yes)
-					)
-					(pin_names
-						(offset 0)
-					)
-					(exclude_from_sim no)
-					(in_bom yes)
-					(on_board yes)
-					(property "Reference" "R"
-						(at 2.032 0 90)
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(property "Value" "R"
-						(at 0 0 90)
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(property "Footprint" ""
-						(at -1.778 0 90)
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-							(hide yes)
-						)
-					)
-					(property "Datasheet" "~"
-						(at 0 0 0)
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-							(hide yes)
-						)
-					)
-					(property "Description" "Resistor"
-						(at 0 0 0)
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-							(hide yes)
-						)
-					)
-					(property "ki_keywords" "R res resistor"
-						(at 0 0 0)
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-							(hide yes)
-						)
-					)
-					(property "ki_fp_filters" "R_*"
-						(at 0 0 0)
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-							(hide yes)
-						)
-					)
-					(symbol "R_0_1"
-						(rectangle
-							(start -1.016 -2.54)
-							(end 1.016 2.54)
-							(stroke
-								(width 0.254)
-								(type default)
-							)
-							(fill
-								(type none)
-							)
-						)
-					)
-					(symbol "R_1_1"
-						(pin passive line
-							(at 0 3.81 270)
-							(length 1.27)
-							(name "~"
-								(effects
-									(font
-										(size 1.27 1.27)
-									)
-								)
-							)
-							(number "1"
-								(effects
-									(font
-										(size 1.27 1.27)
-									)
-								)
-							)
-						)
-						(pin passive line
-							(at 0 -3.81 90)
-							(length 1.27)
-							(name "~"
-								(effects
-									(font
-										(size 1.27 1.27)
-									)
-								)
-							)
-							(number "2"
-								(effects
-									(font
-										(size 1.27 1.27)
-									)
-								)
-							)
-						)
-					)
-					(embedded_fonts no)
-				)
 		(symbol "power:GND"
-					(power)
-					(pin_numbers
-						(hide yes)
-					)
-					(pin_names
-						(offset 0)
-						(hide yes)
-					)
-					(exclude_from_sim no)
-					(in_bom yes)
-					(on_board yes)
-					(property "Reference" "#PWR"
-						(at 0 -6.35 0)
-						(effects
-							(font
-								(size 1.27 1.27)
+							(power)
+							(pin_numbers
+								(hide yes)
 							)
-							(hide yes)
-						)
-					)
-					(property "Value" "GND"
-						(at 0 -3.81 0)
-						(effects
-							(font
-								(size 1.27 1.27)
+							(pin_names
+								(offset 0)
+								(hide yes)
 							)
-						)
-					)
-					(property "Footprint" ""
-						(at 0 0 0)
-						(effects
-							(font
-								(size 1.27 1.27)
+							(exclude_from_sim no)
+							(in_bom yes)
+							(on_board yes)
+							(property "Reference" "#PWR"
+								(at 0 -6.35 0)
+								(effects
+									(font
+										(size 1.27 1.27)
+									)
+									(hide yes)
+								)
 							)
-							(hide yes)
-						)
-					)
-					(property "Datasheet" ""
-						(at 0 0 0)
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-							(hide yes)
-						)
-					)
-					(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-						(at 0 0 0)
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-							(hide yes)
-						)
-					)
-					(property "ki_keywords" "global power"
-						(at 0 0 0)
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-							(hide yes)
-						)
-					)
-					(symbol "GND_0_1"
-						(polyline
-							(pts
-								(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-							)
-							(stroke
-								(width 0)
-								(type default)
-							)
-							(fill
-								(type none)
-							)
-						)
-					)
-					(symbol "GND_1_1"
-						(pin power_in line
-							(at 0 0 270)
-							(length 0)
-							(name "~"
+							(property "Value" "GND"
+								(at 0 -3.81 0)
 								(effects
 									(font
 										(size 1.27 1.27)
 									)
 								)
 							)
-							(number "1"
+							(property "Footprint" ""
+								(at 0 0 0)
 								(effects
 									(font
 										(size 1.27 1.27)
 									)
+									(hide yes)
 								)
 							)
+							(property "Datasheet" ""
+								(at 0 0 0)
+								(effects
+									(font
+										(size 1.27 1.27)
+									)
+									(hide yes)
+								)
+							)
+							(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+								(at 0 0 0)
+								(effects
+									(font
+										(size 1.27 1.27)
+									)
+									(hide yes)
+								)
+							)
+							(property "ki_keywords" "global power"
+								(at 0 0 0)
+								(effects
+									(font
+										(size 1.27 1.27)
+									)
+									(hide yes)
+								)
+							)
+							(symbol "GND_0_1"
+								(polyline
+									(pts
+										(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+									)
+									(stroke
+										(width 0)
+										(type default)
+									)
+									(fill
+										(type none)
+									)
+								)
+							)
+							(symbol "GND_1_1"
+								(pin power_in line
+									(at 0 0 270)
+									(length 0)
+									(name "~"
+										(effects
+											(font
+												(size 1.27 1.27)
+											)
+										)
+									)
+									(number "1"
+										(effects
+											(font
+												(size 1.27 1.27)
+											)
+										)
+									)
+								)
+							)
+							(embedded_fonts no)
 						)
-					)
-					(embedded_fonts no)
+		(symbol "KL_Conn_Data:RJ45_1840888-1"
+				(pin_names
+					(offset 1.016)
 				)
+				(exclude_from_sim no)
+				(in_bom yes)
+				(on_board yes)
+				(property "Reference" "J"
+					(at -10.16 22.86 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "Value" "RJ45_1840888-1"
+					(at -10.16 25.4 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "Footprint" "KL_Footprints:BEL_1840888-1"
+					(at 0 0 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(hide yes)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "Datasheet" "TBD"
+					(at 0 0 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(hide yes)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "Description" "RJ45 jack with integrated 10/100/1000Base-T magnetics"
+					(at 0 0 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(hide yes)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "MPN" "1840888-1"
+					(at 0 0 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(hide yes)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "Mouser" "TBD"
+					(at 0 0 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(hide yes)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "Digikey" "TBD"
+					(at 0 0 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(hide yes)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "LCSC" "TBD"
+					(at 0 0 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(hide yes)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "ki_keywords" "RJ45 magjack ethernet"
+					(at 0 0 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(hide yes)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(symbol "RJ45_1840888-1_0_1"
+					(rectangle
+						(start -10.16 20.32)
+						(end 5.08 -25.4)
+						(stroke
+							(width 0.254)
+							(type default)
+						)
+						(fill
+							(type background)
+						)
+					)
+				)
+				(symbol "RJ45_1840888-1_1_1"
+					(pin power_in line
+						(at -15.24 17.78 0)
+						(length 5.08)
+						(name "VCC"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+						(number "1"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+					)
+					(pin passive line
+						(at -15.24 12.7 0)
+						(length 5.08)
+						(name "MD0+"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+						(number "2"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+					)
+					(pin passive line
+						(at -15.24 10.16 0)
+						(length 5.08)
+						(name "MD0-"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+						(number "3"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+					)
+					(pin passive line
+						(at -15.24 5.08 0)
+						(length 5.08)
+						(name "MD1+"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+						(number "4"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+					)
+					(pin passive line
+						(at -15.24 2.54 0)
+						(length 5.08)
+						(name "MD1-"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+						(number "5"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+					)
+					(pin passive line
+						(at -15.24 -2.54 0)
+						(length 5.08)
+						(name "MD2+"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+						(number "6"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+					)
+					(pin passive line
+						(at -15.24 -5.08 0)
+						(length 5.08)
+						(name "MD2-"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+						(number "7"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+					)
+					(pin passive line
+						(at -15.24 -10.16 0)
+						(length 5.08)
+						(name "MD3+"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+						(number "8"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+					)
+					(pin passive line
+						(at -15.24 -12.7 0)
+						(length 5.08)
+						(name "MD3-"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+						(number "9"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+					)
+					(pin passive line
+						(at -15.24 -17.78 0)
+						(length 5.08)
+						(name "SHIELD"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+						(number "S1"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+					)
+					(pin passive line
+						(at -15.24 -20.32 0)
+						(length 5.08)
+						(name "SHIELD__1"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+						(number "S2"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+					)
+					(pin power_in line
+						(at -15.24 -22.86 0)
+						(length 5.08)
+						(name "GND"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+						(number "10"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+					)
+				)
+				(embedded_fonts no)
+			)
+		(symbol "KL_R:R_0R_0.063W_5pct_0402"
+				(pin_numbers
+					(hide yes)
+				)
+				(pin_names
+					(offset 0)
+				)
+				(exclude_from_sim no)
+				(in_bom yes)
+				(on_board yes)
+				(property "Reference" "R"
+					(at 2.032 0 90)
+					(show_name no)
+					(do_not_autoplace no)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "Value" "0R"
+					(at 0 0 90)
+					(show_name no)
+					(do_not_autoplace no)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "Footprint" "KL_Footprints:R_0402"
+					(at -1.778 0 90)
+					(show_name no)
+					(do_not_autoplace no)
+					(hide yes)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "Datasheet" "https://www.vishay.com/docs/28773/crcwce3.pdf"
+					(at 0 0 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(hide yes)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "Description" "Resistor"
+					(at 0 0 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(hide yes)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "Power_in_W" "0.063"
+					(at 0 0 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(hide yes)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "Tolerance_in_pct" "5"
+					(at 0 0 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(hide yes)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "MPN" "CRCW04020000Z0EDC"
+					(at 0 0 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(hide yes)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "Mouser" "71-CRCW04020000Z0EDC"
+					(at 0 0 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(hide yes)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "Digikey" "TBD"
+					(at 0 0 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(hide yes)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "LCSC" "TBD"
+					(at 0 0 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(hide yes)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "Package_in_inch" "0402"
+					(at 0 0 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(hide yes)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "ki_keywords" "R res resistor"
+					(at 0 0 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(hide yes)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "ki_fp_filters" "R_*"
+					(at 0 0 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(hide yes)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(in_pos_files yes)
+				(duplicate_pin_numbers_are_jumpers no)
+				(symbol "R_0R_0.063W_5pct_0402_0_1"
+					(rectangle
+						(start -1.016 -2.54)
+						(end 1.016 2.54)
+						(stroke
+							(width 0.254)
+							(type default)
+						)
+						(fill
+							(type none)
+						)
+					)
+				)
+				(symbol "R_0R_0.063W_5pct_0402_1_1"
+					(pin passive line
+						(at 0 3.81 270)
+						(length 1.27)
+						(name ""
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+						(number "1"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+					)
+					(pin passive line
+						(at 0 -3.81 90)
+						(length 1.27)
+						(name ""
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+						(number "2"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+					)
+				)
+				(embedded_fonts no)
+			)
 	)
 	(symbol
-		(lib_id "1840888-1:1840888-1")
+		(lib_id "KL_Conn_Data:RJ45_1840888-1")
 		(at 165.1 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -573,7 +690,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1840888-1"
+		(property "Value" "RJ45_1840888-1"
 			(at 168.91 74.93 0)
 			(effects
 				(font
@@ -582,7 +699,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "1840888_1:BEL_1840888-1"
+		(property "Footprint" "KL_Footprints:BEL_1840888-1"
 			(at 168.91 77.47 0)
 			(hide yes)
 			(effects
@@ -592,7 +709,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "TBD"
 			(at 168.91 80.01 0)
 			(hide yes)
 			(effects
@@ -602,7 +719,7 @@
 				(justify left)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RJ45 jack with integrated 10/100/1000Base-T magnetics"
 			(at 168.91 82.55 0)
 			(hide yes)
 			(effects
@@ -650,6 +767,42 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(property "MPN" "1840888-1"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "TBD"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "TBD"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "TBD"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -886,13 +1039,13 @@
 		(uuid "04ac435b-7f8b-43c0-8fb2-88d17a9f21ef")
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "KL_R:R_0R_0.063W_5pct_0402")
 		(at 140.97 52.07 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "cfe8fc95-aa3f-419a-8f20-77c648edbe42")
 		(property "Reference" "R25"
 			(at 144.78 48.26 0)
@@ -903,7 +1056,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "DNP"
+		(property "Value" "0R"
 			(at 144.78 50.8 0)
 			(effects
 				(font
@@ -912,7 +1065,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+		(property "Footprint" "KL_Footprints:R_0402"
 			(at 144.78 53.34 0)
 			(hide yes)
 			(effects
@@ -922,7 +1075,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/28773/crcwce3.pdf"
 			(at 144.78 55.88 0)
 			(hide yes)
 			(effects
@@ -940,6 +1093,69 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(property "Power_in_W" "0.063"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance_in_pct" "5"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CRCW04020000Z0EDC"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "71-CRCW04020000Z0EDC"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "TBD"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "TBD"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package_in_inch" "0402"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -1009,7 +1225,7 @@
 		(uuid "407106fb-ea0b-4c27-82d9-61fbc8fc2e8c")
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "KL_R:R_0R_0.063W_5pct_0402")
 		(at 143.51 101.6 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1035,7 +1251,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+		(property "Footprint" "KL_Footprints:R_0402"
 			(at 147.32 102.87 0)
 			(hide yes)
 			(effects
@@ -1045,7 +1261,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/28773/crcwce3.pdf"
 			(at 147.32 105.41 0)
 			(hide yes)
 			(effects
@@ -1063,6 +1279,69 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(property "Power_in_W" "0.063"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance_in_pct" "5"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CRCW04020000Z0EDC"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "71-CRCW04020000Z0EDC"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "TBD"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "TBD"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package_in_inch" "0402"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -1170,7 +1449,7 @@
 		(uuid "ebb3da82-c383-43ae-a4c3-ebd639322eca")
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "KL_R:R_0R_0.063W_5pct_0402")
 		(at 146.05 101.6 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1196,7 +1475,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+		(property "Footprint" "KL_Footprints:R_0402"
 			(at 149.86 102.87 0)
 			(hide yes)
 			(effects
@@ -1206,7 +1485,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/28773/crcwce3.pdf"
 			(at 149.86 105.41 0)
 			(hide yes)
 			(effects
@@ -1224,6 +1503,69 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(property "Power_in_W" "0.063"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance_in_pct" "5"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CRCW04020000Z0EDC"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "71-CRCW04020000Z0EDC"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "TBD"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "TBD"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package_in_inch" "0402"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
