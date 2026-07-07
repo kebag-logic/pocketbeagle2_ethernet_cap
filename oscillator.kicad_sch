@@ -595,6 +595,7 @@
 		(symbol "KL_Oscillator:Oscillator_25M_25ppm_HCMOS_2.5x2.0"
 				(pin_names
 					(offset 1.016)
+					(hide yes)
 				)
 				(exclude_from_sim no)
 				(in_bom yes)
@@ -1253,7 +1254,7 @@
 			)
 		)
 		(property "Value" "27p"
-			(at 121.92 78.74 0)
+			(at 121.92 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1428,7 +1429,7 @@
 			)
 		)
 		(property "Value" "27p"
-			(at 129.54 78.74 0)
+			(at 129.54 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1737,7 +1738,7 @@
 	)
 	(symbol
 		(lib_id "KL_C:C_100n_35V_10pct_X7R_0402")
-		(at 78.74 80.01 0)
+		(at 60.96 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1745,7 +1746,7 @@
 		(dnp no)
 		(uuid "8ca398c3-03db-48ee-b1de-38671441a024")
 		(property "Reference" "C4"
-			(at 96.52 76.2 0)
+			(at 64.77 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1754,7 +1755,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 96.52 78.74 0)
+			(at 64.77 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1881,7 +1882,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 76.2) (xy 78.74 73.66)
+			(xy 60.96 76.2) (xy 60.96 73.66)
 		)
 		(stroke
 			(width 0)
@@ -1890,7 +1891,7 @@
 		(uuid "0183bc30-5752-44f3-a603-d1e7a0ad7f1f")
 	)
 	(label "VDD_3V3"
-		(at 78.74 73.66 0)
+		(at 60.96 73.66 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1901,7 +1902,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 83.82) (xy 78.74 86.36)
+			(xy 60.96 83.82) (xy 60.96 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1911,7 +1912,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 78.74 86.36 0)
+		(at 60.96 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
