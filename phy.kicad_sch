@@ -3476,7 +3476,7 @@
 					(pin input line
 						(at 30.48 -38.1 180)
 						(length 5.08)
-						(name "RESET_N"
+						(name "RESET_N_CPU_to_PHY"
 							(effects
 								(font
 									(size 1.27 1.27)
@@ -7012,7 +7012,7 @@
 		)
 		(uuid "ff61adda-3f48-403c-a9db-007d8a77a851")
 	)
-	(label "RX_CTRL"
+	(label "STRAP_RX_CTRL_PHY"
 		(at 118.11 83.82 0)
 		(effects
 			(font
@@ -7022,7 +7022,7 @@
 		)
 		(uuid "00051d9a-b520-456f-8ed2-0afcd85a864c")
 	)
-	(label "MD2_P"
+	(label "MDI2_PHY_RJ45_P"
 		(at 218.44 58.42 0)
 		(effects
 			(font
@@ -7032,7 +7032,7 @@
 		)
 		(uuid "0c2d013a-928a-45fd-b9de-fb44d8b1aea0")
 	)
-	(label "MD2_N"
+	(label "MDI2_PHY_RJ45_N"
 		(at 218.44 60.96 0)
 		(effects
 			(font
@@ -7042,7 +7042,7 @@
 		)
 		(uuid "10f0557f-0032-4a9e-9a6a-99b27450fbe8")
 	)
-	(label "LED2"
+	(label "LED2_PHY_to_Q3"
 		(at 262.89 148.59 180)
 		(effects
 			(font
@@ -7052,7 +7052,7 @@
 		)
 		(uuid "25a7caea-3e7f-4439-91a4-cde27fef19a9")
 	)
-	(label "MD0_P"
+	(label "MDI0_PHY_RJ45_P"
 		(at 218.44 43.18 0)
 		(effects
 			(font
@@ -7062,7 +7062,7 @@
 		)
 		(uuid "2b9d0a76-4edb-405d-9798-1b288dc88b0d")
 	)
-	(label "LED1"
+	(label "LED1_PHY_to_Q2"
 		(at 236.22 148.59 180)
 		(effects
 			(font
@@ -7072,7 +7072,7 @@
 		)
 		(uuid "312590dc-65f3-43d1-ba9b-5cffe0cb6f62")
 	)
-	(label "MD0_N"
+	(label "MDI0_PHY_RJ45_N"
 		(at 218.44 45.72 0)
 		(effects
 			(font
@@ -7084,7 +7084,7 @@
 	)
 
 
-	(label "3V3"
+	(label "VDD_3V3"
 		(at 273.05 125.73 0)
 		(effects
 			(font
@@ -7094,7 +7094,7 @@
 		)
 		(uuid "62a1e028-46f6-411e-b33b-7f5bb622155b")
 	)
-	(label "LED0"
+	(label "LED0_PHY_to_Q1"
 		(at 208.28 148.59 180)
 		(effects
 			(font
@@ -7104,7 +7104,7 @@
 		)
 		(uuid "64ac4a03-55fd-41ff-9554-eb889f05126f")
 	)
-	(label "3V3"
+	(label "VDD_3V3"
 		(at 218.44 125.73 0)
 		(effects
 			(font
@@ -7114,7 +7114,7 @@
 		)
 		(uuid "6b5cb61b-ef1d-49f6-a7bd-58e18057b624")
 	)
-	(label "LED0"
+	(label "LED0_PHY_to_Q1"
 		(at 200.66 93.98 0)
 		(effects
 			(font
@@ -7124,7 +7124,7 @@
 		)
 		(uuid "6d53b266-e846-4a44-a67e-9d3ae6ef4493")
 	)
-	(label "RX_CTRL"
+	(label "STRAP_RX_CTRL_PHY"
 		(at 48.26 82.55 0)
 		(effects
 			(font
@@ -7134,7 +7134,7 @@
 		)
 		(uuid "80d6579f-7e35-45b0-aa36-df4f06f93ddf")
 	)
-	(label "3V3"
+	(label "VDD_3V3"
 		(at 26.67 72.39 0)
 		(effects
 			(font
@@ -7144,7 +7144,7 @@
 		)
 		(uuid "8d16bffb-61ca-4a95-ab7d-b6b285111aec")
 	)
-	(label "RX_D7"
+	(label "STRAP_RX_D7_PHY"
 		(at 31.75 82.55 0)
 		(effects
 			(font
@@ -7154,7 +7154,7 @@
 		)
 		(uuid "8fa3701c-accf-4c16-94b7-8cf464c53353")
 	)
-	(label "MD3_N"
+	(label "MDI3_PHY_RJ45_N"
 		(at 218.44 68.58 0)
 		(effects
 			(font
@@ -7164,7 +7164,7 @@
 		)
 		(uuid "9492280d-fc84-4dcc-847f-db6318197d07")
 	)
-	(hierarchical_label "X_IN"
+	(hierarchical_label "CLK_25M_OSC_to_PHY"
 		(shape input)
 		(at 198.12 121.92 0)
 		(effects
@@ -7175,7 +7175,7 @@
 		)
 		(uuid "a8519bb4-ce0f-4a65-8364-cd21b5d198f8")
 	)
-	(label "LED1"
+	(label "LED1_PHY_to_Q2"
 		(at 200.66 96.52 0)
 		(effects
 			(font
@@ -7185,7 +7185,7 @@
 		)
 		(uuid "9a395fe3-bb79-4dca-931e-1b9f676e8b8a")
 	)
-	(label "LED2"
+	(label "LED2_PHY_to_Q3"
 		(at 201.93 99.06 0)
 		(effects
 			(font
@@ -7195,7 +7195,7 @@
 		)
 		(uuid "9c257d8e-5f0a-424d-97a1-9c0b79e172e2")
 	)
-	(label "MD3_P"
+	(label "MDI3_PHY_RJ45_P"
 		(at 218.44 66.04 0)
 		(effects
 			(font
@@ -7205,7 +7205,7 @@
 		)
 		(uuid "9e2efc5a-de9b-4a27-bafa-014327f56ed1")
 	)
-	(label "3V3"
+	(label "VDD_3V3"
 		(at 124.46 22.86 0)
 		(effects
 			(font
@@ -7215,7 +7215,7 @@
 		)
 		(uuid "b113589b-befd-4629-9ace-b8b62e0b8537")
 	)
-	(label "MD1_N"
+	(label "MDI1_PHY_RJ45_N"
 		(at 218.44 53.34 0)
 		(effects
 			(font
@@ -7225,7 +7225,7 @@
 		)
 		(uuid "b3616719-e725-4671-ba7e-6b0ea9c56b60")
 	)
-	(label "MD1_P"
+	(label "MDI1_PHY_RJ45_P"
 		(at 218.44 50.8 0)
 		(effects
 			(font
@@ -7235,7 +7235,7 @@
 		)
 		(uuid "c605fe01-63a4-4ff2-9cad-2d1cb184e029")
 	)
-	(label "RX_D7"
+	(label "STRAP_RX_D7_PHY"
 		(at 128.27 111.76 180)
 		(effects
 			(font
@@ -7245,7 +7245,7 @@
 		)
 		(uuid "eee7e652-69f7-4050-bfba-d736fc53ac34")
 	)
-	(label "3V3"
+	(label "VDD_3V3"
 		(at 246.38 125.73 0)
 		(effects
 			(font
@@ -7255,7 +7255,7 @@
 		)
 		(uuid "f64346ee-a3f1-417a-b03f-725d6197750d")
 	)
-	(hierarchical_label "MDIO_DIO"
+	(hierarchical_label "MDIO_DIO_CPU_PHY"
 		(shape bidirectional)
 		(at 199.39 106.68 0)
 		(effects
@@ -7266,7 +7266,7 @@
 		)
 		(uuid "14811be8-4868-4c45-9abb-946bc2501a08")
 	)
-	(hierarchical_label "2V5"
+	(hierarchical_label "VDD_2V5"
 		(shape input)
 		(at 25.4 146.05 180)
 		(effects
@@ -7277,7 +7277,7 @@
 		)
 		(uuid "23ede7c3-5fa8-46c1-a868-49b8d50b9726")
 	)
-	(hierarchical_label "3V3"
+	(hierarchical_label "VDD_3V3"
 		(shape input)
 		(at 121.92 22.86 180)
 		(effects
@@ -7288,7 +7288,7 @@
 		)
 		(uuid "3359074d-bbbd-450a-a3d4-c80ead7f9699")
 	)
-	(hierarchical_label "2V5"
+	(hierarchical_label "VDD_2V5"
 		(shape input)
 		(at 121.92 33.02 180)
 		(effects
@@ -7299,7 +7299,7 @@
 		)
 		(uuid "369f413e-7299-4f41-99a6-f48004ec0861")
 	)
-	(hierarchical_label "INT_PWDN_N"
+	(hierarchical_label "INT_PWDN_N_CPU_PHY"
 		(shape input)
 		(at 205.74 114.3 0)
 		(effects
@@ -7310,7 +7310,7 @@
 		)
 		(uuid "3b0e3325-e0d8-4bb3-a60c-7347dd3699bc")
 	)
-	(hierarchical_label "RGMII_RD3"
+	(hierarchical_label "RGMII_RD3_PHY_to_CPU"
 		(shape output)
 		(at 97.79 101.6 180)
 		(effects
@@ -7321,7 +7321,7 @@
 		)
 		(uuid "408fda39-410f-4129-9c36-87908386519b")
 	)
-	(hierarchical_label "RST_N"
+	(hierarchical_label "RESET_N_CPU_to_PHY"
 		(shape input)
 		(at 207.01 116.84 0)
 		(effects
@@ -7332,7 +7332,7 @@
 		)
 		(uuid "4f99e89b-efae-4a9f-99ec-ab6370d75080")
 	)
-	(hierarchical_label "RGMII_RX_CLK"
+	(hierarchical_label "RGMII_RX_CLK_PHY_to_CPU"
 		(shape output)
 		(at 97.79 88.9 180)
 		(effects
@@ -7343,7 +7343,7 @@
 		)
 		(uuid "50d58635-000e-4076-9e95-2f9b106cbeeb")
 	)
-	(hierarchical_label "RGMII_RD0"
+	(hierarchical_label "RGMII_RD0_PHY_to_CPU"
 		(shape output)
 		(at 97.79 93.98 180)
 		(effects
@@ -7354,7 +7354,7 @@
 		)
 		(uuid "610319d6-699b-444c-99c5-6780c8090a73")
 	)
-	(hierarchical_label "RGMII_TX_CLK"
+	(hierarchical_label "RGMII_TX_CLK_CPU_to_PHY"
 		(shape input)
 		(at 102.87 43.18 180)
 		(effects
@@ -7365,7 +7365,7 @@
 		)
 		(uuid "67877888-05ac-42a6-b949-d1ac4e599cc8")
 	)
-	(hierarchical_label "3V3"
+	(hierarchical_label "VDD_3V3"
 		(shape input)
 		(at 25.4 160.02 180)
 		(effects
@@ -7376,7 +7376,7 @@
 		)
 		(uuid "73cbab55-e464-4ff4-9b3d-e5b5e9aa7515")
 	)
-	(hierarchical_label "RGMII_RD2"
+	(hierarchical_label "RGMII_RD2_PHY_to_CPU"
 		(shape output)
 		(at 97.79 99.06 180)
 		(effects
@@ -7387,7 +7387,7 @@
 		)
 		(uuid "7d498e27-ac79-4ccc-b3c0-86bc375676fb")
 	)
-	(hierarchical_label "RGMII_TD0"
+	(hierarchical_label "RGMII_TD0_CPU_to_PHY"
 		(shape input)
 		(at 91.44 58.42 180)
 		(effects
@@ -7398,7 +7398,7 @@
 		)
 		(uuid "8d9f3823-2382-4762-bb57-44713ada28f1")
 	)
-	(hierarchical_label "MDIO_MDC"
+	(hierarchical_label "MDIO_MDC_CPU_PHY"
 		(shape input)
 		(at 199.39 104.14 0)
 		(effects
@@ -7409,7 +7409,7 @@
 		)
 		(uuid "9ba85c45-cf93-4d9e-a954-e3a401ef1f62")
 	)
-	(hierarchical_label "1V1"
+	(hierarchical_label "VDD_1V1"
 		(shape input)
 		(at 203.2 22.86 0)
 		(effects
@@ -7420,7 +7420,7 @@
 		)
 		(uuid "9ef53f12-11c2-4287-8284-033ddebec65a")
 	)
-	(hierarchical_label "RGMII_TX_CTRL"
+	(hierarchical_label "RGMII_TX_CTRL_CPU_to_PHY"
 		(shape input)
 		(at 104.14 48.26 180)
 		(effects
@@ -7431,7 +7431,7 @@
 		)
 		(uuid "a0b6e619-ecf9-4da1-bee1-e367834d5b93")
 	)
-	(hierarchical_label "3V3"
+	(hierarchical_label "VDD_3V3"
 		(shape input)
 		(at 212.09 101.6 0)
 		(effects
@@ -7442,7 +7442,7 @@
 		)
 		(uuid "a8a166ca-9df3-4775-bf2f-8c1af36f63d9")
 	)
-	(hierarchical_label "RGMII_TD2"
+	(hierarchical_label "RGMII_TD2_CPU_to_PHY"
 		(shape input)
 		(at 91.44 63.5 180)
 		(effects
@@ -7453,7 +7453,7 @@
 		)
 		(uuid "ae5dc782-66df-4963-8f8e-f576628b0be4")
 	)
-	(hierarchical_label "RGMII_RX_CTRL"
+	(hierarchical_label "RGMII_RX_CTRL_PHY_to_CPU"
 		(shape output)
 		(at 97.79 83.82 180)
 		(effects
@@ -7464,7 +7464,7 @@
 		)
 		(uuid "bb49df9f-4b45-4921-92ae-074c7480e39f")
 	)
-	(hierarchical_label "RGMII_TD1"
+	(hierarchical_label "RGMII_TD1_CPU_to_PHY"
 		(shape input)
 		(at 91.44 60.96 180)
 		(effects
@@ -7475,7 +7475,7 @@
 		)
 		(uuid "c96d254a-6748-4791-a09a-e5e7c5f05ab0")
 	)
-	(hierarchical_label "RGMII_RD1"
+	(hierarchical_label "RGMII_RD1_PHY_to_CPU"
 		(shape output)
 		(at 97.79 96.52 180)
 		(effects
@@ -7486,7 +7486,7 @@
 		)
 		(uuid "cec9d9db-386d-4860-b6b6-6dbc53e7d534")
 	)
-	(hierarchical_label "3V3"
+	(hierarchical_label "VDD_3V3"
 		(shape input)
 		(at 227.33 111.76 0)
 		(effects
@@ -7497,7 +7497,7 @@
 		)
 		(uuid "db3ff2fc-7b66-4a49-9c64-d78ed86aaddd")
 	)
-	(hierarchical_label "1V1"
+	(hierarchical_label "VDD_1V1"
 		(shape input)
 		(at 25.4 173.99 180)
 		(effects
@@ -7508,7 +7508,7 @@
 		)
 		(uuid "eaa7f103-92a3-4bfa-9208-114d1e4daa35")
 	)
-	(hierarchical_label "3V3"
+	(hierarchical_label "VDD_3V3"
 		(shape input)
 		(at 212.09 109.22 0)
 		(effects
@@ -7519,7 +7519,7 @@
 		)
 		(uuid "eb8a594e-cb4d-467d-85ff-324d8042e732")
 	)
-	(hierarchical_label "RGMII_TD3"
+	(hierarchical_label "RGMII_TD3_CPU_to_PHY"
 		(shape input)
 		(at 91.44 66.04 180)
 		(effects
@@ -16709,7 +16709,7 @@
 			)
 		)
 	)
-	(hierarchical_label "MD0_P"
+	(hierarchical_label "MDI0_PHY_RJ45_P"
 		(shape bidirectional)
 		(at 220.98 43.18 0)
 		(effects
@@ -16720,7 +16720,7 @@
 		)
 		(uuid "6c34bc9e-71a3-4c39-b28b-d1093ddef23b")
 	)
-	(hierarchical_label "MD0_N"
+	(hierarchical_label "MDI0_PHY_RJ45_N"
 		(shape bidirectional)
 		(at 220.98 45.72 0)
 		(effects
@@ -16731,7 +16731,7 @@
 		)
 		(uuid "ea4de66e-9b5d-4276-b2d2-43b8948aa0d1")
 	)
-	(hierarchical_label "MD1_P"
+	(hierarchical_label "MDI1_PHY_RJ45_P"
 		(shape bidirectional)
 		(at 220.98 50.8 0)
 		(effects
@@ -16742,7 +16742,7 @@
 		)
 		(uuid "9109eb4c-6bdd-4dd9-a200-91577e42c965")
 	)
-	(hierarchical_label "MD1_N"
+	(hierarchical_label "MDI1_PHY_RJ45_N"
 		(shape bidirectional)
 		(at 220.98 53.34 0)
 		(effects
@@ -16753,7 +16753,7 @@
 		)
 		(uuid "18b7560e-0033-4796-86f6-24cb643efdb2")
 	)
-	(hierarchical_label "MD2_P"
+	(hierarchical_label "MDI2_PHY_RJ45_P"
 		(shape bidirectional)
 		(at 220.98 58.42 0)
 		(effects
@@ -16764,7 +16764,7 @@
 		)
 		(uuid "6d91ec21-3eb3-42ba-b50f-63b195414d57")
 	)
-	(hierarchical_label "MD2_N"
+	(hierarchical_label "MDI2_PHY_RJ45_N"
 		(shape bidirectional)
 		(at 220.98 60.96 0)
 		(effects
@@ -16775,7 +16775,7 @@
 		)
 		(uuid "10a4c1bb-f02c-484c-8a07-a8ebf41148e2")
 	)
-	(hierarchical_label "MD3_P"
+	(hierarchical_label "MDI3_PHY_RJ45_P"
 		(shape bidirectional)
 		(at 220.98 66.04 0)
 		(effects
@@ -16786,7 +16786,7 @@
 		)
 		(uuid "eddf7f40-29b3-43d6-9038-800f9104b47e")
 	)
-	(hierarchical_label "MD3_N"
+	(hierarchical_label "MDI3_PHY_RJ45_N"
 		(shape bidirectional)
 		(at 220.98 68.58 0)
 		(effects

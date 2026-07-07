@@ -978,7 +978,7 @@
 		)
 		(uuid "fedab249-e999-4b6c-9422-264787df2626")
 	)
-	(label "MCLK"
+	(label "MCLK_PMOD"
 		(at 40.64 55.88 0)
 		(effects
 			(font
@@ -988,7 +988,7 @@
 		)
 		(uuid "16ad116d-7233-49c9-82dd-6beecb238a5b")
 	)
-	(label "MCLK"
+	(label "MCLK_PMOD"
 		(at 149.86 50.8 0)
 		(effects
 			(font
@@ -998,7 +998,7 @@
 		)
 		(uuid "3d01994b-d8d9-42ba-b68c-2d1d9a2a2eb2")
 	)
-	(label "MCLK"
+	(label "MCLK_PMOD"
 		(at 66.04 55.88 0)
 		(effects
 			(font
@@ -1008,7 +1008,7 @@
 		)
 		(uuid "858a374b-9dc2-45c3-86f4-4d7d0976ec4f")
 	)
-	(label "MCLK"
+	(label "MCLK_PMOD"
 		(at 41.91 92.71 0)
 		(effects
 			(font
@@ -1018,7 +1018,7 @@
 		)
 		(uuid "b378b8b7-017d-4238-a89f-602f01cb9699")
 	)
-	(label "MCLK"
+	(label "MCLK_PMOD"
 		(at 67.31 92.71 0)
 		(effects
 			(font
@@ -1039,7 +1039,7 @@
 		)
 		(uuid "01b34dbf-c81c-42ff-af4d-41d1956ff27e")
 	)
-	(hierarchical_label "BCLK"
+	(hierarchical_label "I2S_BCLK_CPU_PMOD"
 		(shape input)
 		(at 40.64 87.63 180)
 		(effects
@@ -1050,7 +1050,7 @@
 		)
 		(uuid "0b2d1a6b-cef9-4574-bf87-d253508be231")
 	)
-	(hierarchical_label "LRCLK"
+	(hierarchical_label "I2S_LRCLK_CPU_PMOD"
 		(shape input)
 		(at 71.12 90.17 0)
 		(effects
@@ -1061,7 +1061,7 @@
 		)
 		(uuid "14e6886e-11fc-40e0-9784-44500f387486")
 	)
-	(hierarchical_label "3V3"
+	(hierarchical_label "VDD_3V3"
 		(shape input)
 		(at 40.64 80.01 180)
 		(effects
@@ -1072,7 +1072,7 @@
 		)
 		(uuid "1baa8301-daef-47fb-9419-4b39f8f445e3")
 	)
-	(hierarchical_label "3V3"
+	(hierarchical_label "VDD_3V3"
 		(shape input)
 		(at 69.85 80.01 0)
 		(effects
@@ -1083,7 +1083,7 @@
 		)
 		(uuid "282b56a5-1257-49dd-88d1-5709e27747d8")
 	)
-	(hierarchical_label "PMOD2_SDOUT"
+	(hierarchical_label "I2S_SDOUT_PMOD2_to_CPU"
 		(shape output)
 		(at 69.85 85.09 0)
 		(effects
@@ -1105,7 +1105,7 @@
 		)
 		(uuid "40ee8266-d3cc-4c23-abec-9addad6f56fb")
 	)
-	(hierarchical_label "PMOD1_SDIN"
+	(hierarchical_label "I2S_SDIN_CPU_to_PMOD1"
 		(shape input)
 		(at 44.45 48.26 180)
 		(effects
@@ -1116,7 +1116,7 @@
 		)
 		(uuid "560ca3d9-e23b-4291-b8bb-a38300d85b33")
 	)
-	(hierarchical_label "BCLK"
+	(hierarchical_label "I2S_BCLK_CPU_PMOD"
 		(shape input)
 		(at 71.12 87.63 0)
 		(effects
@@ -1127,7 +1127,7 @@
 		)
 		(uuid "64f70ec8-541c-49e1-abb5-b1e5276b77b9")
 	)
-	(hierarchical_label "PMOD1_SDOUT"
+	(hierarchical_label "I2S_SDOUT_PMOD1_to_CPU"
 		(shape output)
 		(at 69.85 48.26 0)
 		(effects
@@ -1138,7 +1138,7 @@
 		)
 		(uuid "8d227690-88c3-4c77-a69f-0a9acab0560c")
 	)
-	(hierarchical_label "3V3"
+	(hierarchical_label "VDD_3V3"
 		(shape input)
 		(at 39.37 43.18 180)
 		(effects
@@ -1149,7 +1149,7 @@
 		)
 		(uuid "93c413f7-a3e0-401c-bc70-141df7ea7563")
 	)
-	(hierarchical_label "BCLK"
+	(hierarchical_label "I2S_BCLK_CPU_PMOD"
 		(shape input)
 		(at 69.85 50.8 0)
 		(effects
@@ -1171,7 +1171,7 @@
 		)
 		(uuid "afa0162c-5294-4cd4-ab8b-dd890699a566")
 	)
-	(hierarchical_label "LRCLK"
+	(hierarchical_label "I2S_LRCLK_CPU_PMOD"
 		(shape input)
 		(at 69.85 53.34 0)
 		(effects
@@ -1182,7 +1182,7 @@
 		)
 		(uuid "bc185252-4a66-4783-9901-35fced7b8fef")
 	)
-	(hierarchical_label "LRCLK"
+	(hierarchical_label "I2S_LRCLK_CPU_PMOD"
 		(shape input)
 		(at 39.37 53.34 180)
 		(effects
@@ -1193,7 +1193,7 @@
 		)
 		(uuid "be823ae2-7d51-41ad-bdb2-4ecdcd991710")
 	)
-	(hierarchical_label "BCLK"
+	(hierarchical_label "I2S_BCLK_CPU_PMOD"
 		(shape input)
 		(at 39.37 50.8 180)
 		(effects
@@ -1215,7 +1215,7 @@
 		)
 		(uuid "d4ff4eee-b760-4cbf-bff1-be7cbd3d46e7")
 	)
-	(hierarchical_label "LRCLK"
+	(hierarchical_label "I2S_LRCLK_CPU_PMOD"
 		(shape input)
 		(at 40.64 90.17 180)
 		(effects
@@ -1226,7 +1226,7 @@
 		)
 		(uuid "d92f3741-0870-44f2-bedd-b9dcb9779635")
 	)
-	(hierarchical_label "3V3"
+	(hierarchical_label "VDD_3V3"
 		(shape input)
 		(at 69.85 43.18 0)
 		(effects
@@ -1248,7 +1248,7 @@
 		)
 		(uuid "e692320d-eef9-406d-bd61-9ebbda950d45")
 	)
-	(hierarchical_label "PMOD2_SDIN"
+	(hierarchical_label "I2S_SDIN_CPU_to_PMOD2"
 		(shape input)
 		(at 40.64 85.09 180)
 		(effects

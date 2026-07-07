@@ -40,7 +40,7 @@
 				(justify left top)
 			)
 		)
-		(pin "RGMII_TD0" input
+		(pin "RGMII_TD0_CPU_to_PHY" input
 			(at 63.5 43.18 180)
 			(uuid "80458d5e-1104-4d78-9246-0f3ab67e3d7d")
 			(effects
@@ -50,7 +50,7 @@
 				(justify right)
 			)
 		)
-		(pin "RGMII_TD1" input
+		(pin "RGMII_TD1_CPU_to_PHY" input
 			(at 63.5 45.72 180)
 			(uuid "fd8fecc1-31e5-4a31-9ec8-5649c1dfb903")
 			(effects
@@ -60,7 +60,7 @@
 				(justify right)
 			)
 		)
-		(pin "RGMII_TD2" input
+		(pin "RGMII_TD2_CPU_to_PHY" input
 			(at 63.5 48.26 180)
 			(uuid "3d48456a-2de8-4819-9bab-199a8245a9d6")
 			(effects
@@ -70,7 +70,7 @@
 				(justify right)
 			)
 		)
-		(pin "RGMII_TD3" input
+		(pin "RGMII_TD3_CPU_to_PHY" input
 			(at 63.5 50.8 180)
 			(uuid "2520d222-e9f0-4e77-943d-14ef032dc9d8")
 			(effects
@@ -80,7 +80,7 @@
 				(justify right)
 			)
 		)
-		(pin "RGMII_TX_CLK" input
+		(pin "RGMII_TX_CLK_CPU_to_PHY" input
 			(at 63.5 53.34 180)
 			(uuid "2e4d1b47-d088-416c-bf74-7ccb02d8ab4b")
 			(effects
@@ -90,7 +90,7 @@
 				(justify right)
 			)
 		)
-		(pin "RGMII_TX_CTRL" input
+		(pin "RGMII_TX_CTRL_CPU_to_PHY" input
 			(at 63.5 55.88 180)
 			(uuid "5fb64670-5ef0-47cc-91b8-bf859f04483f")
 			(effects
@@ -100,7 +100,7 @@
 				(justify right)
 			)
 		)
-		(pin "RGMII_RD0" output
+		(pin "RGMII_RD0_PHY_to_CPU" output
 			(at 63.5 58.42 180)
 			(uuid "17e1e7d0-ad45-4534-b445-e44d14541d95")
 			(effects
@@ -110,7 +110,7 @@
 				(justify right)
 			)
 		)
-		(pin "RGMII_RD1" output
+		(pin "RGMII_RD1_PHY_to_CPU" output
 			(at 63.5 60.96 180)
 			(uuid "ac74c7f4-ecb9-4d03-8f95-65fe01eab55f")
 			(effects
@@ -120,7 +120,7 @@
 				(justify right)
 			)
 		)
-		(pin "RGMII_RD2" output
+		(pin "RGMII_RD2_PHY_to_CPU" output
 			(at 63.5 63.5 180)
 			(uuid "02f57ca5-5fb3-4b62-a9c4-67b8b5d1dd2f")
 			(effects
@@ -130,7 +130,7 @@
 				(justify right)
 			)
 		)
-		(pin "RGMII_RD3" output
+		(pin "RGMII_RD3_PHY_to_CPU" output
 			(at 63.5 66.04 180)
 			(uuid "783fc1ef-9f37-448f-b057-8aa78c1f5658")
 			(effects
@@ -140,7 +140,7 @@
 				(justify right)
 			)
 		)
-		(pin "RGMII_RX_CLK" output
+		(pin "RGMII_RX_CLK_PHY_to_CPU" output
 			(at 63.5 68.58 180)
 			(uuid "f61dedcc-395d-45ea-b1f3-d6caef9252a6")
 			(effects
@@ -150,7 +150,7 @@
 				(justify right)
 			)
 		)
-		(pin "RGMII_RX_CTRL" output
+		(pin "RGMII_RX_CTRL_PHY_to_CPU" output
 			(at 63.5 71.12 180)
 			(uuid "2fa38e18-35fc-49c9-9e4c-b9c1b25c4b7a")
 			(effects
@@ -160,7 +160,7 @@
 				(justify right)
 			)
 		)
-		(pin "MDIO_MDC" input
+		(pin "MDIO_MDC_CPU_PHY" input
 			(at 63.5 73.66 180)
 			(uuid "b051f210-ecef-419e-9fd3-d06fa44351be")
 			(effects
@@ -170,7 +170,7 @@
 				(justify right)
 			)
 		)
-		(pin "MDIO_DIO" bidirectional
+		(pin "MDIO_DIO_CPU_PHY" bidirectional
 			(at 63.5 76.2 180)
 			(uuid "9a12460f-2524-42cd-9aa0-347981f57dcc")
 			(effects
@@ -180,7 +180,7 @@
 				(justify right)
 			)
 		)
-		(pin "RST_N" input
+		(pin "RESET_N_CPU_to_PHY" input
 			(at 63.5 78.74 180)
 			(uuid "4cabd670-f210-444c-941c-ea00f1f74905")
 			(effects
@@ -190,7 +190,7 @@
 				(justify right)
 			)
 		)
-		(pin "INT_PWDN_N" input
+		(pin "INT_PWDN_N_CPU_PHY" input
 			(at 63.5 81.28 180)
 			(uuid "5b088938-c7a3-45a4-b968-f257fa6d8266")
 			(effects
@@ -200,7 +200,7 @@
 				(justify right)
 			)
 		)
-		(pin "1V1" input
+		(pin "VDD_1V1" input
 			(at 63.5 83.82 180)
 			(uuid "0426134a-4365-49ea-a514-2fdb28faf88e")
 			(effects
@@ -210,7 +210,7 @@
 				(justify right)
 			)
 		)
-		(pin "2V5" input
+		(pin "VDD_2V5" input
 			(at 63.5 86.36 180)
 			(uuid "fc0647b4-1a3a-4f90-b066-908114cfc4a8")
 			(effects
@@ -220,7 +220,7 @@
 				(justify right)
 			)
 		)
-		(pin "3V3" input
+		(pin "VDD_3V3" input
 			(at 63.5 88.9 180)
 			(uuid "741d6403-bf4e-4a79-a9b9-5ed530d858aa")
 			(effects
@@ -230,7 +230,7 @@
 				(justify right)
 			)
 		)
-		(pin "MD0_P" bidirectional
+		(pin "MDI0_PHY_RJ45_P" bidirectional
 			(at 114.3 43.18 0)
 			(uuid "d0fe1579-d98d-4c41-863b-456f2ca0bece")
 			(effects
@@ -240,7 +240,7 @@
 				(justify left)
 			)
 		)
-		(pin "MD0_N" bidirectional
+		(pin "MDI0_PHY_RJ45_N" bidirectional
 			(at 114.3 45.72 0)
 			(uuid "9b8dbe4c-4847-4c0d-a95b-885243cf79cb")
 			(effects
@@ -250,7 +250,7 @@
 				(justify left)
 			)
 		)
-		(pin "MD1_P" bidirectional
+		(pin "MDI1_PHY_RJ45_P" bidirectional
 			(at 114.3 48.26 0)
 			(uuid "cb42b197-e09e-4cd8-bbf4-16c6d98418f0")
 			(effects
@@ -260,7 +260,7 @@
 				(justify left)
 			)
 		)
-		(pin "MD1_N" bidirectional
+		(pin "MDI1_PHY_RJ45_N" bidirectional
 			(at 114.3 50.8 0)
 			(uuid "b7c117fa-4c64-41ea-b182-04160eff5ccf")
 			(effects
@@ -270,7 +270,7 @@
 				(justify left)
 			)
 		)
-		(pin "MD2_P" bidirectional
+		(pin "MDI2_PHY_RJ45_P" bidirectional
 			(at 114.3 53.34 0)
 			(uuid "c0ad5033-6adb-4d3f-825d-be1e39d1a9e2")
 			(effects
@@ -280,7 +280,7 @@
 				(justify left)
 			)
 		)
-		(pin "MD2_N" bidirectional
+		(pin "MDI2_PHY_RJ45_N" bidirectional
 			(at 114.3 55.88 0)
 			(uuid "62ade160-6cbf-440f-8ef2-57487602623d")
 			(effects
@@ -290,7 +290,7 @@
 				(justify left)
 			)
 		)
-		(pin "MD3_P" bidirectional
+		(pin "MDI3_PHY_RJ45_P" bidirectional
 			(at 114.3 58.42 0)
 			(uuid "f7d46ada-031e-41af-b7f6-3b586358cdac")
 			(effects
@@ -300,7 +300,7 @@
 				(justify left)
 			)
 		)
-		(pin "MD3_N" bidirectional
+		(pin "MDI3_PHY_RJ45_N" bidirectional
 			(at 114.3 60.96 0)
 			(uuid "87cc87df-80ba-4bfe-9034-0f7f035a3207")
 			(effects
@@ -310,7 +310,7 @@
 				(justify left)
 			)
 		)
-		(pin "X_IN" input
+		(pin "CLK_25M_OSC_to_PHY" input
 			(at 114.3 66.04 0)
 			(uuid "5e6f3152-52dd-4d31-851a-ba4b497aeb4e")
 			(effects
@@ -362,7 +362,7 @@
 				(justify left top)
 			)
 		)
-		(pin "MD0_P" bidirectional
+		(pin "MDI0_PHY_RJ45_P" bidirectional
 			(at 152.4 43.18 180)
 			(uuid "8536ece1-5692-4c5f-b54b-5be08d992f2f")
 			(effects
@@ -372,7 +372,7 @@
 				(justify right)
 			)
 		)
-		(pin "MD0_N" bidirectional
+		(pin "MDI0_PHY_RJ45_N" bidirectional
 			(at 152.4 45.72 180)
 			(uuid "d52a40fb-bf50-4057-950e-44b0342d3077")
 			(effects
@@ -382,7 +382,7 @@
 				(justify right)
 			)
 		)
-		(pin "MD1_P" bidirectional
+		(pin "MDI1_PHY_RJ45_P" bidirectional
 			(at 152.4 48.26 180)
 			(uuid "eab0cbff-d369-4baa-9482-9208fa642929")
 			(effects
@@ -392,7 +392,7 @@
 				(justify right)
 			)
 		)
-		(pin "MD1_N" bidirectional
+		(pin "MDI1_PHY_RJ45_N" bidirectional
 			(at 152.4 50.8 180)
 			(uuid "0f1bdd08-c7f2-4f9d-aeea-8b01d273cb0c")
 			(effects
@@ -402,7 +402,7 @@
 				(justify right)
 			)
 		)
-		(pin "MD2_P" bidirectional
+		(pin "MDI2_PHY_RJ45_P" bidirectional
 			(at 152.4 53.34 180)
 			(uuid "200b1848-1ffa-43f6-88ae-830cf3131347")
 			(effects
@@ -412,7 +412,7 @@
 				(justify right)
 			)
 		)
-		(pin "MD2_N" bidirectional
+		(pin "MDI2_PHY_RJ45_N" bidirectional
 			(at 152.4 55.88 180)
 			(uuid "0e0165c8-0f40-46a4-8603-da5051f0acc5")
 			(effects
@@ -422,7 +422,7 @@
 				(justify right)
 			)
 		)
-		(pin "MD3_P" bidirectional
+		(pin "MDI3_PHY_RJ45_P" bidirectional
 			(at 152.4 58.42 180)
 			(uuid "7a9888aa-fba6-4142-a1be-8bcffb51a8cd")
 			(effects
@@ -432,7 +432,7 @@
 				(justify right)
 			)
 		)
-		(pin "MD3_N" bidirectional
+		(pin "MDI3_PHY_RJ45_N" bidirectional
 			(at 152.4 60.96 180)
 			(uuid "fa28f892-6456-4416-919c-3e8503d56165")
 			(effects
@@ -442,7 +442,7 @@
 				(justify right)
 			)
 		)
-		(pin "2V5" input
+		(pin "VDD_2V5" input
 			(at 152.4 63.5 180)
 			(uuid "65a5dc93-fb11-4bbc-9b7a-18fa9d340553")
 			(effects
@@ -494,7 +494,7 @@
 				(justify left top)
 			)
 		)
-		(pin "X_IN" output
+		(pin "CLK_25M_OSC_to_PHY" output
 			(at 152.4 81.28 180)
 			(uuid "a36078b1-db2b-4c42-b8e7-b4c0dfb4a40d")
 			(effects
@@ -504,7 +504,7 @@
 				(justify right)
 			)
 		)
-		(pin "3V3" input
+		(pin "VDD_3V3" input
 			(at 152.4 83.82 180)
 			(uuid "e67dd4dd-23ab-42fe-9613-8e32afafc72c")
 			(effects
@@ -532,7 +532,7 @@
 		)
 		(uuid "c2331a57-d741-4fa6-824f-4999d8f54ca1")
 	)
-	(hierarchical_label "RGMII_TD0"
+	(hierarchical_label "RGMII_TD0_CPU_to_PHY"
 		(shape input)
 		(at 45.72 43.18 180)
 		(effects
@@ -553,7 +553,7 @@
 		)
 		(uuid "8965fc06-ebf3-4999-9479-be135383dd8e")
 	)
-	(hierarchical_label "RGMII_TD1"
+	(hierarchical_label "RGMII_TD1_CPU_to_PHY"
 		(shape input)
 		(at 45.72 45.72 180)
 		(effects
@@ -574,7 +574,7 @@
 		)
 		(uuid "e7646420-90e7-4824-a99d-c96f13ab61fb")
 	)
-	(hierarchical_label "RGMII_TD2"
+	(hierarchical_label "RGMII_TD2_CPU_to_PHY"
 		(shape input)
 		(at 45.72 48.26 180)
 		(effects
@@ -595,7 +595,7 @@
 		)
 		(uuid "914e35bf-8401-4ea5-92e8-c1701b86befe")
 	)
-	(hierarchical_label "RGMII_TD3"
+	(hierarchical_label "RGMII_TD3_CPU_to_PHY"
 		(shape input)
 		(at 45.72 50.8 180)
 		(effects
@@ -616,7 +616,7 @@
 		)
 		(uuid "cf64fc65-1f58-40b3-9cf3-d5a8d7d9174e")
 	)
-	(hierarchical_label "RGMII_TX_CLK"
+	(hierarchical_label "RGMII_TX_CLK_CPU_to_PHY"
 		(shape input)
 		(at 45.72 53.34 180)
 		(effects
@@ -637,7 +637,7 @@
 		)
 		(uuid "97b01827-c2eb-4861-8e40-a687ff21b7c2")
 	)
-	(hierarchical_label "RGMII_TX_CTRL"
+	(hierarchical_label "RGMII_TX_CTRL_CPU_to_PHY"
 		(shape input)
 		(at 45.72 55.88 180)
 		(effects
@@ -658,7 +658,7 @@
 		)
 		(uuid "564fe9b0-e211-494a-872b-769f67995229")
 	)
-	(hierarchical_label "RGMII_RD0"
+	(hierarchical_label "RGMII_RD0_PHY_to_CPU"
 		(shape output)
 		(at 45.72 58.42 180)
 		(effects
@@ -679,7 +679,7 @@
 		)
 		(uuid "19f34d22-f7be-4f1d-8423-1b4d362a793c")
 	)
-	(hierarchical_label "RGMII_RD1"
+	(hierarchical_label "RGMII_RD1_PHY_to_CPU"
 		(shape output)
 		(at 45.72 60.96 180)
 		(effects
@@ -700,7 +700,7 @@
 		)
 		(uuid "c3eae19e-4c9d-4fc1-bc31-a20f1e3df402")
 	)
-	(hierarchical_label "RGMII_RD2"
+	(hierarchical_label "RGMII_RD2_PHY_to_CPU"
 		(shape output)
 		(at 45.72 63.5 180)
 		(effects
@@ -721,7 +721,7 @@
 		)
 		(uuid "9de08684-7b80-46f0-845f-8a02e81b7998")
 	)
-	(hierarchical_label "RGMII_RD3"
+	(hierarchical_label "RGMII_RD3_PHY_to_CPU"
 		(shape output)
 		(at 45.72 66.04 180)
 		(effects
@@ -742,7 +742,7 @@
 		)
 		(uuid "5e683ce0-e89e-4e0d-adc8-808b600c22fb")
 	)
-	(hierarchical_label "RGMII_RX_CLK"
+	(hierarchical_label "RGMII_RX_CLK_PHY_to_CPU"
 		(shape output)
 		(at 45.72 68.58 180)
 		(effects
@@ -763,7 +763,7 @@
 		)
 		(uuid "34913f78-fad4-44e7-8c4d-5f0512e09b01")
 	)
-	(hierarchical_label "RGMII_RX_CTRL"
+	(hierarchical_label "RGMII_RX_CTRL_PHY_to_CPU"
 		(shape output)
 		(at 45.72 71.12 180)
 		(effects
@@ -784,7 +784,7 @@
 		)
 		(uuid "6fdca0b4-2eee-4b40-b112-c5ef2893a2ae")
 	)
-	(hierarchical_label "MDIO_MDC"
+	(hierarchical_label "MDIO_MDC_CPU_PHY"
 		(shape input)
 		(at 45.72 73.66 180)
 		(effects
@@ -805,7 +805,7 @@
 		)
 		(uuid "43807cc5-2cd7-4eb4-8a6d-ff8de360721f")
 	)
-	(hierarchical_label "MDIO_DIO"
+	(hierarchical_label "MDIO_DIO_CPU_PHY"
 		(shape bidirectional)
 		(at 45.72 76.2 180)
 		(effects
@@ -826,7 +826,7 @@
 		)
 		(uuid "6437b271-288f-4fc9-a017-e9b9d09b6137")
 	)
-	(hierarchical_label "RST_N"
+	(hierarchical_label "RESET_N_CPU_to_PHY"
 		(shape input)
 		(at 45.72 78.74 180)
 		(effects
@@ -847,7 +847,7 @@
 		)
 		(uuid "e7f98353-f0c1-474d-acff-b8307d319399")
 	)
-	(hierarchical_label "INT_PWDN_N"
+	(hierarchical_label "INT_PWDN_N_CPU_PHY"
 		(shape input)
 		(at 45.72 81.28 180)
 		(effects
@@ -868,7 +868,7 @@
 		)
 		(uuid "7e3c2371-fb63-426e-9d6d-742cfaaa2b1a")
 	)
-	(hierarchical_label "1V1"
+	(hierarchical_label "VDD_1V1"
 		(shape input)
 		(at 45.72 83.82 180)
 		(effects
@@ -889,7 +889,7 @@
 		)
 		(uuid "19344ad3-33ed-4130-91a2-e812bf1624a2")
 	)
-	(hierarchical_label "2V5"
+	(hierarchical_label "VDD_2V5"
 		(shape input)
 		(at 45.72 86.36 180)
 		(effects
@@ -910,7 +910,7 @@
 		)
 		(uuid "168e32c2-3bcc-401d-aec1-442a2c65fc6a")
 	)
-	(hierarchical_label "3V3"
+	(hierarchical_label "VDD_3V3"
 		(shape input)
 		(at 45.72 88.9 180)
 		(effects
@@ -1011,7 +1011,7 @@
 		)
 		(uuid "a41cffdc-7272-4da8-8bc8-109ed245eeda")
 	)
-	(label "2V5"
+	(label "VDD_2V5"
 		(at 127.0 63.5 0)
 		(effects
 			(font
@@ -1061,7 +1061,7 @@
 		)
 		(uuid "32c784ff-96d7-40e7-825b-46d1437ab5ca")
 	)
-	(label "3V3"
+	(label "VDD_3V3"
 		(at 140.97 83.82 0)
 		(effects
 			(font

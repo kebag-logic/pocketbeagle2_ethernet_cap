@@ -2324,7 +2324,7 @@
 		)
 		(uuid "fff3af9d-1902-4e0f-abf3-fc3e540d3407")
 	)
-	(global_label "RESET_N"
+	(global_label "RESET_N_CPU_to_PHY"
 		(shape input)
 		(at 176.53 25.4 180)
 		(fields_autoplaced yes)
@@ -2346,7 +2346,7 @@
 			)
 		)
 	)
-	(global_label "PMOD2.SDOUT"
+	(global_label "I2S_SDOUT_PMOD2_to_CPU"
 		(shape output)
 		(at 177.8 99.06 180)
 		(fields_autoplaced yes)
@@ -2368,7 +2368,7 @@
 			)
 		)
 	)
-	(global_label "RGMII_RX_CTRL"
+	(global_label "RGMII_RX_CTRL_PHY_to_CPU"
 		(shape output)
 		(at 173.99 62.23 180)
 		(fields_autoplaced yes)
@@ -2412,7 +2412,7 @@
 			)
 		)
 	)
-	(global_label "RGMII_RX_CTRL"
+	(global_label "RGMII_RX_CTRL_PHY_to_CPU"
 		(shape input)
 		(at 41.91 80.01 180)
 		(fields_autoplaced yes)
@@ -2434,7 +2434,7 @@
 			)
 		)
 	)
-	(global_label "RGMII_RD3"
+	(global_label "RGMII_RD3_PHY_to_CPU"
 		(shape input)
 		(at 40.64 82.55 180)
 		(fields_autoplaced yes)
@@ -2456,7 +2456,7 @@
 			)
 		)
 	)
-	(global_label "RGMII_RD1"
+	(global_label "RGMII_RD1_PHY_to_CPU"
 		(shape input)
 		(at 40.64 87.63 180)
 		(fields_autoplaced yes)
@@ -2478,7 +2478,7 @@
 			)
 		)
 	)
-	(global_label "INT_N{slash}PWRDN_N"
+	(global_label "INT_PWDN_N_CPU_PHY"
 		(shape input)
 		(at 224.79 35.56 0)
 		(fields_autoplaced yes)
@@ -2500,7 +2500,7 @@
 			)
 		)
 	)
-	(global_label "RGMII_TX_CLK"
+	(global_label "RGMII_TX_CLK_CPU_to_PHY"
 		(shape input)
 		(at 173.99 43.18 180)
 		(fields_autoplaced yes)
@@ -2522,7 +2522,7 @@
 			)
 		)
 	)
-	(global_label "RGMII_TX_CTRL"
+	(global_label "RGMII_TX_CTRL_CPU_to_PHY"
 		(shape input)
 		(at 171.45 40.64 180)
 		(fields_autoplaced yes)
@@ -2566,7 +2566,7 @@
 			)
 		)
 	)
-	(global_label "PMOD1_SDIN"
+	(global_label "I2S_SDIN_CPU_to_PMOD1"
 		(shape input)
 		(at 177.8 95.25 180)
 		(fields_autoplaced yes)
@@ -2588,7 +2588,7 @@
 			)
 		)
 	)
-	(global_label "MDIO0_MDC"
+	(global_label "MDIO_MDC_CPU_PHY"
 		(shape output)
 		(at 97.79 110.49 0)
 		(fields_autoplaced yes)
@@ -2676,7 +2676,7 @@
 			)
 		)
 	)
-	(global_label "LRCK"
+	(global_label "I2S_LRCLK_CPU_PMOD"
 		(shape output)
 		(at 96.52 77.47 0)
 		(fields_autoplaced yes)
@@ -2698,7 +2698,7 @@
 			)
 		)
 	)
-	(global_label "RGMII_RD3"
+	(global_label "RGMII_RD3_PHY_to_CPU"
 		(shape output)
 		(at 172.72 57.15 180)
 		(fields_autoplaced yes)
@@ -2720,7 +2720,7 @@
 			)
 		)
 	)
-	(global_label "RGMII_TD3"
+	(global_label "RGMII_TD3_CPU_to_PHY"
 		(shape output)
 		(at 39.37 44.45 180)
 		(fields_autoplaced yes)
@@ -2742,7 +2742,7 @@
 			)
 		)
 	)
-	(global_label "RGMII_RD0"
+	(global_label "RGMII_RD0_PHY_to_CPU"
 		(shape output)
 		(at 172.72 49.53 180)
 		(fields_autoplaced yes)
@@ -2764,7 +2764,7 @@
 			)
 		)
 	)
-	(global_label "RGMII_RX_CLK"
+	(global_label "RGMII_RX_CLK_PHY_to_CPU"
 		(shape input)
 		(at 40.64 41.91 180)
 		(fields_autoplaced yes)
@@ -2808,7 +2808,7 @@
 			)
 		)
 	)
-	(global_label "MDIO0_DIO"
+	(global_label "MDIO_DIO_CPU_PHY"
 		(shape bidirectional)
 		(at 40.64 39.37 180)
 		(fields_autoplaced yes)
@@ -2830,7 +2830,7 @@
 			)
 		)
 	)
-	(global_label "RGMII_TD0"
+	(global_label "RGMII_TD0_CPU_to_PHY"
 		(shape input)
 		(at 172.72 30.48 180)
 		(fields_autoplaced yes)
@@ -2896,7 +2896,7 @@
 			)
 		)
 	)
-	(global_label "BCLK"
+	(global_label "I2S_BCLK_CPU_PMOD"
 		(shape output)
 		(at 96.52 80.01 0)
 		(fields_autoplaced yes)
@@ -2918,7 +2918,7 @@
 			)
 		)
 	)
-	(global_label "RGMII_RX_CLK"
+	(global_label "RGMII_RX_CLK_PHY_to_CPU"
 		(shape output)
 		(at 173.99 59.69 180)
 		(fields_autoplaced yes)
@@ -2940,7 +2940,7 @@
 			)
 		)
 	)
-	(global_label "MDIO0_DIO"
+	(global_label "MDIO_DIO_CPU_PHY"
 		(shape bidirectional)
 		(at 223.52 64.77 0)
 		(fields_autoplaced yes)
@@ -2962,7 +2962,7 @@
 			)
 		)
 	)
-	(global_label "RGMII_TD1"
+	(global_label "RGMII_TD1_CPU_to_PHY"
 		(shape output)
 		(at 96.52 64.77 0)
 		(fields_autoplaced yes)
@@ -2984,7 +2984,7 @@
 			)
 		)
 	)
-	(global_label "PMOD1_SDOUT"
+	(global_label "I2S_SDOUT_PMOD1_to_CPU"
 		(shape input)
 		(at 96.52 100.33 0)
 		(fields_autoplaced yes)
@@ -3006,7 +3006,7 @@
 			)
 		)
 	)
-	(global_label "RGMII_RD2"
+	(global_label "RGMII_RD2_PHY_to_CPU"
 		(shape output)
 		(at 172.72 54.61 180)
 		(fields_autoplaced yes)
@@ -3028,7 +3028,7 @@
 			)
 		)
 	)
-	(global_label "RGMII_TD0"
+	(global_label "RGMII_TD0_CPU_to_PHY"
 		(shape output)
 		(at 40.64 74.93 180)
 		(fields_autoplaced yes)
@@ -3072,7 +3072,7 @@
 			)
 		)
 	)
-	(global_label "RGMII_RD2"
+	(global_label "RGMII_RD2_PHY_to_CPU"
 		(shape input)
 		(at 40.64 85.09 180)
 		(fields_autoplaced yes)
@@ -3094,7 +3094,7 @@
 			)
 		)
 	)
-	(global_label "INT_N{slash}PWRDN_N"
+	(global_label "INT_PWDN_N_CPU_PHY"
 		(shape output)
 		(at 96.52 52.07 0)
 		(fields_autoplaced yes)
@@ -3116,7 +3116,7 @@
 			)
 		)
 	)
-	(global_label "RGMII_TX_CLK"
+	(global_label "RGMII_TX_CLK_CPU_to_PHY"
 		(shape output)
 		(at 40.64 120.65 180)
 		(fields_autoplaced yes)
@@ -3138,7 +3138,7 @@
 			)
 		)
 	)
-	(global_label "RESET_N"
+	(global_label "RESET_N_CPU_to_PHY"
 		(shape output)
 		(at 96.52 54.61 0)
 		(fields_autoplaced yes)
@@ -3160,7 +3160,7 @@
 			)
 		)
 	)
-	(global_label "PMOD2.SDIN"
+	(global_label "I2S_SDIN_CPU_to_PMOD2"
 		(shape input)
 		(at 177.8 101.6 180)
 		(fields_autoplaced yes)
@@ -3182,7 +3182,7 @@
 			)
 		)
 	)
-	(global_label "RGMII_TD2"
+	(global_label "RGMII_TD2_CPU_to_PHY"
 		(shape input)
 		(at 172.72 35.56 180)
 		(fields_autoplaced yes)
@@ -3204,7 +3204,7 @@
 			)
 		)
 	)
-	(global_label "PMOD2.SDIN"
+	(global_label "I2S_SDIN_CPU_to_PMOD2"
 		(shape output)
 		(at 96.52 46.99 0)
 		(fields_autoplaced yes)
@@ -3226,7 +3226,7 @@
 			)
 		)
 	)
-	(global_label "RGMII_RD1"
+	(global_label "RGMII_RD1_PHY_to_CPU"
 		(shape output)
 		(at 172.72 52.07 180)
 		(fields_autoplaced yes)
@@ -3270,7 +3270,7 @@
 			)
 		)
 	)
-	(global_label "PMOD1_SDOUT"
+	(global_label "I2S_SDOUT_PMOD1_to_CPU"
 		(shape output)
 		(at 177.8 92.71 180)
 		(fields_autoplaced yes)
@@ -3292,7 +3292,7 @@
 			)
 		)
 	)
-	(global_label "LRCK"
+	(global_label "I2S_LRCLK_CPU_PMOD"
 		(shape input)
 		(at 177.8 116.84 180)
 		(fields_autoplaced yes)
@@ -3314,7 +3314,7 @@
 			)
 		)
 	)
-	(global_label "BCLK"
+	(global_label "I2S_BCLK_CPU_PMOD"
 		(shape input)
 		(at 177.8 119.38 180)
 		(fields_autoplaced yes)
@@ -3336,7 +3336,7 @@
 			)
 		)
 	)
-	(global_label "MDIO0_MDC"
+	(global_label "MDIO_MDC_CPU_PHY"
 		(shape input)
 		(at 224.79 67.31 0)
 		(fields_autoplaced yes)
@@ -3358,7 +3358,7 @@
 			)
 		)
 	)
-	(global_label "RGMII_TD2"
+	(global_label "RGMII_TD2_CPU_to_PHY"
 		(shape output)
 		(at 40.64 57.15 180)
 		(fields_autoplaced yes)
@@ -3380,7 +3380,7 @@
 			)
 		)
 	)
-	(global_label "PMOD2.SDOUT"
+	(global_label "I2S_SDOUT_PMOD2_to_CPU"
 		(shape input)
 		(at 96.52 67.31 0)
 		(fields_autoplaced yes)
@@ -3402,7 +3402,7 @@
 			)
 		)
 	)
-	(global_label "RGMII_TD1"
+	(global_label "RGMII_TD1_CPU_to_PHY"
 		(shape input)
 		(at 172.72 33.02 180)
 		(fields_autoplaced yes)
@@ -3424,7 +3424,7 @@
 			)
 		)
 	)
-	(global_label "RGMII_TD3"
+	(global_label "RGMII_TD3_CPU_to_PHY"
 		(shape input)
 		(at 172.72 38.1 180)
 		(fields_autoplaced yes)
@@ -3446,7 +3446,7 @@
 			)
 		)
 	)
-	(global_label "RGMII_RD0"
+	(global_label "RGMII_RD0_PHY_to_CPU"
 		(shape input)
 		(at 40.64 90.17 180)
 		(fields_autoplaced yes)
@@ -3468,7 +3468,7 @@
 			)
 		)
 	)
-	(global_label "RGMII_TX_CTRL"
+	(global_label "RGMII_TX_CTRL_CPU_to_PHY"
 		(shape output)
 		(at 40.64 95.25 180)
 		(fields_autoplaced yes)
@@ -3490,7 +3490,7 @@
 			)
 		)
 	)
-	(global_label "PMOD1_SDIN"
+	(global_label "I2S_SDIN_CPU_to_PMOD1"
 		(shape output)
 		(at 96.52 102.87 0)
 		(fields_autoplaced yes)
@@ -3951,7 +3951,7 @@
 				(justify left top)
 			)
 		)
-		(pin "RGMII_TD0" input
+		(pin "RGMII_TD0_CPU_to_PHY" input
 			(at 177.8 30.48 180)
 			(uuid "49dd0481-9345-44ed-a0d7-6718b6e843fe")
 			(effects
@@ -3961,7 +3961,7 @@
 				(justify left)
 			)
 		)
-		(pin "1V1" input
+		(pin "VDD_1V1" input
 			(at 219.71 25.4 0)
 			(uuid "ddbe43a8-1f1c-4f81-b70a-2894a3057d14")
 			(effects
@@ -3971,7 +3971,7 @@
 				(justify right)
 			)
 		)
-		(pin "RGMII_RX_CLK" output
+		(pin "RGMII_RX_CLK_PHY_to_CPU" output
 			(at 177.8 59.69 180)
 			(uuid "60d44230-e9d9-414b-a809-204e9b1475a0")
 			(effects
@@ -3981,7 +3981,7 @@
 				(justify left)
 			)
 		)
-		(pin "3V3" input
+		(pin "VDD_3V3" input
 			(at 219.71 30.48 0)
 			(uuid "b35deee6-cc0b-4480-aca9-2cb3ec413a47")
 			(effects
@@ -3991,7 +3991,7 @@
 				(justify right)
 			)
 		)
-		(pin "RGMII_RX_CTRL" output
+		(pin "RGMII_RX_CTRL_PHY_to_CPU" output
 			(at 177.8 62.23 180)
 			(uuid "bab6d205-cb3b-43c9-b2df-e8f6f8e74ec3")
 			(effects
@@ -4001,7 +4001,7 @@
 				(justify left)
 			)
 		)
-		(pin "RGMII_TD2" input
+		(pin "RGMII_TD2_CPU_to_PHY" input
 			(at 177.8 35.56 180)
 			(uuid "37fb4810-a62d-4cb4-919c-05d1740c7871")
 			(effects
@@ -4011,7 +4011,7 @@
 				(justify left)
 			)
 		)
-		(pin "RGMII_RD1" output
+		(pin "RGMII_RD1_PHY_to_CPU" output
 			(at 177.8 52.07 180)
 			(uuid "4377a2c8-2037-47d1-b8a3-5094569fd6fc")
 			(effects
@@ -4021,7 +4021,7 @@
 				(justify left)
 			)
 		)
-		(pin "MDIO_MDC" input
+		(pin "MDIO_MDC_CPU_PHY" input
 			(at 219.71 67.31 0)
 			(uuid "ae133fe9-4eb2-4289-8503-4d8b5da04203")
 			(effects
@@ -4031,7 +4031,7 @@
 				(justify right)
 			)
 		)
-		(pin "MDIO_DIO" bidirectional
+		(pin "MDIO_DIO_CPU_PHY" bidirectional
 			(at 219.71 64.77 0)
 			(uuid "f56d4ca6-8f9c-4c2e-9b68-67df3ceb35c2")
 			(effects
@@ -4041,7 +4041,7 @@
 				(justify right)
 			)
 		)
-		(pin "RGMII_RD2" output
+		(pin "RGMII_RD2_PHY_to_CPU" output
 			(at 177.8 54.61 180)
 			(uuid "cc1b3f1e-e0ad-4175-b0de-5890e81e9879")
 			(effects
@@ -4051,7 +4051,7 @@
 				(justify left)
 			)
 		)
-		(pin "2V5" input
+		(pin "VDD_2V5" input
 			(at 219.71 27.94 0)
 			(uuid "26d04080-0491-4784-b4ba-acb3816eefb8")
 			(effects
@@ -4061,7 +4061,7 @@
 				(justify right)
 			)
 		)
-		(pin "RGMII_TD1" input
+		(pin "RGMII_TD1_CPU_to_PHY" input
 			(at 177.8 33.02 180)
 			(uuid "6865eb3a-d87e-41e4-aead-ca40a1defffd")
 			(effects
@@ -4071,7 +4071,7 @@
 				(justify left)
 			)
 		)
-		(pin "RGMII_TX_CLK" input
+		(pin "RGMII_TX_CLK_CPU_to_PHY" input
 			(at 177.8 43.18 180)
 			(uuid "f35f5eec-fc00-4bd7-a947-1c89806b22ef")
 			(effects
@@ -4081,7 +4081,7 @@
 				(justify left)
 			)
 		)
-		(pin "RGMII_TX_CTRL" input
+		(pin "RGMII_TX_CTRL_CPU_to_PHY" input
 			(at 177.8 40.64 180)
 			(uuid "43a86507-4efd-47fd-883c-a4437c901635")
 			(effects
@@ -4091,7 +4091,7 @@
 				(justify left)
 			)
 		)
-		(pin "RST_N" input
+		(pin "RESET_N_CPU_to_PHY" input
 			(at 177.8 25.4 180)
 			(uuid "a4cd74e0-a61b-4e87-b844-797808d97a2b")
 			(effects
@@ -4101,7 +4101,7 @@
 				(justify left)
 			)
 		)
-		(pin "RGMII_RD0" output
+		(pin "RGMII_RD0_PHY_to_CPU" output
 			(at 177.8 49.53 180)
 			(uuid "e53d8725-71af-4825-98ef-48a256415e9a")
 			(effects
@@ -4111,7 +4111,7 @@
 				(justify left)
 			)
 		)
-		(pin "INT_PWDN_N" input
+		(pin "INT_PWDN_N_CPU_PHY" input
 			(at 219.71 35.56 0)
 			(uuid "c07d6e90-82fd-46c2-ac94-82f47774b5ae")
 			(effects
@@ -4121,7 +4121,7 @@
 				(justify right)
 			)
 		)
-		(pin "RGMII_TD3" input
+		(pin "RGMII_TD3_CPU_to_PHY" input
 			(at 177.8 38.1 180)
 			(uuid "3a59ccb4-e9a0-4ad2-ba28-1c8914916f61")
 			(effects
@@ -4131,7 +4131,7 @@
 				(justify left)
 			)
 		)
-		(pin "RGMII_RD3" output
+		(pin "RGMII_RD3_PHY_to_CPU" output
 			(at 177.8 57.15 180)
 			(uuid "0ac47550-c333-4871-8dca-4a934a9c19a9")
 			(effects
@@ -4183,7 +4183,7 @@
 				(justify left top)
 			)
 		)
-		(pin "3V3" input
+		(pin "VDD_3V3" input
 			(at 224.79 93.98 0)
 			(uuid "6e22a771-7688-4dcb-8d70-8b6f5c76aa3e")
 			(effects
@@ -4193,7 +4193,7 @@
 				(justify right)
 			)
 		)
-		(pin "BCLK" input
+		(pin "I2S_BCLK_CPU_PMOD" input
 			(at 180.34 119.38 180)
 			(uuid "a5a214a1-cd0f-40dd-b18e-e66184f96445")
 			(effects
@@ -4203,7 +4203,7 @@
 				(justify left)
 			)
 		)
-		(pin "LRCLK" input
+		(pin "I2S_LRCLK_CPU_PMOD" input
 			(at 180.34 116.84 180)
 			(uuid "d1a694bd-c18e-4ecf-8985-bd878caa8f5b")
 			(effects
@@ -4213,7 +4213,7 @@
 				(justify left)
 			)
 		)
-		(pin "PMOD1_SDOUT" output
+		(pin "I2S_SDOUT_PMOD1_to_CPU" output
 			(at 180.34 92.71 180)
 			(uuid "8c087dd2-1c4b-4599-b865-f39a9443247a")
 			(effects
@@ -4223,7 +4223,7 @@
 				(justify left)
 			)
 		)
-		(pin "PMOD1_SDIN" input
+		(pin "I2S_SDIN_CPU_to_PMOD1" input
 			(at 180.34 95.25 180)
 			(uuid "6595b7d6-a271-4777-bbde-80775bcfc84f")
 			(effects
@@ -4233,7 +4233,7 @@
 				(justify left)
 			)
 		)
-		(pin "PMOD2_SDIN" input
+		(pin "I2S_SDIN_CPU_to_PMOD2" input
 			(at 180.34 101.6 180)
 			(uuid "ad8dfbbf-ddd3-4cd0-a97b-fa96b904b493")
 			(effects
@@ -4273,7 +4273,7 @@
 				(justify left)
 			)
 		)
-		(pin "PMOD2_SDOUT" output
+		(pin "I2S_SDOUT_PMOD2_to_CPU" output
 			(at 180.34 99.06 180)
 			(uuid "093c2433-a18e-4f6c-80a0-a7290b4a40ff")
 			(effects
@@ -4325,7 +4325,7 @@
 				(justify left top)
 			)
 		)
-		(pin "3V3" input
+		(pin "VDD_3V3" input
 			(at 198.12 140.97 180)
 			(uuid "d4ad744a-a3dc-4cfe-bfaf-acfc366bb297")
 			(effects
@@ -4335,7 +4335,7 @@
 				(justify right)
 			)
 		)
-		(pin "1V1" output
+		(pin "VDD_1V1" output
 			(at 198.12 143.51 180)
 			(uuid "7b155004-95b4-4aeb-9eae-34bcf3cd7f57")
 			(effects
@@ -4387,7 +4387,7 @@
 				(justify left top)
 			)
 		)
-		(pin "3V3" input
+		(pin "VDD_3V3" input
 			(at 198.12 153.67 180)
 			(uuid "070beef1-3af6-40d1-8dac-db52d6ba87e8")
 			(effects
@@ -4397,7 +4397,7 @@
 				(justify right)
 			)
 		)
-		(pin "2V5" output
+		(pin "VDD_2V5" output
 			(at 198.12 156.21 180)
 			(uuid "2494d6ec-6c0b-4c9a-813b-777d8628eaca")
 			(effects

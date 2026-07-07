@@ -1177,7 +1177,7 @@
 		)
 		(uuid "3d95b59c-85c0-49f2-a815-4c4e88c5278d")
 	)
-	(hierarchical_label "3V3"
+	(hierarchical_label "VDD_3V3"
 		(shape input)
 		(at 96.52 88.9 180)
 		(effects
@@ -1218,7 +1218,7 @@
 		)
 		(uuid "ec23ebd0-2c97-4c37-9939-47b9cef3df6d")
 	)
-	(hierarchical_label "2V5"
+	(hierarchical_label "VDD_2V5"
 		(shape output)
 		(at 181.61 110.49 0)
 		(effects
@@ -1328,7 +1328,7 @@
 		)
 		(uuid "42ce97a1-9f7b-42e0-96cd-26a6fa3afa77")
 	)
-	(label "3V3"
+	(label "VDD_3V3"
 		(at 168.91 91.44 0)
 		(effects
 			(font
@@ -1496,7 +1496,7 @@
 		)
 		(uuid "8ad24c72-3ead-4618-ade7-1018800bd9ee")
 	)
-	(label "3V3"
+	(label "VDD_3V3"
 		(at 100.33 124.46 0)
 		(effects
 			(font
@@ -1739,7 +1739,7 @@
 		)
 		(uuid "6ddc1fc4-3a93-4c88-acd8-d5893d394914")
 	)
-	(label "3V3"
+	(label "VDD_3V3"
 		(at 115.57 124.46 0)
 		(effects
 			(font
@@ -1982,7 +1982,7 @@
 		)
 		(uuid "51093e38-9fd3-4afd-adec-eddf02c74345")
 	)
-	(label "2V5"
+	(label "VDD_2V5"
 		(at 130.81 124.46 0)
 		(effects
 			(font
@@ -2150,7 +2150,7 @@
 		)
 		(uuid "9a02de1d-0046-4263-81fe-9f44965c84fb")
 	)
-	(label "3V3"
+	(label "VDD_3V3"
 		(at 100.33 63.5 0)
 		(effects
 			(font
@@ -2239,7 +2239,7 @@
 		)
 		(uuid "da51b9f0-67dd-4d9f-b711-d44a013f01b6")
 	)
-	(label "2V5"
+	(label "VDD_2V5"
 		(at 115.57 63.5 0)
 		(effects
 			(font
