@@ -48,9 +48,6 @@ Check items off here; details live in [library_additions.md](library_additions.m
   MCASP/TIMER/EXT_REFCLK pins are plain pass-through now. The PMOD symbol
   (`KL_Conn_Data:PMOD_02x06`) and `06x02_2.54mm_SMD_Header` footprint remain in the
   KL library as stock — keep or drop?
-- [ ] **Waived ERC warnings** — 3× `same_local_global_label` on the `VDD_*` rails
-  (local labels inside child sheets intentionally share the global names;
-  connectivity netlist-verified against rev A).
 - [ ] **Sheet naming deviation** — the clock sheet is `oscillator.kicad_sch` (plan
   said `crystal.kicad_sch`; the part is an oscillator, not a crystal).
 
@@ -64,8 +61,7 @@ Check items off here; details live in [library_additions.md](library_additions.m
   still shows "ahead 20" from before the branch existed).
 - [ ] Push the superproject `main` when ready.
 - [ ] Open the project in KiCad once — headless rendering can't judge everything
-  (fonts, print scale, personal preference). ERC should report 0 errors /
-  3 waived warnings.
+  (fonts, print scale, personal preference). ERC should report 0 errors / 0 warnings.
 
 ## D. Known leftovers (low priority)
 
@@ -83,7 +79,7 @@ Check items off here; details live in [library_additions.md](library_additions.m
 
 | Check | Result |
 |---|---|
-| ERC | 0 errors, 3 waived warnings (baseline was 35 violations) |
+| ERC | 0 errors, 0 warnings (baseline was 35 violations) |
 | Netlist vs rev A | identical node-sets (incl. power flags); only net *names* re-scoped (pass-through nets now `/io/*`) |
 | IO pass-through | all 72 U1 pins match J2/J3 1:1 (scripted check) |
 | Connectivity | fully hierarchical: 0 global labels, GND via power symbols, inter-sheet via ports |
