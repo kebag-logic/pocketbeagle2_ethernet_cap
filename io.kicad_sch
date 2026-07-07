@@ -3926,7 +3926,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 64.77 142.24 180)
+		(at 64.77 142.24 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3944,130 +3944,6 @@
 		)
 		(pin "1" (uuid "e068c815-cc79-4974-bd48-5444cd31ed8c"))
 		(instances (project "pocketbeagle2_ethernet_cap" (path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/dfc0d9ea-92ee-4019-ab1c-eca4c3fda1e2" (reference "#PWR0100") (unit 1))))
-	)
-	(wire
-		(pts
-			(xy 64.77 138.43) (xy 64.77 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2a5e9ccb-eadf-4e59-a2f8-57375c13ca8b")
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 64.77 142.24 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a3313796-f19a-4e7e-9a8e-64a6ac34e5cc")
-		(property "Reference" "#PWR0101"
-			(at 64.77 146.05 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Value" "GND"
-			(at 64.77 147.32 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(pin "1" (uuid "8265ec15-4060-49c3-a8f3-c2d6c5de1c96"))
-		(instances (project "pocketbeagle2_ethernet_cap" (path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/dfc0d9ea-92ee-4019-ab1c-eca4c3fda1e2" (reference "#PWR0101") (unit 1))))
-	)
-	(wire
-		(pts
-			(xy 64.77 138.43) (xy 64.77 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4dc4b9cf-8b29-44b6-bc87-f5eb4240b32e")
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 64.77 142.24 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6ffc97b4-5a6d-4fa4-a298-9702a2431767")
-		(property "Reference" "#PWR0102"
-			(at 64.77 146.05 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Value" "GND"
-			(at 64.77 147.32 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(pin "1" (uuid "b119caa9-a9a5-4d6b-b010-b9959a82d36d"))
-		(instances (project "pocketbeagle2_ethernet_cap" (path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/dfc0d9ea-92ee-4019-ab1c-eca4c3fda1e2" (reference "#PWR0102") (unit 1))))
-	)
-	(wire
-		(pts
-			(xy 64.77 138.43) (xy 64.77 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "05f5d2c0-f988-4d80-a4e6-d6afaa503b04")
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 64.77 142.24 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5dda7782-bcd5-44cf-987c-db6d842b7459")
-		(property "Reference" "#PWR0103"
-			(at 64.77 146.05 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Value" "GND"
-			(at 64.77 147.32 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(pin "1" (uuid "0157c287-72db-4b2c-a754-2cff420d615a"))
-		(instances (project "pocketbeagle2_ethernet_cap" (path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/dfc0d9ea-92ee-4019-ab1c-eca4c3fda1e2" (reference "#PWR0103") (unit 1))))
-	)
-	(wire
-		(pts
-			(xy 64.77 138.43) (xy 64.77 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "40ca882a-d0c0-4e22-b059-5cc647eed709")
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 64.77 142.24 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "318e7af3-ef15-4590-b32f-7ecf3f96ee7b")
-		(property "Reference" "#PWR0104"
-			(at 64.77 146.05 0)
-			(hide yes)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Value" "GND"
-			(at 64.77 147.32 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(pin "1" (uuid "ab64ed9f-ca51-4f87-9e4b-d114dc983a35"))
-		(instances (project "pocketbeagle2_ethernet_cap" (path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/dfc0d9ea-92ee-4019-ab1c-eca4c3fda1e2" (reference "#PWR0104") (unit 1))))
 	)
 	(wire
 		(pts
