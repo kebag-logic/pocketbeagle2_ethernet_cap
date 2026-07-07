@@ -34,6 +34,8 @@ pocketbeagle2_ethernet_cap.kicad_sch   root: U1 PocketBeagle 2 host module
   clocking, straps, audio, power tree, and the rev A → current net rename map
 - [documentation/naming_convention.md](documentation/naming_convention.md) — mandatory
   signal naming rules
+- [documentation/review_checklist.md](documentation/review_checklist.md) — everything
+  awaiting user review after the restructure
 - [documentation/library_additions.md](documentation/library_additions.md) — every
   part added to the KL library for this design (review checkpoint)
 - [documentation/U2-DP83867IRPAPR_pin_out.md](documentation/U2-DP83867IRPAPR_pin_out.md)
