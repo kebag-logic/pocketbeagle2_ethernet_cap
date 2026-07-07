@@ -1,7 +1,7 @@
 # PocketBeagle 2 Ethernet Cap
 
 Ethernet cap for the PocketBeagle 2, exposing the TSN features of the AM62x through a
-DP83867IRPAPR gigabit PHY (RGMII), plus an I2S audio PMOD interface.
+DP83867IRPAPR gigabit PHY (RGMII), with full IO pass-through headers for stacking additional modules.
 
 ## Getting started
 
@@ -25,7 +25,7 @@ pocketbeagle2_ethernet_cap.kicad_sch   root: U1 PocketBeagle 2 host module
 │   └── oscillator.kicad_sch           Y1 25 MHz HCMOS oscillator + clock conditioning
 ├── ldo_2v5.kicad_sch                  U4 TPS7A2025 -> VDD_2V5
 ├── ldo_1v1.kicad_sch                  U3 TPS7A2011 -> VDD_1V1
-└── audio.kicad_sch                    P1/P2 PMOD I2S
+└── expansion.kicad_sch                J2/J3 full IO pass-through stacking headers
 ```
 
 ## Documentation

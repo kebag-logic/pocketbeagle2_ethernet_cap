@@ -76,11 +76,17 @@ Only numeric pin data was carried over; symbol bodies, properties and fields are
 6. **Supplier numbers**: all `TBD` Digikey/LCSC/Mouser fields — want me to fill them
    in from distributor searches where available, or do you maintain these manually?
 
+## Expansion header addition
+
+| Symbol (lib) | MPN | Source | Notes |
+|---|---|---|---|
+| `KL_Header`: `Header_18x02_2.54mm_2.54mm_Straight` | BHR-36-VUA *(derived from house BHR-20-VUA)* | Adam Tech BHR series | footprint `18x02_2.54mm_Header` ported from KiCad official 2x18 vertical + 3D model |
+
 ## Post-migration symbol fixes (M6, also in the submodule)
 
 - `KL_Module:PocketBeagle2`: pin 15 (GND) `power_in` → `power_out` (the host board
   sources ground — makes GND ERC-driven); pin 59 (second 3.3V) `power_out` → `passive`
-  (avoids output-vs-output conflict with pin 14; KiCad idiom for duplicated rail pins).
+  (avoids output-vs-output conflict with pin 14; KiCad idiom for duplicated rail pins); pin 49 (second VOUT) `power_out` → `passive` for the same reason once the expansion headers connected both VOUT pins.
 - `KL_PHY:DP83867IRPAPR`: RBIAS (15) `unspecified` → `passive`, XI (19) `unspecified`
   → `input`.
 

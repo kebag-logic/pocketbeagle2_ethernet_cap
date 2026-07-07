@@ -49,14 +49,22 @@ the DP83867IRPAPR gigabit PHY ("PHY") and the RJ45 magjack. Net names follow
 - PHY status LEDs: `LED0_PHY_to_Q1` … `LED2_PHY_to_Q3` drive BSS138 gates (Q1–Q3);
   the FETs sink D1–D3 (0805 green/orange/red) from `VDD_3V3` via 200R (R23/R27/R28).
 
-## Audio (PMOD)
+## Expansion / stacking headers
 
-- Two PMOD 2x6 connectors (P1, P2) share the I2S bus: `I2S_BCLK_CPU_PMOD`,
-  `I2S_LRCLK_CPU_PMOD` (bus naming — master role is protocol/configuration defined),
-  and per-module data `I2S_SDIN_CPU_to_PMOD1/2`, `I2S_SDOUT_PMOD1/2_to_CPU`.
-- `MCLK_PMOD` is the module master clock rail; 0R links R1–R4 select its CPU source:
-  `MCLK_TOUT` (timer out), `MCLK_TIN` (timer in), `MCLK_MCASP` (MCASP AHCLK). These
-  CPU-side option nets keep functional names per convention rule 4.
+Every PocketBeagle 2 IO is routed 1:1 to two 18x02 (36-pin) pass-through headers on
+the `expansion` sheet, so the PB2 + cap stack can sit on top of (or under) other
+modules:
+
+- **J2** mirrors P1 (header pin k = U1 pin k), **J3** mirrors P2 (header pin k =
+  U1 pin 36+k). Pin numbering follows the PB2 zigzag convention.
+- Signals used by the cap (RGMII, MDIO, reset/interrupt, rails) pass through under
+  their functional net names - a stacked module sees them and must not drive them.
+- All other pins carry their PB2 pin-function net names (`GPIO47`, `I2C2_SDA`,
+  `UART0_TX`, `SPI0_MOSI`, `MCASP2_ACLKX`, `AIN5`, ...). The former audio PMOD
+  circuitry (rev A) was removed; the MCASP/TIMER/EXT_REFCLK pins are now plain
+  pass-through.
+- `PWR_FLAG`s mark the power-input rails a stacked module may legally drive:
+  `VIN`, `USB1_VIN`, `BAT_VIN`, `AIN_VREF_P`, `AIN_VREF_N`.
 
 ## Power tree
 
@@ -85,9 +93,7 @@ test points on input and output rails.
 | LED0/1/2 | LED0..2_PHY_to_Q1..3 |
 | RX_CTRL / RX_D7 (straps) | STRAP_RX_CTRL_PHY / STRAP_RX_D7_PHY |
 | 1V1 / 2V5 / 3V3 (hier) | VDD_1V1 / VDD_2V5 / VDD_3V3 |
-| BCLK / LRCK / LRCLK | I2S_BCLK_CPU_PMOD / I2S_LRCLK_CPU_PMOD |
-| PMOD1/2_SDIN/SDOUT (+ `.` typos) | I2S_SDIN_CPU_to_PMODx / I2S_SDOUT_PMODx_to_CPU |
-| MCLK | MCLK_PMOD |
+| BCLK / LRCK / PMOD* / MCLK* (audio, removed) | MCASP2_ACLKX / MCASP2_AFSX / MCASP2_AXR0/1 / MCASP_AXR12/13 / TIMER_IO0/1 / EXT_REFCLK1 (plain pass-through) |
 
 Known accepted ERC warnings: local rail labels intentionally share the global
 `VDD_*` names inside child sheets (`same_local_global_label`, 3x) — connectivity is
