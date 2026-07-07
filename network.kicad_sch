@@ -5996,7 +5996,7 @@
 			(uuid "aaf31fde-6d6f-49eb-bae5-4259cd6898e8")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "C21")
 					(unit 1)
@@ -6066,7 +6066,7 @@
 			(uuid "c7c93d7e-d77a-4eb2-8e56-c8c9cd586728")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "C26")
 					(unit 1)
@@ -6136,7 +6136,7 @@
 			(uuid "942d74f2-fef7-4ffd-8470-30cf1c71ccfa")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "C7")
 					(unit 1)
@@ -6203,7 +6203,7 @@
 			(uuid "9be943bb-e951-40f7-8399-5f647378d110")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "R26")
 					(unit 1)
@@ -6270,7 +6270,7 @@
 			(uuid "cde2fbb7-ef2f-4d04-bdb1-05c611468157")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "R10")
 					(unit 1)
@@ -6336,7 +6336,7 @@
 			(uuid "907c9a7f-2725-42a9-abb9-4ac833b006d7")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "#PWR010")
 					(unit 1)
@@ -6403,7 +6403,7 @@
 			(uuid "7e4524ec-f605-4183-a91d-93118bb7e19c")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "R9")
 					(unit 1)
@@ -6470,7 +6470,7 @@
 			(uuid "8f97393c-f22b-4396-99ca-48bcf6d0a981")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "R12")
 					(unit 1)
@@ -6536,7 +6536,7 @@
 			(uuid "436e849d-6eb3-47c1-bb47-dc1a2161d063")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "#PWR015")
 					(unit 1)
@@ -6606,7 +6606,7 @@
 			(uuid "d5c37851-49c0-4c33-baef-190e9dd05428")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "C13")
 					(unit 1)
@@ -6672,7 +6672,7 @@
 			(uuid "58100fc1-5f51-46a5-8850-a8d996c79670")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "#PWR014")
 					(unit 1)
@@ -6742,7 +6742,7 @@
 			(uuid "06757c03-6d26-4877-9bf9-3ce9d7c7aab3")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "C15")
 					(unit 1)
@@ -6812,7 +6812,7 @@
 			(uuid "2c793536-65a3-4a9e-ab46-10ab04678ad3")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "C19")
 					(unit 1)
@@ -6879,7 +6879,7 @@
 			(uuid "1c9479dd-b455-441d-b878-217dbf1b8f6d")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "TP2")
 					(unit 1)
@@ -6946,7 +6946,7 @@
 			(uuid "502feff1-1b32-4d8c-9ffa-11b88a1af256")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "R25")
 					(unit 1)
@@ -7016,7 +7016,7 @@
 			(uuid "8fa31bb5-cbc5-4a9e-801a-5e00709657fc")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "C3")
 					(unit 1)
@@ -7086,7 +7086,7 @@
 			(uuid "81888a85-6ef0-44ed-8894-39caa29269fd")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "C18")
 					(unit 1)
@@ -7156,7 +7156,7 @@
 			(uuid "78011eaa-6377-4981-9782-13674039fb5a")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "C16")
 					(unit 1)
@@ -7223,7 +7223,7 @@
 			(uuid "aa5eb200-f351-4f54-9433-3cab340d31a7")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "R14")
 					(unit 1)
@@ -7293,7 +7293,7 @@
 			(uuid "e1e14e3b-4601-4cc0-b150-79158df647f1")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "C27")
 					(unit 1)
@@ -7360,7 +7360,7 @@
 			(uuid "0332cbbf-32b9-4d25-bba0-39be75509910")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "R15")
 					(unit 1)
@@ -7427,7 +7427,7 @@
 			(uuid "74fdbe62-93ac-4255-871f-16e81d6d4214")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "R6")
 					(unit 1)
@@ -7497,7 +7497,7 @@
 			(uuid "4ba876e5-ce18-4d47-80ca-a77cb0e6ff11")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "C6")
 					(unit 1)
@@ -7565,7 +7565,7 @@
 			(uuid "d6b365c4-ebec-473c-8814-0cf5fa31ad19")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "C14")
 					(unit 1)
@@ -7632,7 +7632,7 @@
 			(uuid "c74e3a79-08e6-41d4-882f-472935403e50")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "R20")
 					(unit 1)
@@ -7702,7 +7702,7 @@
 			(uuid "6a85ac86-13c0-4f15-b71c-6e663f1ff6ef")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "C1")
 					(unit 1)
@@ -7781,7 +7781,7 @@
 			(uuid "327d8ac3-2faf-4536-a013-f1774cce761f")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "D3")
 					(unit 1)
@@ -7851,7 +7851,7 @@
 			(uuid "733322c4-0f95-4e13-b6fd-afa7060bdb8a")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "C9")
 					(unit 1)
@@ -7917,7 +7917,7 @@
 			(uuid "29ba4440-a9bd-4b3d-a0f1-2ac805ca7206")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "#PWR06")
 					(unit 1)
@@ -7991,7 +7991,7 @@
 			(uuid "eaa96fa1-5ca3-4234-bd02-8ce94e7778ae")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "Y1")
 					(unit 1)
@@ -8061,7 +8061,7 @@
 			(uuid "fe0bf60d-0911-47c4-b12c-ab766228fa75")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "C22")
 					(unit 1)
@@ -8131,7 +8131,7 @@
 			(uuid "b1b96a7b-8728-4d55-9c0d-0d26c4147ec1")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "C28")
 					(unit 1)
@@ -8201,7 +8201,7 @@
 			(uuid "679fa83a-b817-4058-a8fe-e191b5dd94cc")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "C25")
 					(unit 1)
@@ -8277,7 +8277,7 @@
 			(uuid "defd1c00-5c89-45f5-a055-796940b27987")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "Q2")
 					(unit 1)
@@ -8343,7 +8343,7 @@
 			(uuid "dd5fb0b8-6984-49cc-a20e-df211d681204")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "#PWR017")
 					(unit 1)
@@ -8410,7 +8410,7 @@
 			(uuid "f0d71b42-ae6b-4567-9226-7e3828dd28f4")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "R13")
 					(unit 1)
@@ -8480,7 +8480,7 @@
 			(uuid "65619013-8f96-40b9-a6ee-3bbc9ddfc940")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "C24")
 					(unit 1)
@@ -8556,7 +8556,7 @@
 			(uuid "bedec9fb-9e27-49fd-b9fc-e6b70e1158f9")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "Q3")
 					(unit 1)
@@ -8623,7 +8623,7 @@
 			(uuid "9fd93679-6973-4e82-a00a-21aa2c03a3ec")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "R11")
 					(unit 1)
@@ -8689,7 +8689,7 @@
 			(uuid "c040ce9f-98c8-44d3-8185-4ec00ec55fe0")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "#PWR016")
 					(unit 1)
@@ -8830,7 +8830,7 @@
 			(uuid "67cb829b-78dd-4f73-8729-125e8a6e3483")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "J1")
 					(unit 1)
@@ -8900,7 +8900,7 @@
 			(uuid "7ec9f664-d598-408f-8a7d-51b8c7d583d3")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "C12")
 					(unit 1)
@@ -8966,7 +8966,7 @@
 			(uuid "1cb01862-1b7d-43a6-9547-48cb90a9dc48")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "#PWR028")
 					(unit 1)
@@ -9036,7 +9036,7 @@
 			(uuid "4eccd905-79b3-4c7e-8cca-31f85611d822")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "C4")
 					(unit 1)
@@ -9103,7 +9103,7 @@
 			(uuid "66bae3e9-a368-4a49-a722-b4c469ece1e2")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "R7")
 					(unit 1)
@@ -9169,7 +9169,7 @@
 			(uuid "5fc08e6d-7a11-439f-835c-962647b550ef")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "#PWR07")
 					(unit 1)
@@ -9236,7 +9236,7 @@
 			(uuid "3985423b-ca28-41d0-bc1c-db9c42835bc0")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "R23")
 					(unit 1)
@@ -9303,7 +9303,7 @@
 			(uuid "39fd7dfd-0fd2-40eb-8b48-1e7b01b40c23")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "R27")
 					(unit 1)
@@ -9369,7 +9369,7 @@
 			(uuid "77acdd15-5376-4458-affd-1631b86cd2d0")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "#PWR012")
 					(unit 1)
@@ -9436,7 +9436,7 @@
 			(uuid "ad233a4f-4a7a-4f83-a6fa-06aa1ba6ae60")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "R22")
 					(unit 1)
@@ -9506,7 +9506,7 @@
 			(uuid "4e027a79-7a5a-4fbe-beba-a6bdf65f1b7c")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "C17")
 					(unit 1)
@@ -9585,7 +9585,7 @@
 			(uuid "9123f7fb-64ed-4776-a10a-854226998c77")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "D1")
 					(unit 1)
@@ -9652,7 +9652,7 @@
 			(uuid "13d9e4c8-bf8b-4b33-bdff-b096386d8ae0")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "R5")
 					(unit 1)
@@ -9719,7 +9719,7 @@
 			(uuid "123b2bac-fb59-4f8a-a2ed-438cda33c0bb")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "R19")
 					(unit 1)
@@ -9786,7 +9786,7 @@
 			(uuid "c7d371d9-5e25-47f2-8bd3-5f09c8f177e0")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "R16")
 					(unit 1)
@@ -9853,7 +9853,7 @@
 			(uuid "47959779-b27f-41e8-9bdd-f990bb079709")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "R17")
 					(unit 1)
@@ -10115,7 +10115,7 @@
 			(uuid "54ecae7f-fb3f-4f6b-902c-2aed9f411cd6")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "U2")
 					(unit 1)
@@ -10191,7 +10191,7 @@
 			(uuid "da2a7c45-40d5-4b93-b7db-87dce4ac6963")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "Q1")
 					(unit 1)
@@ -10258,7 +10258,7 @@
 			(uuid "6da54495-0e05-4e7e-a340-2eecd8a686eb")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "TP4")
 					(unit 1)
@@ -10325,7 +10325,7 @@
 			(uuid "89407c8a-5546-4989-80b8-317cf9f03afb")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "R8")
 					(unit 1)
@@ -10392,7 +10392,7 @@
 			(uuid "16724fee-55b0-46b6-93cc-ce75b6af96a0")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "R29")
 					(unit 1)
@@ -10458,7 +10458,7 @@
 			(uuid "b3f2c528-a0e7-4c4c-93c8-f78ee9af6fac")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "#PWR018")
 					(unit 1)
@@ -10524,7 +10524,7 @@
 			(uuid "6bf20baf-b498-4571-a703-7e010226a6d1")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "#PWR09")
 					(unit 1)
@@ -10594,7 +10594,7 @@
 			(uuid "f73329a5-ab13-496e-bda6-a6d8c27317e3")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "C10")
 					(unit 1)
@@ -10673,7 +10673,7 @@
 			(uuid "64dbc989-f788-4edd-85f6-0f9c85269167")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "D2")
 					(unit 1)
@@ -10740,7 +10740,7 @@
 			(uuid "1f277b8e-1a25-4cff-b9d7-13898b813c4e")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "R18")
 					(unit 1)
@@ -10810,7 +10810,7 @@
 			(uuid "0d9943b8-1a8e-4c6e-98cf-a2c50b5a8a54")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "C23")
 					(unit 1)
@@ -10880,7 +10880,7 @@
 			(uuid "368c69be-f037-499b-8506-f1afa050723d")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "C8")
 					(unit 1)
@@ -10946,7 +10946,7 @@
 			(uuid "b2443a99-2adc-4b0e-ac51-e63cda5530e4")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "#PWR013")
 					(unit 1)
@@ -11016,7 +11016,7 @@
 			(uuid "6823dfe0-ff8b-4707-b352-cc04a246ce81")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "C5")
 					(unit 1)
@@ -11083,7 +11083,7 @@
 			(uuid "bad16036-d048-4bab-b04e-c266b0d138b2")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "R28")
 					(unit 1)
@@ -11150,7 +11150,7 @@
 			(uuid "e9343839-8c8a-4920-a211-6308af52e4fe")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "TP1")
 					(unit 1)
@@ -11216,7 +11216,7 @@
 			(uuid "a0a47d61-a459-4b06-bfa0-5d3d0d6a0497")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "#PWR08")
 					(unit 1)
@@ -11283,7 +11283,7 @@
 			(uuid "6133fb48-b1cf-4e09-a389-1c4f377b704d")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "R24")
 					(unit 1)
@@ -11353,7 +11353,7 @@
 			(uuid "1454dc5b-c17e-4824-b280-b1627fab6345")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "C11")
 					(unit 1)
@@ -11419,7 +11419,7 @@
 			(uuid "bed7eb04-1b27-42b9-bc35-0b702f90b67d")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "#PWR019")
 					(unit 1)
@@ -11489,7 +11489,7 @@
 			(uuid "abf284c7-9b56-44c1-af8b-e7b2817ec561")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "C2")
 					(unit 1)
@@ -11559,7 +11559,7 @@
 			(uuid "36958bab-d6f9-498c-a54d-430280b8ef54")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "C20")
 					(unit 1)
@@ -11626,7 +11626,7 @@
 			(uuid "77b59119-280f-492c-b08c-964b494d21e9")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "R21")
 					(unit 1)
@@ -11692,7 +11692,7 @@
 			(uuid "68252b27-2c3c-43f4-a1f9-5e95bf576c80")
 		)
 		(instances
-			(project "pocketbeagle2 revA_241205"
+			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca"
 					(reference "#PWR011")
 					(unit 1)
