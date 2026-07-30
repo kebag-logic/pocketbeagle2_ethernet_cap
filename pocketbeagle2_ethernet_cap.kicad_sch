@@ -1,205 +1,932 @@
 (kicad_sch
-	(version 20250114)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(uuid "82320ebb-b624-4fc9-8d5a-3bc164182d09")
 	(paper "A4")
 	(title_block
 		(title "Gigabit EthernetCap")
-		(date "2025-08-19")
+		(date "2026-04-19")
 		(rev "V0.1")
 		(company "Kebag Logic: kebag-logic.com")
 		(comment 3 "This source describes Open Hardware and is licensed under the\nCERN-OHL-S v2.0.\nYou may redistribute and modify this documentation and make products\nusing it under the terms of the CERN-OHL-S v2.0 (https://cern.ch/ohl).")
 	)
 	(lib_symbols
 		(symbol "power:GND"
-													(power)
-													(pin_numbers
-														(hide yes)
-													)
-													(pin_names
-														(offset 0)
-														(hide yes)
-													)
-													(exclude_from_sim no)
-													(in_bom yes)
-													(on_board yes)
-													(property "Reference" "#PWR"
-														(at 0 -6.35 0)
-														(effects
-															(font
-																(size 1.27 1.27)
-															)
-															(hide yes)
-														)
-													)
-													(property "Value" "GND"
-														(at 0 -3.81 0)
-														(effects
-															(font
-																(size 1.27 1.27)
-															)
-														)
-													)
-													(property "Footprint" ""
-														(at 0 0 0)
-														(effects
-															(font
-																(size 1.27 1.27)
-															)
-															(hide yes)
-														)
-													)
-													(property "Datasheet" ""
-														(at 0 0 0)
-														(effects
-															(font
-																(size 1.27 1.27)
-															)
-															(hide yes)
-														)
-													)
-													(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-														(at 0 0 0)
-														(effects
-															(font
-																(size 1.27 1.27)
-															)
-															(hide yes)
-														)
-													)
-													(property "ki_keywords" "global power"
-														(at 0 0 0)
-														(effects
-															(font
-																(size 1.27 1.27)
-															)
-															(hide yes)
-														)
-													)
-													(symbol "GND_0_1"
-														(polyline
-															(pts
-																(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-															)
-															(stroke
-																(width 0)
-																(type default)
-															)
-															(fill
-																(type none)
-															)
-														)
-													)
-													(symbol "GND_1_1"
-														(pin power_in line
-															(at 0 0 270)
-															(length 0)
-															(name "~"
-																(effects
-																	(font
-																		(size 1.27 1.27)
-																	)
-																)
-															)
-															(number "1"
-																(effects
-																	(font
-																		(size 1.27 1.27)
-																	)
-																)
-															)
-														)
-													)
-													(embedded_fonts no)
-												)
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
-	(sheet
-		(at 25.4 33.02)
-		(size 53.34 68.58)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke (width 0.1524) (type solid))
-		(fill (color 0 0 0 0.0000))
-		(uuid "dfc0d9ea-92ee-4019-ab1c-eca4c3fda1e2")
-		(property "Sheetname" "io"
-			(at 25.4 32.31 0)
-			(effects (font (size 1.27 1.27)) (justify left bottom)))
-		(property "Sheetfile" "io.kicad_sch"
-			(at 25.4 102.31 0)
-			(effects (font (size 1.27 1.27)) (justify left top)))
-		(pin "RGMII_TD0_CPU_to_PHY" output
-			(at 78.74 36.83 0)
-			(uuid "40ed0da9-1aff-4ba3-99ae-37963cb48c4a")
-			(effects (font (size 1.27 1.27)) (justify right)))
-		(pin "RGMII_TD1_CPU_to_PHY" output
-			(at 78.74 40.64 0)
-			(uuid "4b44a05a-352e-4b3a-b0e0-0275fdc8cd41")
-			(effects (font (size 1.27 1.27)) (justify right)))
-		(pin "RGMII_TD2_CPU_to_PHY" output
-			(at 78.74 44.45 0)
-			(uuid "8aaf1d84-cb7c-4f61-a135-b89d1b7e7999")
-			(effects (font (size 1.27 1.27)) (justify right)))
-		(pin "RGMII_TD3_CPU_to_PHY" output
-			(at 78.74 48.26 0)
-			(uuid "dbfdacca-3dd0-4427-940c-56ce1f254840")
-			(effects (font (size 1.27 1.27)) (justify right)))
-		(pin "RGMII_TX_CLK_CPU_to_PHY" output
-			(at 78.74 52.07 0)
-			(uuid "06d6de55-1992-44c4-bf15-425adc9bf65e")
-			(effects (font (size 1.27 1.27)) (justify right)))
-		(pin "RGMII_TX_CTRL_CPU_to_PHY" output
-			(at 78.74 55.88 0)
-			(uuid "6d009015-810c-46a2-a652-45036740577d")
-			(effects (font (size 1.27 1.27)) (justify right)))
-		(pin "RGMII_RD0_PHY_to_CPU" input
-			(at 78.74 59.69 0)
-			(uuid "5bf204c4-58eb-4d1e-89f8-de7a3c4df684")
-			(effects (font (size 1.27 1.27)) (justify right)))
-		(pin "RGMII_RD1_PHY_to_CPU" input
-			(at 78.74 63.5 0)
-			(uuid "a3e2df51-299d-4d39-b5d6-e674b71183a5")
-			(effects (font (size 1.27 1.27)) (justify right)))
-		(pin "RGMII_RD2_PHY_to_CPU" input
-			(at 78.74 67.31 0)
-			(uuid "6b506ea6-fe70-49ef-acc0-2fa8898df7ef")
-			(effects (font (size 1.27 1.27)) (justify right)))
-		(pin "RGMII_RD3_PHY_to_CPU" input
-			(at 78.74 71.12 0)
-			(uuid "16aa9cab-31e0-474e-b09d-a45b99e560f0")
-			(effects (font (size 1.27 1.27)) (justify right)))
-		(pin "RGMII_RX_CLK_PHY_to_CPU" input
-			(at 78.74 74.93 0)
-			(uuid "e0e05361-c469-424d-a27c-9ccf3d7e478c")
-			(effects (font (size 1.27 1.27)) (justify right)))
-		(pin "RGMII_RX_CTRL_PHY_to_CPU" input
-			(at 78.74 78.74 0)
-			(uuid "dfb2957e-18d8-4193-8841-2aa4a68ac1b6")
-			(effects (font (size 1.27 1.27)) (justify right)))
-		(pin "MDIO_MDC_CPU_PHY" output
-			(at 78.74 82.55 0)
-			(uuid "7ceef4cf-8688-41da-b497-9ac0c67c689f")
-			(effects (font (size 1.27 1.27)) (justify right)))
-		(pin "MDIO_DIO_CPU_PHY" bidirectional
-			(at 78.74 86.36 0)
-			(uuid "8dc9ecab-31f0-4412-8e67-6007e5f8e333")
-			(effects (font (size 1.27 1.27)) (justify right)))
-		(pin "RESET_N_CPU_to_PHY" output
-			(at 78.74 90.17 0)
-			(uuid "1af699dd-c6bd-483a-8b1e-50e330e7d079")
-			(effects (font (size 1.27 1.27)) (justify right)))
-		(pin "INT_PWDN_N_CPU_PHY" bidirectional
-			(at 78.74 93.98 0)
-			(uuid "b0fce7a1-2a11-4587-978f-fd3695834d60")
-			(effects (font (size 1.27 1.27)) (justify right)))
-		(pin "VDD_3V3" output
-			(at 78.74 97.79 0)
-			(uuid "5c6c213b-730f-4100-a853-3dee283d6aee")
-			(effects (font (size 1.27 1.27)) (justify right)))
-		(instances (project "pocketbeagle2_ethernet_cap" (path "/82320ebb-b624-4fc9-8d5a-3bc164182d09" (page "4"))))
+	(wire
+		(pts
+			(xy 152.4 44.45) (xy 148.59 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04ceb285-ada6-49f9-aaec-9ffb708a47ee")
+	)
+	(wire
+		(pts
+			(xy 152.4 71.12) (xy 148.59 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06b928e7-f713-4670-8f23-e72e661be3d5")
+	)
+	(wire
+		(pts
+			(xy 152.4 144.78) (xy 148.59 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0753b9ea-a3ee-43c9-994d-086f2beb500a")
+	)
+	(wire
+		(pts
+			(xy 152.4 90.17) (xy 148.59 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b404bef-26dc-4009-bd34-ea04a3db50c3")
+	)
+	(wire
+		(pts
+			(xy 78.74 90.17) (xy 82.55 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13e2a2e4-ccf3-4cde-8f8b-e9a0a7dcecf0")
+	)
+	(wire
+		(pts
+			(xy 152.4 48.26) (xy 148.59 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ca76906-ba04-489b-aa89-d93ec2b6dcc8")
+	)
+	(wire
+		(pts
+			(xy 78.74 36.83) (xy 82.55 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fdf5b7a-5f49-4525-8691-e80846266ad4")
+	)
+	(wire
+		(pts
+			(xy 78.74 48.26) (xy 82.55 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21a6b9d1-322c-4913-9c2a-b746279c2963")
+	)
+	(wire
+		(pts
+			(xy 152.4 82.55) (xy 148.59 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2714cf77-dab2-4614-a005-87d627bc5184")
+	)
+	(wire
+		(pts
+			(xy 78.74 74.93) (xy 82.55 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ddd9317-fdcc-4ff5-88c3-5e2120368a5d")
+	)
+	(wire
+		(pts
+			(xy 152.4 105.41) (xy 148.59 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2eb05e9f-f5b1-4c23-b4fd-c1d995172535")
+	)
+	(wire
+		(pts
+			(xy 152.4 97.79) (xy 148.59 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f133f83-215b-4a2f-893e-125d4d38ec46")
+	)
+	(wire
+		(pts
+			(xy 78.74 97.79) (xy 82.55 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46383dcf-5221-4794-bac1-e5bf58e70c2a")
+	)
+	(wire
+		(pts
+			(xy 152.4 63.5) (xy 148.59 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5af0356c-7dbf-4b98-a3ac-87ad56d7ba9a")
+	)
+	(wire
+		(pts
+			(xy 152.4 55.88) (xy 148.59 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5bedf852-d980-4af9-953b-43daab1c1670")
+	)
+	(wire
+		(pts
+			(xy 152.4 74.93) (xy 148.59 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d94f284-6ae0-43e5-9d73-7d789f026743")
+	)
+	(wire
+		(pts
+			(xy 152.4 40.64) (xy 148.59 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e655dc6-ba37-4906-83d6-05c41843b046")
+	)
+	(wire
+		(pts
+			(xy 152.4 140.97) (xy 148.59 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fab1f76-ed8b-43d8-8730-203e4b7c561f")
+	)
+	(wire
+		(pts
+			(xy 152.4 86.36) (xy 148.59 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67b12eb4-b8ef-434f-a07d-9bab010fb4d6")
+	)
+	(wire
+		(pts
+			(xy 78.74 52.07) (xy 82.55 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69488d21-7a16-4f92-8e05-16a5ebdba037")
+	)
+	(wire
+		(pts
+			(xy 78.74 59.69) (xy 82.55 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c7f0af5-e5fd-41e7-88c0-bdd459dec474")
+	)
+	(wire
+		(pts
+			(xy 78.74 67.31) (xy 82.55 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8159ee12-d776-4c0e-b94a-8f0a3652e043")
+	)
+	(wire
+		(pts
+			(xy 152.4 128.27) (xy 148.59 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "847c3796-ed8e-486d-a770-7094c9a8a029")
+	)
+	(wire
+		(pts
+			(xy 152.4 52.07) (xy 148.59 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d702a79-be6e-4efe-9bd7-1f160f24be46")
+	)
+	(wire
+		(pts
+			(xy 78.74 86.36) (xy 82.55 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90824d49-41a9-4b2a-8385-385d228f37da")
+	)
+	(wire
+		(pts
+			(xy 78.74 63.5) (xy 82.55 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "915fe972-e3ee-4e81-a82b-ef3f14bb12a7")
+	)
+	(wire
+		(pts
+			(xy 152.4 93.98) (xy 148.59 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "933ec252-5f87-4e72-90cf-96262721d7ea")
+	)
+	(wire
+		(pts
+			(xy 78.74 40.64) (xy 82.55 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0b6c58c-4774-4a9a-b54a-90d5043c177d")
+	)
+	(wire
+		(pts
+			(xy 152.4 59.69) (xy 148.59 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3a0288d-cef0-4414-8cc8-5a58fc987215")
+	)
+	(wire
+		(pts
+			(xy 152.4 124.46) (xy 148.59 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6aeadfa-cf52-41f3-b275-ddf026fc8a66")
+	)
+	(wire
+		(pts
+			(xy 78.74 55.88) (xy 82.55 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a730d994-8046-4d6f-8aae-490a70ab1b66")
+	)
+	(wire
+		(pts
+			(xy 78.74 44.45) (xy 82.55 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab1a9a9f-ed30-428e-9821-be7f74a568aa")
+	)
+	(wire
+		(pts
+			(xy 152.4 78.74) (xy 148.59 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b182b762-d49a-4a9b-948d-f40389355601")
+	)
+	(wire
+		(pts
+			(xy 78.74 82.55) (xy 82.55 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba2fc89a-0554-42b3-84d4-5ffb799e1798")
+	)
+	(wire
+		(pts
+			(xy 78.74 93.98) (xy 82.55 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c384cb55-25fd-4c4a-8c0c-c441cca421f1")
+	)
+	(wire
+		(pts
+			(xy 78.74 71.12) (xy 82.55 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2ced528-3493-400e-80e9-95a93acb353f")
+	)
+	(wire
+		(pts
+			(xy 152.4 67.31) (xy 148.59 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc16f8da-f460-4faa-b548-1ea1abf5c8e5")
+	)
+	(wire
+		(pts
+			(xy 152.4 36.83) (xy 148.59 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2663a50-6b2a-43c3-aac0-15238b8efb6a")
+	)
+	(wire
+		(pts
+			(xy 152.4 101.6) (xy 148.59 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2b5e61a-7db4-4b20-a9a8-296f080a01e3")
+	)
+	(wire
+		(pts
+			(xy 78.74 78.74) (xy 82.55 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f977ac60-2308-4d27-8aef-00a703f337e4")
+	)
+	(label "RGMII_RD2_PHY_to_CPU"
+		(at 148.59 67.31 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0012fe2b-0c3c-499c-baaf-cafb487dc418")
+	)
+	(label "VDD_2V5"
+		(at 148.59 101.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "01cb53d5-68c2-4169-be66-9da461a97a2d")
+	)
+	(label "RGMII_TX_CTRL_CPU_to_PHY"
+		(at 148.59 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "038713bc-7380-4fa1-b4e7-e95dddc0db1f")
+	)
+	(label "RGMII_TD1_CPU_to_PHY"
+		(at 82.55 40.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0a30ce4f-c54e-45b4-a718-75dfa0770f88")
+	)
+	(label "RGMII_TD0_CPU_to_PHY"
+		(at 82.55 36.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0aba5ada-bed3-4d67-bbcc-ebbf13a58ce2")
+	)
+	(label "RGMII_TD0_CPU_to_PHY"
+		(at 148.59 36.83 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0d389e4a-cb7d-4d97-a0d5-653b28673d64")
+	)
+	(label "RGMII_TX_CLK_CPU_to_PHY"
+		(at 148.59 52.07 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0ec1da00-5b75-4f2e-a227-278f66e64ad0")
+	)
+	(label "MDIO_DIO_CPU_PHY"
+		(at 82.55 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "11439570-648a-4713-8741-0c7c2f5e6275")
+	)
+	(label "VDD_3V3"
+		(at 148.59 140.97 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "20031c87-2105-42f8-84b1-6de8ecefc13c")
+	)
+	(label "RGMII_RX_CLK_PHY_to_CPU"
+		(at 148.59 74.93 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "23bbcb77-2a8c-49c8-8489-7a3d035fd2d7")
+	)
+	(label "RGMII_TX_CTRL_CPU_to_PHY"
+		(at 82.55 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "25c895bc-5c52-45ec-9c83-bc156ddc5c76")
+	)
+	(label "RGMII_RD3_PHY_to_CPU"
+		(at 82.55 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2cf557aa-c2b5-4190-abe0-ff5de6767676")
+	)
+	(label "RGMII_RX_CTRL_PHY_to_CPU"
+		(at 148.59 78.74 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3132075e-3d2b-465e-93c8-c414314448d4")
+	)
+	(label "RGMII_TD2_CPU_to_PHY"
+		(at 82.55 44.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "332b308f-3404-45fe-9bcd-2cc9dd298af3")
+	)
+	(label "MDIO_MDC_CPU_PHY"
+		(at 148.59 82.55 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "39d37d85-4169-4264-8645-b29f0b2c6199")
+	)
+	(label "MDIO_MDC_CPU_PHY"
+		(at 82.55 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "417c553b-37be-4fdc-af5a-7b4f7cb8721d")
+	)
+	(label "RGMII_TD2_CPU_to_PHY"
+		(at 148.59 44.45 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "57e32b45-892a-446c-a84e-63400445989f")
+	)
+	(label "INT_PWDN_N_CPU_PHY"
+		(at 82.55 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6037224b-0552-436c-a4de-173983811ad0")
+	)
+	(label "VDD_3V3"
+		(at 82.55 97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "646b6f6b-c3bd-445d-bfc4-a4ff2b20de2b")
+	)
+	(label "RGMII_RD0_PHY_to_CPU"
+		(at 82.55 59.69 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6cdcd930-b947-4501-ad82-8cffad696405")
+	)
+	(label "RGMII_RD2_PHY_to_CPU"
+		(at 82.55 67.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6d2e774d-2f08-4921-b1d1-93b8a6a05481")
+	)
+	(label "RGMII_RD3_PHY_to_CPU"
+		(at 148.59 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7005df22-aab4-4f04-a75f-71e6a065955b")
+	)
+	(label "VDD_1V1"
+		(at 148.59 128.27 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "84f4c732-9d4a-42a8-8104-d968b960bcee")
+	)
+	(label "RGMII_RD0_PHY_to_CPU"
+		(at 148.59 59.69 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8a045cd1-04ed-45bc-96a4-54a1de61c8fb")
+	)
+	(label "RGMII_RD1_PHY_to_CPU"
+		(at 148.59 63.5 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "923505b9-af8e-4c61-8e9b-6cb746d7181b")
+	)
+	(label "INT_PWDN_N_CPU_PHY"
+		(at 148.59 93.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "96077176-4515-4234-bab1-87ac629f81e0")
+	)
+	(label "VDD_1V1"
+		(at 148.59 97.79 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9d5ca046-d7f6-4e04-bdc8-5988f0816576")
+	)
+	(label "MDIO_DIO_CPU_PHY"
+		(at 148.59 86.36 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9fcba05c-9106-4a67-a8c3-737e66a9a5ae")
+	)
+	(label "RGMII_TD3_CPU_to_PHY"
+		(at 82.55 48.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9feb69ce-69ef-40a7-9bd4-dc28767aadf2")
+	)
+	(label "RGMII_RX_CLK_PHY_to_CPU"
+		(at 82.55 74.93 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a68a84a4-9fa7-4dc1-91e5-8dffd681e1a6")
+	)
+	(label "RESET_N_CPU_to_PHY"
+		(at 148.59 90.17 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "aa773765-a757-4b7f-8280-7300816ecbfd")
+	)
+	(label "RGMII_RD1_PHY_to_CPU"
+		(at 82.55 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "aee40c1d-3f3d-44c0-af25-bedb7c147c31")
+	)
+	(label "RGMII_TD1_CPU_to_PHY"
+		(at 148.59 40.64 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b23a76a7-d7cd-41c5-acf8-1e38bca501fc")
+	)
+	(label "RGMII_TX_CLK_CPU_to_PHY"
+		(at 82.55 52.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d15d25f6-c1f2-45a5-89d9-5c7d7279e868")
+	)
+	(label "RGMII_RX_CTRL_PHY_to_CPU"
+		(at 82.55 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "db80f960-2224-44b2-8e9f-071e23dde00c")
+	)
+	(label "VDD_3V3"
+		(at 148.59 124.46 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "dd466297-f3a3-4b8e-8691-18985929a01c")
+	)
+	(label "RESET_N_CPU_to_PHY"
+		(at 82.55 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "df9b0ea9-c2ca-494b-8491-7759d65ddf9a")
+	)
+	(label "RGMII_TD3_CPU_to_PHY"
+		(at 148.59 48.26 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e3ec650f-150b-4ca1-bb39-06bdd3c314fd")
+	)
+	(label "VDD_2V5"
+		(at 148.59 144.78 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f06918ef-33d2-488f-babf-dbd44eafbbb5")
+	)
+	(label "VDD_3V3"
+		(at 148.59 105.41 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fb289b88-8f78-47ba-9ec3-504d5aa49aeb")
 	)
 	(sheet
 		(at 152.4 33.02)
@@ -209,92 +936,233 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(stroke (width 0.1524) (type solid))
-		(fill (color 0 0 0 0.0000))
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
 		(uuid "1a5f5f50-6711-4dc3-8e4f-1634784841ca")
 		(property "Sheetname" "network"
 			(at 152.4 32.31 0)
-			(effects (font (size 1.27 1.27)) (justify left bottom)))
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
 		(property "Sheetfile" "network.kicad_sch"
 			(at 152.4 109.93 0)
-			(effects (font (size 1.27 1.27)) (justify left top)))
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
 		(pin "RGMII_TD0_CPU_to_PHY" input
 			(at 152.4 36.83 180)
 			(uuid "38d392f8-d529-4466-ab45-b1615c300016")
-			(effects (font (size 1.27 1.27)) (justify left)))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(pin "RGMII_TD1_CPU_to_PHY" input
 			(at 152.4 40.64 180)
 			(uuid "2d0a1cce-73cc-4512-9e70-08a9228fb086")
-			(effects (font (size 1.27 1.27)) (justify left)))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(pin "RGMII_TD2_CPU_to_PHY" input
 			(at 152.4 44.45 180)
 			(uuid "6c1bba23-e738-48e7-a071-ed9d8b7d050d")
-			(effects (font (size 1.27 1.27)) (justify left)))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(pin "RGMII_TD3_CPU_to_PHY" input
 			(at 152.4 48.26 180)
 			(uuid "d553954b-59e7-4a4b-8b0b-d672078fb9fd")
-			(effects (font (size 1.27 1.27)) (justify left)))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(pin "RGMII_TX_CLK_CPU_to_PHY" input
 			(at 152.4 52.07 180)
 			(uuid "907cf6e2-49a1-4af8-8b88-af6a642f7dec")
-			(effects (font (size 1.27 1.27)) (justify left)))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(pin "RGMII_TX_CTRL_CPU_to_PHY" input
 			(at 152.4 55.88 180)
 			(uuid "8f52b937-2fe0-4c3e-baae-1b704466b97d")
-			(effects (font (size 1.27 1.27)) (justify left)))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(pin "RGMII_RD0_PHY_to_CPU" output
 			(at 152.4 59.69 180)
 			(uuid "8e92ed50-cf84-494b-b2f1-12dabf603121")
-			(effects (font (size 1.27 1.27)) (justify left)))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(pin "RGMII_RD1_PHY_to_CPU" output
 			(at 152.4 63.5 180)
 			(uuid "774692d4-dfc2-4773-bfa9-a755040731f6")
-			(effects (font (size 1.27 1.27)) (justify left)))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(pin "RGMII_RD2_PHY_to_CPU" output
 			(at 152.4 67.31 180)
 			(uuid "df703723-fca0-40a4-9188-31e3936cf305")
-			(effects (font (size 1.27 1.27)) (justify left)))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(pin "RGMII_RD3_PHY_to_CPU" output
 			(at 152.4 71.12 180)
 			(uuid "65a7efae-3eff-4fd2-a741-a013d45bdbcc")
-			(effects (font (size 1.27 1.27)) (justify left)))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(pin "RGMII_RX_CLK_PHY_to_CPU" output
 			(at 152.4 74.93 180)
 			(uuid "bff67d83-aee1-41c0-904a-8ac0a07b2e24")
-			(effects (font (size 1.27 1.27)) (justify left)))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(pin "RGMII_RX_CTRL_PHY_to_CPU" output
 			(at 152.4 78.74 180)
 			(uuid "4f00fe93-36f4-4fc7-8a87-2625dd83d7c8")
-			(effects (font (size 1.27 1.27)) (justify left)))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(pin "MDIO_MDC_CPU_PHY" input
 			(at 152.4 82.55 180)
 			(uuid "cb50a297-d615-4580-b058-4fb9643d7270")
-			(effects (font (size 1.27 1.27)) (justify left)))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(pin "MDIO_DIO_CPU_PHY" bidirectional
 			(at 152.4 86.36 180)
 			(uuid "e048714d-a57d-4b24-bee4-b1709a7b71c0")
-			(effects (font (size 1.27 1.27)) (justify left)))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(pin "RESET_N_CPU_to_PHY" input
 			(at 152.4 90.17 180)
 			(uuid "6843c858-10a3-4f8a-80fa-fe1a154ba709")
-			(effects (font (size 1.27 1.27)) (justify left)))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(pin "INT_PWDN_N_CPU_PHY" input
 			(at 152.4 93.98 180)
 			(uuid "d57a02e7-57aa-48ed-afc5-dce6da92953a")
-			(effects (font (size 1.27 1.27)) (justify left)))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(pin "VDD_1V1" input
 			(at 152.4 97.79 180)
 			(uuid "99122b6b-4676-4596-abd7-992e35e3a7cd")
-			(effects (font (size 1.27 1.27)) (justify left)))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(pin "VDD_2V5" input
 			(at 152.4 101.6 180)
 			(uuid "22541733-0622-4a56-b703-2ae64726d2f0")
-			(effects (font (size 1.27 1.27)) (justify left)))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(pin "VDD_3V3" input
 			(at 152.4 105.41 180)
 			(uuid "3073ac41-16a4-4d11-bc5e-f5f8dc9569d3")
-			(effects (font (size 1.27 1.27)) (justify left)))
-		(instances (project "pocketbeagle2_ethernet_cap" (path "/82320ebb-b624-4fc9-8d5a-3bc164182d09" (page "3"))))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "pocketbeagle2_ethernet_cap"
+				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09"
+					(page "3")
+				)
+			)
+		)
 	)
 	(sheet
 		(at 152.4 120.65)
@@ -304,24 +1172,63 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(stroke (width 0.1524) (type solid))
-		(fill (color 0 0 0 0.0000))
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
 		(uuid "2e5abd12-85bc-4f85-a7a1-ae06ad2aa1d0")
 		(property "Sheetname" "ldo_1v1"
 			(at 152.4 119.94 0)
-			(effects (font (size 1.27 1.27)) (justify left bottom)))
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
 		(property "Sheetfile" "ldo_1v1.kicad_sch"
 			(at 152.4 132.79 0)
-			(effects (font (size 1.27 1.27)) (justify left top)))
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
 		(pin "VDD_3V3" input
 			(at 152.4 124.46 180)
 			(uuid "510036f5-a6fa-42db-ae2d-395b8bcc9bf8")
-			(effects (font (size 1.27 1.27)) (justify left)))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(pin "VDD_1V1" output
 			(at 152.4 128.27 180)
 			(uuid "d38192d3-1ca3-48db-bb30-e5afd03d8e2f")
-			(effects (font (size 1.27 1.27)) (justify left)))
-		(instances (project "pocketbeagle2_ethernet_cap" (path "/82320ebb-b624-4fc9-8d5a-3bc164182d09" (page "5"))))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "pocketbeagle2_ethernet_cap"
+				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09"
+					(page "5")
+				)
+			)
+		)
 	)
 	(sheet
 		(at 152.4 137.16)
@@ -331,504 +1238,279 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(stroke (width 0.1524) (type solid))
-		(fill (color 0 0 0 0.0000))
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
 		(uuid "9eeabf10-aa36-4e65-8aae-ebc6ff753019")
 		(property "Sheetname" "ldo_2v5"
 			(at 152.4 136.45 0)
-			(effects (font (size 1.27 1.27)) (justify left bottom)))
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
 		(property "Sheetfile" "ldo_2v5.kicad_sch"
 			(at 152.4 149.3 0)
-			(effects (font (size 1.27 1.27)) (justify left top)))
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
 		(pin "VDD_3V3" input
 			(at 152.4 140.97 180)
 			(uuid "93115df0-6731-470c-a313-9b31e57eb818")
-			(effects (font (size 1.27 1.27)) (justify left)))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(pin "VDD_2V5" output
 			(at 152.4 144.78 180)
 			(uuid "00dc1d0b-f899-4bc8-ae42-60d80575f80a")
-			(effects (font (size 1.27 1.27)) (justify left)))
-		(instances (project "pocketbeagle2_ethernet_cap" (path "/82320ebb-b624-4fc9-8d5a-3bc164182d09" (page "6"))))
-	)
-	(wire
-		(pts
-			(xy 78.74 36.83) (xy 82.55 36.83)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
 		)
-		(stroke (width 0) (type default))
-		(uuid "1fdf5b7a-5f49-4525-8691-e80846266ad4")
-	)
-	(label "RGMII_TD0_CPU_to_PHY"
-		(at 82.55 36.83 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "0aba5ada-bed3-4d67-bbcc-ebbf13a58ce2")
-	)
-	(wire
-		(pts
-			(xy 78.74 40.64) (xy 82.55 40.64)
+		(instances
+			(project "pocketbeagle2_ethernet_cap"
+				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09"
+					(page "6")
+				)
+			)
 		)
-		(stroke (width 0) (type default))
-		(uuid "a0b6c58c-4774-4a9a-b54a-90d5043c177d")
 	)
-	(label "RGMII_TD1_CPU_to_PHY"
-		(at 82.55 40.64 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "0a30ce4f-c54e-45b4-a718-75dfa0770f88")
-	)
-	(wire
-		(pts
-			(xy 78.74 44.45) (xy 82.55 44.45)
+	(sheet
+		(at 25.4 33.02)
+		(size 53.34 68.58)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
 		)
-		(stroke (width 0) (type default))
-		(uuid "ab1a9a9f-ed30-428e-9821-be7f74a568aa")
-	)
-	(label "RGMII_TD2_CPU_to_PHY"
-		(at 82.55 44.45 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "332b308f-3404-45fe-9bcd-2cc9dd298af3")
-	)
-	(wire
-		(pts
-			(xy 78.74 48.26) (xy 82.55 48.26)
+		(fill
+			(color 0 0 0 0)
 		)
-		(stroke (width 0) (type default))
-		(uuid "21a6b9d1-322c-4913-9c2a-b746279c2963")
-	)
-	(label "RGMII_TD3_CPU_to_PHY"
-		(at 82.55 48.26 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "9feb69ce-69ef-40a7-9bd4-dc28767aadf2")
-	)
-	(wire
-		(pts
-			(xy 78.74 52.07) (xy 82.55 52.07)
+		(uuid "dfc0d9ea-92ee-4019-ab1c-eca4c3fda1e2")
+		(property "Sheetname" "io"
+			(at 25.4 32.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
 		)
-		(stroke (width 0) (type default))
-		(uuid "69488d21-7a16-4f92-8e05-16a5ebdba037")
-	)
-	(label "RGMII_TX_CLK_CPU_to_PHY"
-		(at 82.55 52.07 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "d15d25f6-c1f2-45a5-89d9-5c7d7279e868")
-	)
-	(wire
-		(pts
-			(xy 78.74 55.88) (xy 82.55 55.88)
+		(property "Sheetfile" "io.kicad_sch"
+			(at 25.4 102.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
 		)
-		(stroke (width 0) (type default))
-		(uuid "a730d994-8046-4d6f-8aae-490a70ab1b66")
-	)
-	(label "RGMII_TX_CTRL_CPU_to_PHY"
-		(at 82.55 55.88 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "25c895bc-5c52-45ec-9c83-bc156ddc5c76")
-	)
-	(wire
-		(pts
-			(xy 78.74 59.69) (xy 82.55 59.69)
+		(pin "RGMII_TD0_CPU_to_PHY" output
+			(at 78.74 36.83 0)
+			(uuid "40ed0da9-1aff-4ba3-99ae-37963cb48c4a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
 		)
-		(stroke (width 0) (type default))
-		(uuid "6c7f0af5-e5fd-41e7-88c0-bdd459dec474")
-	)
-	(label "RGMII_RD0_PHY_to_CPU"
-		(at 82.55 59.69 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "6cdcd930-b947-4501-ad82-8cffad696405")
-	)
-	(wire
-		(pts
-			(xy 78.74 63.5) (xy 82.55 63.5)
+		(pin "RGMII_TD1_CPU_to_PHY" output
+			(at 78.74 40.64 0)
+			(uuid "4b44a05a-352e-4b3a-b0e0-0275fdc8cd41")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
 		)
-		(stroke (width 0) (type default))
-		(uuid "915fe972-e3ee-4e81-a82b-ef3f14bb12a7")
-	)
-	(label "RGMII_RD1_PHY_to_CPU"
-		(at 82.55 63.5 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "aee40c1d-3f3d-44c0-af25-bedb7c147c31")
-	)
-	(wire
-		(pts
-			(xy 78.74 67.31) (xy 82.55 67.31)
+		(pin "RGMII_TD2_CPU_to_PHY" output
+			(at 78.74 44.45 0)
+			(uuid "8aaf1d84-cb7c-4f61-a135-b89d1b7e7999")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
 		)
-		(stroke (width 0) (type default))
-		(uuid "8159ee12-d776-4c0e-b94a-8f0a3652e043")
-	)
-	(label "RGMII_RD2_PHY_to_CPU"
-		(at 82.55 67.31 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "6d2e774d-2f08-4921-b1d1-93b8a6a05481")
-	)
-	(wire
-		(pts
-			(xy 78.74 71.12) (xy 82.55 71.12)
+		(pin "RGMII_TD3_CPU_to_PHY" output
+			(at 78.74 48.26 0)
+			(uuid "dbfdacca-3dd0-4427-940c-56ce1f254840")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
 		)
-		(stroke (width 0) (type default))
-		(uuid "d2ced528-3493-400e-80e9-95a93acb353f")
-	)
-	(label "RGMII_RD3_PHY_to_CPU"
-		(at 82.55 71.12 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "2cf557aa-c2b5-4190-abe0-ff5de6767676")
-	)
-	(wire
-		(pts
-			(xy 78.74 74.93) (xy 82.55 74.93)
+		(pin "RGMII_TX_CLK_CPU_to_PHY" output
+			(at 78.74 52.07 0)
+			(uuid "06d6de55-1992-44c4-bf15-425adc9bf65e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
 		)
-		(stroke (width 0) (type default))
-		(uuid "2ddd9317-fdcc-4ff5-88c3-5e2120368a5d")
-	)
-	(label "RGMII_RX_CLK_PHY_to_CPU"
-		(at 82.55 74.93 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "a68a84a4-9fa7-4dc1-91e5-8dffd681e1a6")
-	)
-	(wire
-		(pts
-			(xy 78.74 78.74) (xy 82.55 78.74)
+		(pin "RGMII_TX_CTRL_CPU_to_PHY" output
+			(at 78.74 55.88 0)
+			(uuid "6d009015-810c-46a2-a652-45036740577d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
 		)
-		(stroke (width 0) (type default))
-		(uuid "f977ac60-2308-4d27-8aef-00a703f337e4")
-	)
-	(label "RGMII_RX_CTRL_PHY_to_CPU"
-		(at 82.55 78.74 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "db80f960-2224-44b2-8e9f-071e23dde00c")
-	)
-	(wire
-		(pts
-			(xy 78.74 82.55) (xy 82.55 82.55)
+		(pin "RGMII_RD0_PHY_to_CPU" input
+			(at 78.74 59.69 0)
+			(uuid "5bf204c4-58eb-4d1e-89f8-de7a3c4df684")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
 		)
-		(stroke (width 0) (type default))
-		(uuid "ba2fc89a-0554-42b3-84d4-5ffb799e1798")
-	)
-	(label "MDIO_MDC_CPU_PHY"
-		(at 82.55 82.55 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "417c553b-37be-4fdc-af5a-7b4f7cb8721d")
-	)
-	(wire
-		(pts
-			(xy 78.74 86.36) (xy 82.55 86.36)
+		(pin "RGMII_RD1_PHY_to_CPU" input
+			(at 78.74 63.5 0)
+			(uuid "a3e2df51-299d-4d39-b5d6-e674b71183a5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
 		)
-		(stroke (width 0) (type default))
-		(uuid "90824d49-41a9-4b2a-8385-385d228f37da")
-	)
-	(label "MDIO_DIO_CPU_PHY"
-		(at 82.55 86.36 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "11439570-648a-4713-8741-0c7c2f5e6275")
-	)
-	(wire
-		(pts
-			(xy 78.74 90.17) (xy 82.55 90.17)
+		(pin "RGMII_RD2_PHY_to_CPU" input
+			(at 78.74 67.31 0)
+			(uuid "6b506ea6-fe70-49ef-acc0-2fa8898df7ef")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
 		)
-		(stroke (width 0) (type default))
-		(uuid "13e2a2e4-ccf3-4cde-8f8b-e9a0a7dcecf0")
-	)
-	(label "RESET_N_CPU_to_PHY"
-		(at 82.55 90.17 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "df9b0ea9-c2ca-494b-8491-7759d65ddf9a")
-	)
-	(wire
-		(pts
-			(xy 78.74 93.98) (xy 82.55 93.98)
+		(pin "RGMII_RD3_PHY_to_CPU" input
+			(at 78.74 71.12 0)
+			(uuid "16aa9cab-31e0-474e-b09d-a45b99e560f0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
 		)
-		(stroke (width 0) (type default))
-		(uuid "c384cb55-25fd-4c4a-8c0c-c441cca421f1")
-	)
-	(label "INT_PWDN_N_CPU_PHY"
-		(at 82.55 93.98 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "6037224b-0552-436c-a4de-173983811ad0")
-	)
-	(wire
-		(pts
-			(xy 78.74 97.79) (xy 82.55 97.79)
+		(pin "RGMII_RX_CLK_PHY_to_CPU" input
+			(at 78.74 74.93 0)
+			(uuid "e0e05361-c469-424d-a27c-9ccf3d7e478c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
 		)
-		(stroke (width 0) (type default))
-		(uuid "46383dcf-5221-4794-bac1-e5bf58e70c2a")
-	)
-	(label "VDD_3V3"
-		(at 82.55 97.79 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
-		(uuid "646b6f6b-c3bd-445d-bfc4-a4ff2b20de2b")
-	)
-	(wire
-		(pts
-			(xy 152.4 36.83) (xy 148.59 36.83)
+		(pin "RGMII_RX_CTRL_PHY_to_CPU" input
+			(at 78.74 78.74 0)
+			(uuid "dfb2957e-18d8-4193-8841-2aa4a68ac1b6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
 		)
-		(stroke (width 0) (type default))
-		(uuid "e2663a50-6b2a-43c3-aac0-15238b8efb6a")
-	)
-	(label "RGMII_TD0_CPU_to_PHY"
-		(at 148.59 36.83 180)
-		(effects (font (size 1.27 1.27)) (justify right bottom))
-		(uuid "0d389e4a-cb7d-4d97-a0d5-653b28673d64")
-	)
-	(wire
-		(pts
-			(xy 152.4 40.64) (xy 148.59 40.64)
+		(pin "MDIO_MDC_CPU_PHY" output
+			(at 78.74 82.55 0)
+			(uuid "7ceef4cf-8688-41da-b497-9ac0c67c689f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
 		)
-		(stroke (width 0) (type default))
-		(uuid "5e655dc6-ba37-4906-83d6-05c41843b046")
-	)
-	(label "RGMII_TD1_CPU_to_PHY"
-		(at 148.59 40.64 180)
-		(effects (font (size 1.27 1.27)) (justify right bottom))
-		(uuid "b23a76a7-d7cd-41c5-acf8-1e38bca501fc")
-	)
-	(wire
-		(pts
-			(xy 152.4 44.45) (xy 148.59 44.45)
+		(pin "MDIO_DIO_CPU_PHY" bidirectional
+			(at 78.74 86.36 0)
+			(uuid "8dc9ecab-31f0-4412-8e67-6007e5f8e333")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
 		)
-		(stroke (width 0) (type default))
-		(uuid "04ceb285-ada6-49f9-aaec-9ffb708a47ee")
-	)
-	(label "RGMII_TD2_CPU_to_PHY"
-		(at 148.59 44.45 180)
-		(effects (font (size 1.27 1.27)) (justify right bottom))
-		(uuid "57e32b45-892a-446c-a84e-63400445989f")
-	)
-	(wire
-		(pts
-			(xy 152.4 48.26) (xy 148.59 48.26)
+		(pin "RESET_N_CPU_to_PHY" output
+			(at 78.74 90.17 0)
+			(uuid "1af699dd-c6bd-483a-8b1e-50e330e7d079")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
 		)
-		(stroke (width 0) (type default))
-		(uuid "1ca76906-ba04-489b-aa89-d93ec2b6dcc8")
-	)
-	(label "RGMII_TD3_CPU_to_PHY"
-		(at 148.59 48.26 180)
-		(effects (font (size 1.27 1.27)) (justify right bottom))
-		(uuid "e3ec650f-150b-4ca1-bb39-06bdd3c314fd")
-	)
-	(wire
-		(pts
-			(xy 152.4 52.07) (xy 148.59 52.07)
+		(pin "INT_PWDN_N_CPU_PHY" bidirectional
+			(at 78.74 93.98 0)
+			(uuid "b0fce7a1-2a11-4587-978f-fd3695834d60")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
 		)
-		(stroke (width 0) (type default))
-		(uuid "8d702a79-be6e-4efe-9bd7-1f160f24be46")
-	)
-	(label "RGMII_TX_CLK_CPU_to_PHY"
-		(at 148.59 52.07 180)
-		(effects (font (size 1.27 1.27)) (justify right bottom))
-		(uuid "0ec1da00-5b75-4f2e-a227-278f66e64ad0")
-	)
-	(wire
-		(pts
-			(xy 152.4 55.88) (xy 148.59 55.88)
+		(pin "VDD_3V3" output
+			(at 78.74 97.79 0)
+			(uuid "5c6c213b-730f-4100-a853-3dee283d6aee")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
 		)
-		(stroke (width 0) (type default))
-		(uuid "5bedf852-d980-4af9-953b-43daab1c1670")
-	)
-	(label "RGMII_TX_CTRL_CPU_to_PHY"
-		(at 148.59 55.88 180)
-		(effects (font (size 1.27 1.27)) (justify right bottom))
-		(uuid "038713bc-7380-4fa1-b4e7-e95dddc0db1f")
-	)
-	(wire
-		(pts
-			(xy 152.4 59.69) (xy 148.59 59.69)
+		(instances
+			(project "pocketbeagle2_ethernet_cap"
+				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09"
+					(page "4")
+				)
+			)
 		)
-		(stroke (width 0) (type default))
-		(uuid "a3a0288d-cef0-4414-8cc8-5a58fc987215")
-	)
-	(label "RGMII_RD0_PHY_to_CPU"
-		(at 148.59 59.69 180)
-		(effects (font (size 1.27 1.27)) (justify right bottom))
-		(uuid "8a045cd1-04ed-45bc-96a4-54a1de61c8fb")
-	)
-	(wire
-		(pts
-			(xy 152.4 63.5) (xy 148.59 63.5)
-		)
-		(stroke (width 0) (type default))
-		(uuid "5af0356c-7dbf-4b98-a3ac-87ad56d7ba9a")
-	)
-	(label "RGMII_RD1_PHY_to_CPU"
-		(at 148.59 63.5 180)
-		(effects (font (size 1.27 1.27)) (justify right bottom))
-		(uuid "923505b9-af8e-4c61-8e9b-6cb746d7181b")
-	)
-	(wire
-		(pts
-			(xy 152.4 67.31) (xy 148.59 67.31)
-		)
-		(stroke (width 0) (type default))
-		(uuid "dc16f8da-f460-4faa-b548-1ea1abf5c8e5")
-	)
-	(label "RGMII_RD2_PHY_to_CPU"
-		(at 148.59 67.31 180)
-		(effects (font (size 1.27 1.27)) (justify right bottom))
-		(uuid "0012fe2b-0c3c-499c-baaf-cafb487dc418")
-	)
-	(wire
-		(pts
-			(xy 152.4 71.12) (xy 148.59 71.12)
-		)
-		(stroke (width 0) (type default))
-		(uuid "06b928e7-f713-4670-8f23-e72e661be3d5")
-	)
-	(label "RGMII_RD3_PHY_to_CPU"
-		(at 148.59 71.12 180)
-		(effects (font (size 1.27 1.27)) (justify right bottom))
-		(uuid "7005df22-aab4-4f04-a75f-71e6a065955b")
-	)
-	(wire
-		(pts
-			(xy 152.4 74.93) (xy 148.59 74.93)
-		)
-		(stroke (width 0) (type default))
-		(uuid "5d94f284-6ae0-43e5-9d73-7d789f026743")
-	)
-	(label "RGMII_RX_CLK_PHY_to_CPU"
-		(at 148.59 74.93 180)
-		(effects (font (size 1.27 1.27)) (justify right bottom))
-		(uuid "23bbcb77-2a8c-49c8-8489-7a3d035fd2d7")
-	)
-	(wire
-		(pts
-			(xy 152.4 78.74) (xy 148.59 78.74)
-		)
-		(stroke (width 0) (type default))
-		(uuid "b182b762-d49a-4a9b-948d-f40389355601")
-	)
-	(label "RGMII_RX_CTRL_PHY_to_CPU"
-		(at 148.59 78.74 180)
-		(effects (font (size 1.27 1.27)) (justify right bottom))
-		(uuid "3132075e-3d2b-465e-93c8-c414314448d4")
-	)
-	(wire
-		(pts
-			(xy 152.4 82.55) (xy 148.59 82.55)
-		)
-		(stroke (width 0) (type default))
-		(uuid "2714cf77-dab2-4614-a005-87d627bc5184")
-	)
-	(label "MDIO_MDC_CPU_PHY"
-		(at 148.59 82.55 180)
-		(effects (font (size 1.27 1.27)) (justify right bottom))
-		(uuid "39d37d85-4169-4264-8645-b29f0b2c6199")
-	)
-	(wire
-		(pts
-			(xy 152.4 86.36) (xy 148.59 86.36)
-		)
-		(stroke (width 0) (type default))
-		(uuid "67b12eb4-b8ef-434f-a07d-9bab010fb4d6")
-	)
-	(label "MDIO_DIO_CPU_PHY"
-		(at 148.59 86.36 180)
-		(effects (font (size 1.27 1.27)) (justify right bottom))
-		(uuid "9fcba05c-9106-4a67-a8c3-737e66a9a5ae")
-	)
-	(wire
-		(pts
-			(xy 152.4 90.17) (xy 148.59 90.17)
-		)
-		(stroke (width 0) (type default))
-		(uuid "0b404bef-26dc-4009-bd34-ea04a3db50c3")
-	)
-	(label "RESET_N_CPU_to_PHY"
-		(at 148.59 90.17 180)
-		(effects (font (size 1.27 1.27)) (justify right bottom))
-		(uuid "aa773765-a757-4b7f-8280-7300816ecbfd")
-	)
-	(wire
-		(pts
-			(xy 152.4 93.98) (xy 148.59 93.98)
-		)
-		(stroke (width 0) (type default))
-		(uuid "933ec252-5f87-4e72-90cf-96262721d7ea")
-	)
-	(label "INT_PWDN_N_CPU_PHY"
-		(at 148.59 93.98 180)
-		(effects (font (size 1.27 1.27)) (justify right bottom))
-		(uuid "96077176-4515-4234-bab1-87ac629f81e0")
-	)
-	(wire
-		(pts
-			(xy 152.4 97.79) (xy 148.59 97.79)
-		)
-		(stroke (width 0) (type default))
-		(uuid "2f133f83-215b-4a2f-893e-125d4d38ec46")
-	)
-	(label "VDD_1V1"
-		(at 148.59 97.79 180)
-		(effects (font (size 1.27 1.27)) (justify right bottom))
-		(uuid "9d5ca046-d7f6-4e04-bdc8-5988f0816576")
-	)
-	(wire
-		(pts
-			(xy 152.4 101.6) (xy 148.59 101.6)
-		)
-		(stroke (width 0) (type default))
-		(uuid "e2b5e61a-7db4-4b20-a9a8-296f080a01e3")
-	)
-	(label "VDD_2V5"
-		(at 148.59 101.6 180)
-		(effects (font (size 1.27 1.27)) (justify right bottom))
-		(uuid "01cb53d5-68c2-4169-be66-9da461a97a2d")
-	)
-	(wire
-		(pts
-			(xy 152.4 105.41) (xy 148.59 105.41)
-		)
-		(stroke (width 0) (type default))
-		(uuid "2eb05e9f-f5b1-4c23-b4fd-c1d995172535")
-	)
-	(label "VDD_3V3"
-		(at 148.59 105.41 180)
-		(effects (font (size 1.27 1.27)) (justify right bottom))
-		(uuid "fb289b88-8f78-47ba-9ec3-504d5aa49aeb")
-	)
-	(wire
-		(pts
-			(xy 152.4 124.46) (xy 148.59 124.46)
-		)
-		(stroke (width 0) (type default))
-		(uuid "a6aeadfa-cf52-41f3-b275-ddf026fc8a66")
-	)
-	(label "VDD_3V3"
-		(at 148.59 124.46 180)
-		(effects (font (size 1.27 1.27)) (justify right bottom))
-		(uuid "dd466297-f3a3-4b8e-8691-18985929a01c")
-	)
-	(wire
-		(pts
-			(xy 152.4 128.27) (xy 148.59 128.27)
-		)
-		(stroke (width 0) (type default))
-		(uuid "847c3796-ed8e-486d-a770-7094c9a8a029")
-	)
-	(label "VDD_1V1"
-		(at 148.59 128.27 180)
-		(effects (font (size 1.27 1.27)) (justify right bottom))
-		(uuid "84f4c732-9d4a-42a8-8104-d968b960bcee")
-	)
-	(wire
-		(pts
-			(xy 152.4 140.97) (xy 148.59 140.97)
-		)
-		(stroke (width 0) (type default))
-		(uuid "5fab1f76-ed8b-43d8-8730-203e4b7c561f")
-	)
-	(label "VDD_3V3"
-		(at 148.59 140.97 180)
-		(effects (font (size 1.27 1.27)) (justify right bottom))
-		(uuid "20031c87-2105-42f8-84b1-6de8ecefc13c")
-	)
-	(wire
-		(pts
-			(xy 152.4 144.78) (xy 148.59 144.78)
-		)
-		(stroke (width 0) (type default))
-		(uuid "0753b9ea-a3ee-43c9-994d-086f2beb500a")
-	)
-	(label "VDD_2V5"
-		(at 148.59 144.78 180)
-		(effects (font (size 1.27 1.27)) (justify right bottom))
-		(uuid "f06918ef-33d2-488f-babf-dbd44eafbbb5")
 	)
 	(sheet_instances
 		(path "/"
