@@ -2922,7 +2922,7 @@
 	)
 	(text "Power inputs a stacked module may drive:"
 		(exclude_from_sim no)
-		(at 13.462 151.638 0)
+		(at 13.208 166.878 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2933,8 +2933,8 @@
 	)
 	(text_box "Left over signals that can be re-used when stacking caps"
 		(exclude_from_sim no)
-		(at 231.14 39.37 0)
-		(size 22.86 11.43)
+		(at 161.29 20.32 0)
+		(size 22.86 13.97)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
