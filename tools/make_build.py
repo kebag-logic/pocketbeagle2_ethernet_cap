@@ -16,8 +16,22 @@ OUT = os.environ.get("BUILD_OUT", os.path.join(PRJ, "build"))
 FAB, ASM, DOC = (os.path.join(OUT, d) for d in ("fabrication", "assembly", "docs"))
 KL = ["-D", f"KL_LIB={PRJ}/kebag_logic_kicad_library"]
 NOT_ASSEMBLED = {"U1", "J1"}   # PB2 module plugs onto J2/J3; J1 magjack is not stocked at LCSC: hand-solder
-# JLCPCB rotation corrections (their part model orientation differs from the KiCad footprint), degrees CCW
-ROT_FIX = {"J2": 90, "J3": 90}   # HC-PZ254-11.5L-2x18PZ model is drawn horizontal, the board headers run vertical
+# JLCPCB rotation corrections per footprint (their part model orientation differs from the KiCad footprint),
+# degrees CCW, checked against the JLC placement preview (pin-1 dot / cathode bar vs the board's pin-1 marks)
+ROT_FIX = [
+    (r"^18x02_2\.54mm_Header", 90),     # HC-PZ254-11.5L-2x18PZ model drawn horizontal, headers run vertical
+    (r"^HTQFP-", 270),                  # U2 DP83867: JLC pin 1 one corner clockwise of KiCad's
+    (r"^SOT-23", 180),                  # Q1-Q3 (SOT-23), U3/U4 (SOT-23-5)
+    (r"^ECS-2520MV", 270),              # Y1 oscillator
+    (r"^LED_0805", 180),                # D1-D3: JLC cathode bar on the other pad
+]
+
+
+def rot_fix(package):
+    for pat, deg in ROT_FIX:
+        if re.match(pat, package):
+            return deg
+    return 0
 LAYERS = "F.Cu,In1.Cu,In2.Cu,B.Cu,F.Paste,B.Paste,F.Silkscreen,B.Silkscreen,F.Mask,B.Mask,Edge.Cuts"
 nat = lambda s: [int(t) if t.isdigit() else t for t in re.split(r"(\d+)", s)]
 
@@ -123,7 +137,7 @@ def cpl(refs):
             if abs(cx - x) > 0.05 or abs(-cy - y) > 0.05:
                 moved.append(f'{r["Ref"]} ({x:.2f},{y:.2f})->({cx:.2f},{-cy:.2f})')
                 x, y = cx, -cy
-            rot = (float(r["Rot"]) + ROT_FIX.get(r["Ref"], 0)) % 360
+            rot = (float(r["Rot"]) + rot_fix(r["Package"])) % 360
             w.writerow([r["Ref"], f"{x:.4f}mm", f"{y:.4f}mm", "Top" if r["Side"] == "top" else "Bottom",
                         f"{rot:.1f}"]); n += 1
     print("assembly: CPL", n, "placements; centred off-origin parts:", moved)

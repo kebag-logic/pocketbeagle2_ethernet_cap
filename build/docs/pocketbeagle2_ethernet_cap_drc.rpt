@@ -1,8 +1,12 @@
 ** Drc report for pocketbeagle2_ethernet_cap.kicad_pcb **
-** Created on 2026-09-25T18:43:25 **
+** Created on 2026-09-25T19:00:34 **
 ** Report includes: Errors, Warnings, Exclusions **
 
-** Found 80 DRC violations **
+** Found 82 DRC violations **
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(205.1422 mm, 96.7150 mm): Segment of C33 on F.Silkscreen
+    @(205.3000 mm, 96.4100 mm): Polygon of U4 on F.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
     @(202.9400 mm, 96.4600 mm): Segment of U4 on F.Silkscreen
@@ -11,6 +15,10 @@
     Local override; warning
     @(204.7600 mm, 96.4600 mm): Segment of U4 on F.Silkscreen
     @(202.2768 mm, 97.1213 mm): PTH pad 1 [unconnected-(J1-VCC-Pad1)] of J1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(205.3000 mm, 96.4100 mm): Polygon of U4 on F.Silkscreen
+    @(205.7300 mm, 97.0750 mm): Pad 2 [GND] of C33 on F.Cu
 [lib_footprint_mismatch]: Footprint 'ECS-2520MV' does not match copy in library 'KL_Footprints'
     Local override; warning
     @(204.7000 mm, 90.4000 mm): Footprint Y1
@@ -324,7 +332,7 @@
 [unconnected_items]: Missing connection between items
     Local override; error
     @(185.1300 mm, 89.0600 mm): PTH pad 24 [/io/VOUT] of U1
-    @(207.9900 mm, 76.3600 mm): PTH pad 13 [/io/VOUT] of J3
+    @(207.9900 mm, 76.3600 mm): PTH pad 49 [/io/VOUT] of U1
 
 ** Found 84 Footprint errors **
 [footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
@@ -338,7 +346,7 @@
     @(188.4000 mm, 93.4000 mm): Footprint C3
 [footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
     Local override; warning
-    @(203.9500 mm, 97.1500 mm): Footprint C5
+    @(188.1000 mm, 97.0000 mm): Footprint C5
 [footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
     Local override; warning
     @(198.9000 mm, 75.7000 mm): Footprint C6
@@ -359,7 +367,7 @@
     @(212.9000 mm, 95.7000 mm): Footprint C11
 [footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
     Local override; warning
-    @(187.4000 mm, 97.2000 mm): Footprint C12
+    @(180.2000 mm, 95.9000 mm): Footprint C12
 [footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
     Local override; warning
     @(204.4000 mm, 78.9000 mm): Footprint C13
@@ -410,7 +418,7 @@
     @(190.5000 mm, 95.3000 mm): Footprint C39
 [footprint_symbol_field_mismatch]: Missing symbol field 'Dielectric' in footprint
     Local override; warning
-    @(188.9000 mm, 97.0000 mm): Footprint C40
+    @(180.1000 mm, 93.7000 mm): Footprint C40
 [footprint_symbol_field_mismatch]: Missing symbol field 'Sim.Pins' in footprint
     Local override; warning
     @(188.6000 mm, 57.3000 mm): Footprint D1
@@ -539,13 +547,13 @@
     @(204.1700 mm, 76.3000 mm): Footprint U3
 [footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
     Local override; warning
-    @(202.5000 mm, 98.8000 mm): Footprint C32
+    @(208.0000 mm, 106.6000 mm): Footprint C32
 [footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
     Local override; warning
-    @(204.0000 mm, 98.1000 mm): Footprint C33
+    @(205.2500 mm, 97.0750 mm): Footprint C33
 [footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
     Local override; warning
-    @(205.4000 mm, 97.6000 mm): Footprint C35
+    @(202.5000 mm, 98.8000 mm): Footprint C35
 [footprint_symbol_field_mismatch]: Field 'Description' differs (PCB: '', Schematic: 'test point')
     Local override; warning
     @(192.5000 mm, 93.8000 mm): Footprint TP6
@@ -557,13 +565,13 @@
     @(203.8500 mm, 94.9000 mm): Footprint U4
 [footprint_symbol_field_mismatch]: Missing symbol field 'Dielectric' in footprint
     Local override; warning
-    @(204.6000 mm, 100.9000 mm): Footprint C36
+    @(204.6000 mm, 99.8500 mm): Footprint C36
 [footprint_symbol_field_mismatch]: Missing symbol field 'PARTREV' in footprint
     Local override; warning
     @(196.5618 mm, 106.0113 mm): Footprint J1
 [footprint_symbol_field_mismatch]: Missing symbol field 'Power_in_W' in footprint
     Local override; warning
-    @(188.5000 mm, 100.9000 mm): Footprint R29
+    @(188.5000 mm, 99.8000 mm): Footprint R29
 [footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
     Local override; warning
     @(204.7000 mm, 92.6000 mm): Footprint C4
