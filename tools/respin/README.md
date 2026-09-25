@@ -35,4 +35,4 @@ These are archived as run. They also import the working-copy planners (`rg.py`, 
 | `apply_stage.py` | Checks live pads against the model, removes the pruned copper (exact endpoints), then pushes the plan. |
 | `silk_place.py` | Places reference designators and P1/P2 labels at 1.0/0.15 mm with no overlaps. |
 
-`../make_production.py` writes `production/`: the Gerber and drill zip, the JLCPCB BOM (LCSC part numbers) and the CPL.
+`../make_build.py` writes `build/`: fabrication (Gerbers, drill, zip, IPC-D-356), assembly (JLC BOM/CPL, full BOM, drawing) and docs (schematic PDF, STEP, DRC report).

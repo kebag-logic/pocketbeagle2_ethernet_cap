@@ -7,7 +7,7 @@ from shapely.geometry import Point, LineString, Polygon, box
 from shapely import affinity
 from shapely.ops import unary_union
 
-BOARD = "/home/alex/prjs/ames/switch/pocketbeagle2_ethernet_cap/pocketbeagle2_ethernet_cap.kicad_pcb"
+BOARD = __import__("os").path.join(__import__("os").path.dirname(__import__("os").path.abspath(__file__)), "..", "..", "pocketbeagle2_ethernet_cap.kicad_pcb")
 CU = ["F.Cu", "In1.Cu", "In2.Cu", "B.Cu"]
 
 

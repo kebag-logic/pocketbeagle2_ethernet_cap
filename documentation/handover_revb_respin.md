@@ -3,7 +3,7 @@
 Date: 2026-09-25. Project: PocketBeagle 2 Ethernet cape (DP83867, KiCad 10.0.6).
 
 **State (end of 2026-09-25):** the re-spin is **routed, DRC-clean on copper and committed** on branch
-`revb-respin`, with **every SMD part on the top side**. JLCPCB Gerbers, BOM and CPL are in `production/`.
+`revb-respin`, with **every SMD part on the top side**. JLCPCB Gerbers, BOM and CPL are in `build/`.
 Sections 2.1–2.2 are the schematic/library history; 2.3 onward is the current board.
 
 ---
@@ -137,7 +137,7 @@ bottom face, so the PB2 is component-side up. The J1 Bel STEP is **not** committ
 - P1/P2 labels and pin numbers are kept.
 - 19 crowded references are hidden on silk; they're still on F.Fab.
 
-**Production:** `production/` holds the Gerber and drill zip, `*_bom_jlcpcb.csv` (LCSC #) and `*_cpl_jlcpcb.csv`. See `production/README.md`. Regenerate with `python tools/make_production.py`.
+**Production:** `build/` holds the Gerber and drill zip, `*_bom_jlcpcb.csv` (LCSC #) and `*_cpl_jlcpcb.csv`. See `build/README.md`. Regenerate with `python tools/make_build.py`.
 
 ---
 

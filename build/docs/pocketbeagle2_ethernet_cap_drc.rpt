@@ -1,0 +1,592 @@
+** Drc report for pocketbeagle2_ethernet_cap.kicad_pcb **
+** Created on 2026-09-25T18:12:51 **
+** Report includes: Errors, Warnings, Exclusions **
+
+** Found 80 DRC violations **
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(202.9400 mm, 96.4600 mm): Segment of U4 on F.Silkscreen
+    @(202.2768 mm, 97.1213 mm): PTH pad 1 [unconnected-(J1-VCC-Pad1)] of J1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(204.7600 mm, 96.4600 mm): Segment of U4 on F.Silkscreen
+    @(202.2768 mm, 97.1213 mm): PTH pad 1 [unconnected-(J1-VCC-Pad1)] of J1
+[lib_footprint_mismatch]: Footprint 'ECS-2520MV' does not match copy in library 'KL_Footprints'
+    Local override; warning
+    @(204.7000 mm, 90.4000 mm): Footprint Y1
+[lib_footprint_mismatch]: Footprint 'BeagleBoard_PocketBeagle' does not match copy in library 'KL_Footprints'
+    Local override; warning
+    @(182.5900 mm, 61.1200 mm): Footprint U1
+[lib_footprint_mismatch]: Footprint 'HTQFP-64_10x10mm_P0.5mm' does not match copy in library 'KL_Footprints'
+    Local override; warning
+    @(196.5600 mm, 84.7250 mm): Footprint U2
+[lib_footprint_mismatch]: Footprint 'BEL_1840888-1' does not match copy in library 'KL_Footprints'
+    Local override; warning
+    @(196.5618 mm, 106.0113 mm): Footprint J1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(182.5900 mm, 61.1200 mm): PTH pad 1 [/io/VIN] of J2
+    @(182.5900 mm, 61.1200 mm): PTH pad 1 [/io/VIN] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(185.1300 mm, 61.1200 mm): PTH pad 2 [/RGMII_TX_CTRL_CPU_to_PHY] of U1
+    @(185.1300 mm, 61.1200 mm): PTH pad 2 [/RGMII_TX_CTRL_CPU_to_PHY] of J2
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(182.5900 mm, 63.6600 mm): PTH pad 3 [/io/USB1_DRVVBUS] of U1
+    @(182.5900 mm, 63.6600 mm): PTH pad 3 [/io/USB1_DRVVBUS] of J2
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(185.1300 mm, 63.6600 mm): PTH pad 4 [/RGMII_TD0_CPU_to_PHY] of J2
+    @(185.1300 mm, 63.6600 mm): PTH pad 4 [/RGMII_TD0_CPU_to_PHY] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(182.5900 mm, 66.2000 mm): PTH pad 5 [/io/USB1_VBUS] of J2
+    @(182.5900 mm, 66.2000 mm): PTH pad 5 [/io/USB1_VBUS] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(185.1300 mm, 66.2000 mm): PTH pad 6 [/INT_PWDN_N_CPU_PHY] of J2
+    @(185.1300 mm, 66.2000 mm): PTH pad 6 [/INT_PWDN_N_CPU_PHY] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(182.5900 mm, 68.7400 mm): PTH pad 7 [/io/USB1_VIN] of U1
+    @(182.5900 mm, 68.7400 mm): PTH pad 7 [/io/USB1_VIN] of J2
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(185.1300 mm, 68.7400 mm): PTH pad 8 [/RESET_N_CPU_to_PHY] of J2
+    @(185.1300 mm, 68.7400 mm): PTH pad 8 [/RESET_N_CPU_to_PHY] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(182.5900 mm, 71.2800 mm): PTH pad 9 [/io/USB1_DN] of U1
+    @(182.5900 mm, 71.2800 mm): PTH pad 9 [/io/USB1_DN] of J2
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(185.1300 mm, 71.2800 mm): PTH pad 10 [/io/EXT_REFCLK1] of U1
+    @(185.1300 mm, 71.2800 mm): PTH pad 10 [/io/EXT_REFCLK1] of J2
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(182.5900 mm, 73.8200 mm): PTH pad 11 [/io/USB1_DP] of J2
+    @(182.5900 mm, 73.8200 mm): PTH pad 11 [/io/USB1_DP] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(185.1300 mm, 73.8200 mm): PTH pad 12 [/io/SPI0_MOSI] of U1
+    @(185.1300 mm, 73.8200 mm): PTH pad 12 [/io/SPI0_MOSI] of J2
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(182.5900 mm, 76.3600 mm): PTH pad 13 [/io/MCASP_AXR12] of U1
+    @(182.5900 mm, 76.3600 mm): PTH pad 13 [/io/MCASP_AXR12] of J2
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(185.1300 mm, 76.3600 mm): PTH pad 14 [/VDD_3V3] of J2
+    @(185.1300 mm, 76.3600 mm): PTH pad 14 [/VDD_3V3] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(182.5900 mm, 78.9000 mm): PTH pad 15 [GND] of U1
+    @(182.5900 mm, 78.9000 mm): PTH pad 15 [GND] of J2
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(185.1300 mm, 78.9000 mm): PTH pad 16 [GND] of J2
+    @(185.1300 mm, 78.9000 mm): PTH pad 16 [GND] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(182.5900 mm, 81.4400 mm): PTH pad 17 [/io/AIN_VREF_N] of J2
+    @(182.5900 mm, 81.4400 mm): PTH pad 17 [/io/AIN_VREF_N] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(185.1300 mm, 81.4400 mm): PTH pad 18 [/io/AIN_VREF_P] of U1
+    @(185.1300 mm, 81.4400 mm): PTH pad 18 [/io/AIN_VREF_P] of J2
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(182.5900 mm, 83.9800 mm): PTH pad 19 [/RGMII_RX_CTRL_PHY_to_CPU] of U1
+    @(182.5900 mm, 83.9800 mm): PTH pad 19 [/RGMII_RX_CTRL_PHY_to_CPU] of J2
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(185.1300 mm, 83.9800 mm): PTH pad 20 [/io/GPIO20] of U1
+    @(185.1300 mm, 83.9800 mm): PTH pad 20 [/io/GPIO20] of J2
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(182.5900 mm, 86.5200 mm): PTH pad 21 [/RGMII_RD3_PHY_to_CPU] of J2
+    @(182.5900 mm, 86.5200 mm): PTH pad 21 [/RGMII_RD3_PHY_to_CPU] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(185.1300 mm, 86.5200 mm): PTH pad 22 [GND] of J2
+    @(185.1300 mm, 86.5200 mm): PTH pad 22 [GND] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(182.5900 mm, 89.0600 mm): PTH pad 23 [/RGMII_RD2_PHY_to_CPU] of U1
+    @(182.5900 mm, 89.0600 mm): PTH pad 23 [/RGMII_RD2_PHY_to_CPU] of J2
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(185.1300 mm, 89.0600 mm): PTH pad 24 [/io/VOUT] of U1
+    @(185.1300 mm, 89.0600 mm): PTH pad 24 [/io/VOUT] of J2
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(182.5900 mm, 91.6000 mm): PTH pad 25 [/RGMII_RD1_PHY_to_CPU] of J2
+    @(182.5900 mm, 91.6000 mm): PTH pad 25 [/RGMII_RD1_PHY_to_CPU] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(185.1300 mm, 91.6000 mm): PTH pad 26 [/io/I2C2_SDA] of J2
+    @(185.1300 mm, 91.6000 mm): PTH pad 26 [/io/I2C2_SDA] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(182.5900 mm, 94.1400 mm): PTH pad 27 [/RGMII_RD0_PHY_to_CPU] of J2
+    @(182.5900 mm, 94.1400 mm): PTH pad 27 [/RGMII_RD0_PHY_to_CPU] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(185.1300 mm, 94.1400 mm): PTH pad 28 [/io/I2C2_SCL] of J2
+    @(185.1300 mm, 94.1400 mm): PTH pad 28 [/io/I2C2_SCL] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(182.5900 mm, 96.6800 mm): PTH pad 29 [/io/PRU0_7] of U1
+    @(182.5900 mm, 96.6800 mm): PTH pad 29 [/io/PRU0_7] of J2
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(185.1300 mm, 96.6800 mm): PTH pad 30 [/io/UART0_TX] of U1
+    @(185.1300 mm, 96.6800 mm): PTH pad 30 [/io/UART0_TX] of J2
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(182.5900 mm, 99.2200 mm): PTH pad 31 [/io/PRU0_4] of U1
+    @(182.5900 mm, 99.2200 mm): PTH pad 31 [/io/PRU0_4] of J2
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(185.1300 mm, 99.2200 mm): PTH pad 32 [/io/UART0_RX] of U1
+    @(185.1300 mm, 99.2200 mm): PTH pad 32 [/io/UART0_RX] of J2
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(182.5900 mm, 101.7600 mm): PTH pad 33 [/io/TIMER_IO1] of U1
+    @(182.5900 mm, 101.7600 mm): PTH pad 33 [/io/TIMER_IO1] of J2
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(185.1300 mm, 101.7600 mm): PTH pad 34 [/RGMII_RX_CLK_PHY_to_CPU] of U1
+    @(185.1300 mm, 101.7600 mm): PTH pad 34 [/RGMII_RX_CLK_PHY_to_CPU] of J2
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(182.5900 mm, 104.3000 mm): PTH pad 35 [/RGMII_TX_CLK_CPU_to_PHY] of U1
+    @(182.5900 mm, 104.3000 mm): PTH pad 35 [/RGMII_TX_CLK_CPU_to_PHY] of J2
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(185.1300 mm, 104.3000 mm): PTH pad 36 [/io/TIMER_IO0] of J2
+    @(185.1300 mm, 104.3000 mm): PTH pad 36 [/io/TIMER_IO0] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(207.9900 mm, 61.1200 mm): PTH pad 1 [/MDIO_MDC_CPU_PHY] of J3
+    @(207.9900 mm, 61.1200 mm): PTH pad 37 [/MDIO_MDC_CPU_PHY] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(210.5300 mm, 61.1200 mm): PTH pad 38 [/io/GPIO59] of U1
+    @(210.5300 mm, 61.1200 mm): PTH pad 2 [/io/GPIO59] of J3
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(207.9900 mm, 63.6600 mm): PTH pad 3 [/MDIO_DIO_CPU_PHY] of J3
+    @(207.9900 mm, 63.6600 mm): PTH pad 39 [/MDIO_DIO_CPU_PHY] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(210.5300 mm, 63.6600 mm): PTH pad 4 [/io/GPIO58] of J3
+    @(210.5300 mm, 63.6600 mm): PTH pad 40 [/io/GPIO58] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(207.9900 mm, 66.2000 mm): PTH pad 5 [/io/MCASP2_AXR0] of J3
+    @(207.9900 mm, 66.2000 mm): PTH pad 41 [/io/MCASP2_AXR0] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(210.5300 mm, 66.2000 mm): PTH pad 6 [/io/GPIO57] of J3
+    @(210.5300 mm, 66.2000 mm): PTH pad 42 [/io/GPIO57] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(207.9900 mm, 68.7400 mm): PTH pad 7 [/io/MCASP2_AXR1] of J3
+    @(207.9900 mm, 68.7400 mm): PTH pad 43 [/io/MCASP2_AXR1] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(210.5300 mm, 68.7400 mm): PTH pad 44 [/io/GPIO60] of U1
+    @(210.5300 mm, 68.7400 mm): PTH pad 8 [/io/GPIO60] of J3
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(207.9900 mm, 71.2800 mm): PTH pad 9 [/io/MCASP2_AFSX] of J3
+    @(207.9900 mm, 71.2800 mm): PTH pad 45 [/io/MCASP2_AFSX] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(210.5300 mm, 71.2800 mm): PTH pad 10 [/RGMII_TD2_CPU_to_PHY] of J3
+    @(210.5300 mm, 71.2800 mm): PTH pad 46 [/RGMII_TD2_CPU_to_PHY] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(207.9900 mm, 73.8200 mm): PTH pad 11 [/io/MCASP2_ACLKX] of J3
+    @(207.9900 mm, 73.8200 mm): PTH pad 47 [/io/MCASP2_ACLKX] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(210.5300 mm, 73.8200 mm): PTH pad 12 [/io/PWR_BTN] of J3
+    @(210.5300 mm, 73.8200 mm): PTH pad 48 [/io/PWR_BTN] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(207.9900 mm, 76.3600 mm): PTH pad 13 [/io/VOUT] of J3
+    @(207.9900 mm, 76.3600 mm): PTH pad 49 [/io/VOUT] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(210.5300 mm, 76.3600 mm): PTH pad 14 [/io/BAT_VIN] of J3
+    @(210.5300 mm, 76.3600 mm): PTH pad 50 [/io/BAT_VIN] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(207.9900 mm, 78.9000 mm): PTH pad 15 [GND] of J3
+    @(207.9900 mm, 78.9000 mm): PTH pad 51 [GND] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(210.5300 mm, 78.9000 mm): PTH pad 16 [/io/BAT_TEMP] of J3
+    @(210.5300 mm, 78.9000 mm): PTH pad 52 [/io/BAT_TEMP] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(207.9900 mm, 81.4400 mm): PTH pad 53 [/io/GPIO65] of U1
+    @(207.9900 mm, 81.4400 mm): PTH pad 17 [/io/GPIO65] of J3
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(210.5300 mm, 81.4400 mm): PTH pad 54 [/io/GPIO47] of U1
+    @(210.5300 mm, 81.4400 mm): PTH pad 18 [/io/GPIO47] of J3
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(207.9900 mm, 83.9800 mm): PTH pad 55 [/RGMII_TD3_CPU_to_PHY] of U1
+    @(207.9900 mm, 83.9800 mm): PTH pad 19 [/RGMII_TD3_CPU_to_PHY] of J3
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(210.5300 mm, 83.9800 mm): PTH pad 56 [/io/GPIO64] of U1
+    @(210.5300 mm, 83.9800 mm): PTH pad 20 [/io/GPIO64] of J3
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(207.9900 mm, 86.5200 mm): PTH pad 57 [GND] of U1
+    @(207.9900 mm, 86.5200 mm): PTH pad 21 [GND] of J3
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(210.5300 mm, 86.5200 mm): PTH pad 22 [/io/GPIO46] of J3
+    @(210.5300 mm, 86.5200 mm): PTH pad 58 [/io/GPIO46] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(207.9900 mm, 89.0600 mm): PTH pad 23 [/VDD_3V3] of J3
+    @(207.9900 mm, 89.0600 mm): PTH pad 59 [/VDD_3V3] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(210.5300 mm, 89.0600 mm): PTH pad 24 [/io/GPIO48] of J3
+    @(210.5300 mm, 89.0600 mm): PTH pad 60 [/io/GPIO48] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(207.9900 mm, 91.6000 mm): PTH pad 25 [/io/SPI1_MOSI] of J3
+    @(207.9900 mm, 91.6000 mm): PTH pad 61 [/io/SPI1_MOSI] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(210.5300 mm, 91.6000 mm): PTH pad 26 [/io/NRESET_PB2] of J3
+    @(210.5300 mm, 91.6000 mm): PTH pad 62 [/io/NRESET_PB2] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(207.9900 mm, 94.1400 mm): PTH pad 27 [/io/SPI1_MISO] of J3
+    @(207.9900 mm, 94.1400 mm): PTH pad 63 [/io/SPI1_MISO] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(210.5300 mm, 94.1400 mm): PTH pad 64 [/io/PRU0_6] of U1
+    @(210.5300 mm, 94.1400 mm): PTH pad 28 [/io/PRU0_6] of J3
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(207.9900 mm, 96.6800 mm): PTH pad 29 [/io/MCASP_AXR13] of J3
+    @(207.9900 mm, 96.6800 mm): PTH pad 65 [/io/MCASP_AXR13] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(210.5300 mm, 96.6800 mm): PTH pad 66 [/io/PRU0_3] of U1
+    @(210.5300 mm, 96.6800 mm): PTH pad 30 [/io/PRU0_3] of J3
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(207.9900 mm, 99.2200 mm): PTH pad 31 [/RGMII_TD1_CPU_to_PHY] of J3
+    @(207.9900 mm, 99.2200 mm): PTH pad 67 [/RGMII_TD1_CPU_to_PHY] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(210.5300 mm, 99.2200 mm): PTH pad 68 [/io/PRU0_2] of U1
+    @(210.5300 mm, 99.2200 mm): PTH pad 32 [/io/PRU0_2] of J3
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(207.9900 mm, 101.7600 mm): PTH pad 33 [/io/GPIO45] of J3
+    @(207.9900 mm, 101.7600 mm): PTH pad 69 [/io/GPIO45] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(210.5300 mm, 101.7600 mm): PTH pad 34 [/io/PRU0_5] of J3
+    @(210.5300 mm, 101.7600 mm): PTH pad 70 [/io/PRU0_5] of U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(207.9900 mm, 104.3000 mm): PTH pad 71 [/io/AIN5] of U1
+    @(207.9900 mm, 104.3000 mm): PTH pad 35 [/io/AIN5] of J3
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(210.5300 mm, 104.3000 mm): PTH pad 72 [/io/AIN7] of U1
+    @(210.5300 mm, 104.3000 mm): PTH pad 36 [/io/AIN7] of J3
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(189.2076 mm, 100.0225 mm): Arc on Edge.Cuts
+    @(187.2268 mm, 95.1613 mm): Segment of J1 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(204.0000 mm, 100.0225 mm): Arc on Edge.Cuts
+    @(205.8968 mm, 116.8113 mm): Segment of J1 on B.Silkscreen
+
+** Found 1 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(185.1300 mm, 89.0600 mm): PTH pad 24 [/io/VOUT] of J2
+    @(207.9900 mm, 76.3600 mm): PTH pad 13 [/io/VOUT] of J3
+
+** Found 84 Footprint errors **
+[footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
+    Local override; warning
+    @(191.6000 mm, 91.9000 mm): Footprint C1
+[footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
+    Local override; warning
+    @(188.4000 mm, 95.6000 mm): Footprint C2
+[footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
+    Local override; warning
+    @(188.4000 mm, 93.4000 mm): Footprint C3
+[footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
+    Local override; warning
+    @(203.9500 mm, 97.1500 mm): Footprint C5
+[footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
+    Local override; warning
+    @(198.9000 mm, 75.7000 mm): Footprint C6
+[footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
+    Local override; warning
+    @(196.2000 mm, 92.2000 mm): Footprint C7
+[footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
+    Local override; warning
+    @(212.9000 mm, 97.7000 mm): Footprint C8
+[footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
+    Local override; warning
+    @(204.2000 mm, 85.4750 mm): Footprint C9
+[footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
+    Local override; warning
+    @(197.7000 mm, 76.4000 mm): Footprint C10
+[footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
+    Local override; warning
+    @(212.9000 mm, 95.7000 mm): Footprint C11
+[footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
+    Local override; warning
+    @(187.4000 mm, 97.2000 mm): Footprint C12
+[footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
+    Local override; warning
+    @(204.4000 mm, 78.9000 mm): Footprint C13
+[footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
+    Local override; warning
+    @(212.9000 mm, 101.7000 mm): Footprint C15
+[footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
+    Local override; warning
+    @(212.9000 mm, 90.5000 mm): Footprint C16
+[footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
+    Local override; warning
+    @(189.9000 mm, 92.6000 mm): Footprint C17
+[footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
+    Local override; warning
+    @(212.9000 mm, 99.7000 mm): Footprint C19
+[footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
+    Local override; warning
+    @(212.9000 mm, 92.5000 mm): Footprint C20
+[footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
+    Local override; warning
+    @(201.1000 mm, 74.5000 mm): Footprint C21
+[footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
+    Local override; warning
+    @(180.2000 mm, 97.8000 mm): Footprint C22
+[footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
+    Local override; warning
+    @(189.4000 mm, 89.8000 mm): Footprint C23
+[footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
+    Local override; warning
+    @(188.2000 mm, 94.6000 mm): Footprint C24
+[footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
+    Local override; warning
+    @(188.2000 mm, 92.4000 mm): Footprint C25
+[footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
+    Local override; warning
+    @(205.0000 mm, 79.9000 mm): Footprint C26
+[footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
+    Local override; warning
+    @(205.0000 mm, 80.9000 mm): Footprint C27
+[footprint_symbol_field_mismatch]: Missing symbol field 'Dielectric' in footprint
+    Local override; warning
+    @(196.6000 mm, 73.5000 mm): Footprint C37
+[footprint_symbol_field_mismatch]: Missing symbol field 'Dielectric' in footprint
+    Local override; warning
+    @(197.6000 mm, 74.5000 mm): Footprint C38
+[footprint_symbol_field_mismatch]: Missing symbol field 'Dielectric' in footprint
+    Local override; warning
+    @(190.5000 mm, 95.3000 mm): Footprint C39
+[footprint_symbol_field_mismatch]: Missing symbol field 'Dielectric' in footprint
+    Local override; warning
+    @(188.9000 mm, 97.0000 mm): Footprint C40
+[footprint_symbol_field_mismatch]: Missing symbol field 'Sim.Pins' in footprint
+    Local override; warning
+    @(188.6000 mm, 57.3000 mm): Footprint D1
+[footprint_symbol_field_mismatch]: Missing symbol field 'Sim.Pins' in footprint
+    Local override; warning
+    @(192.3000 mm, 57.3000 mm): Footprint D2
+[footprint_symbol_field_mismatch]: Missing symbol field 'Sim.Pins' in footprint
+    Local override; warning
+    @(196.0000 mm, 57.3000 mm): Footprint D3
+[footprint_symbol_field_mismatch]: Missing symbol field 'Type' in footprint
+    Local override; warning
+    @(202.2000 mm, 62.3000 mm): Footprint Q1
+[footprint_symbol_field_mismatch]: Missing symbol field 'Type' in footprint
+    Local override; warning
+    @(198.7000 mm, 62.3000 mm): Footprint Q2
+[footprint_symbol_field_mismatch]: Missing symbol field 'Type' in footprint
+    Local override; warning
+    @(195.2000 mm, 62.3000 mm): Footprint Q3
+[footprint_symbol_field_mismatch]: Missing symbol field 'Power_in_W' in footprint
+    Local override; warning
+    @(188.9000 mm, 80.2000 mm): Footprint R5
+[footprint_symbol_field_mismatch]: Missing symbol field 'Power_in_W' in footprint
+    Local override; warning
+    @(188.8500 mm, 75.8000 mm): Footprint R7
+[footprint_symbol_field_mismatch]: Missing symbol field 'Power_in_W' in footprint
+    Local override; warning
+    @(190.3000 mm, 63.9000 mm): Footprint R8
+[footprint_symbol_field_mismatch]: Missing symbol field 'Power_in_W' in footprint
+    Local override; warning
+    @(204.5000 mm, 73.9000 mm): Footprint R9
+[footprint_symbol_field_mismatch]: Missing symbol field 'Power_in_W' in footprint
+    Local override; warning
+    @(205.2000 mm, 70.0100 mm): Footprint R10
+[footprint_symbol_field_mismatch]: Missing symbol field 'Power_in_W' in footprint
+    Local override; warning
+    @(205.2000 mm, 84.4500 mm): Footprint R11
+[footprint_symbol_field_mismatch]: Missing symbol field 'Power_in_W' in footprint
+    Local override; warning
+    @(190.3000 mm, 74.8000 mm): Footprint R12
+[footprint_symbol_field_mismatch]: Missing symbol field 'Power_in_W' in footprint
+    Local override; warning
+    @(187.4000 mm, 62.6000 mm): Footprint R13
+[footprint_symbol_field_mismatch]: Missing symbol field 'Power_in_W' in footprint
+    Local override; warning
+    @(179.9500 mm, 100.5000 mm): Footprint R14
+[footprint_symbol_field_mismatch]: Missing symbol field 'Power_in_W' in footprint
+    Local override; warning
+    @(195.3000 mm, 74.8000 mm): Footprint R15
+[footprint_symbol_field_mismatch]: Missing symbol field 'Power_in_W' in footprint
+    Local override; warning
+    @(194.3000 mm, 74.8000 mm): Footprint R16
+[footprint_symbol_field_mismatch]: Missing symbol field 'Power_in_W' in footprint
+    Local override; warning
+    @(193.3000 mm, 74.8000 mm): Footprint R17
+[footprint_symbol_field_mismatch]: Missing symbol field 'Power_in_W' in footprint
+    Local override; warning
+    @(192.3000 mm, 74.8000 mm): Footprint R18
+[footprint_symbol_field_mismatch]: Missing symbol field 'Power_in_W' in footprint
+    Local override; warning
+    @(191.3000 mm, 74.8000 mm): Footprint R19
+[footprint_symbol_field_mismatch]: Missing symbol field 'Power_in_W' in footprint
+    Local override; warning
+    @(205.2000 mm, 61.1200 mm): Footprint R20
+[footprint_symbol_field_mismatch]: Missing symbol field 'Power_in_W' in footprint
+    Local override; warning
+    @(205.2000 mm, 63.6600 mm): Footprint R21
+[footprint_symbol_field_mismatch]: Missing symbol field 'Power_in_W' in footprint
+    Local override; warning
+    @(201.3500 mm, 91.9500 mm): Footprint R22
+[footprint_symbol_field_mismatch]: Missing symbol field 'Power_in_W' in footprint
+    Local override; warning
+    @(188.6000 mm, 59.3000 mm): Footprint R23
+[footprint_symbol_field_mismatch]: Missing symbol field 'Power_in_W' in footprint
+    Local override; warning
+    @(190.3000 mm, 65.3000 mm): Footprint R24
+[footprint_symbol_field_mismatch]: Missing symbol field 'Power_in_W' in footprint
+    Local override; warning
+    @(192.3000 mm, 59.3000 mm): Footprint R27
+[footprint_symbol_field_mismatch]: Missing symbol field 'Power_in_W' in footprint
+    Local override; warning
+    @(196.0000 mm, 59.3000 mm): Footprint R28
+[footprint_symbol_field_mismatch]: Missing symbol field 'Digikey' in footprint
+    Local override; warning
+    @(188.9000 mm, 84.4000 mm): Footprint R30
+[footprint_symbol_field_mismatch]: Missing symbol field 'Digikey' in footprint
+    Local override; warning
+    @(188.0000 mm, 91.2000 mm): Footprint R31
+[footprint_symbol_field_mismatch]: Missing symbol field 'Digikey' in footprint
+    Local override; warning
+    @(188.0000 mm, 90.0000 mm): Footprint R32
+[footprint_symbol_field_mismatch]: Field 'Description' differs (PCB: '', Schematic: 'test point')
+    Local override; warning
+    @(196.0000 mm, 91.9000 mm): Footprint TP1
+[footprint_symbol_field_mismatch]: Field 'Description' differs (PCB: '', Schematic: 'test point')
+    Local override; warning
+    @(199.6000 mm, 85.5500 mm): Footprint TP2
+[footprint_symbol_field_mismatch]: Missing symbol field 'Interface' in footprint
+    Local override; warning
+    @(196.5600 mm, 84.7250 mm): Footprint U2
+[footprint_symbol_field_mismatch]: Missing symbol field 'No_of_pins' in footprint
+    Local override; warning
+    @(182.5900 mm, 61.1200 mm): Footprint J2
+[footprint_symbol_field_mismatch]: Missing symbol field 'No_of_pins' in footprint
+    Local override; warning
+    @(207.9900 mm, 61.1200 mm): Footprint J3
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(182.5900 mm, 61.1200 mm): Footprint U1
+[footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
+    Local override; warning
+    @(201.2000 mm, 77.4500 mm): Footprint C30
+[footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
+    Local override; warning
+    @(205.0000 mm, 81.9000 mm): Footprint C31
+[footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
+    Local override; warning
+    @(201.2000 mm, 76.5000 mm): Footprint C34
+[footprint_symbol_field_mismatch]: Field 'Description' differs (PCB: '', Schematic: 'test point')
+    Local override; warning
+    @(202.0000 mm, 59.0000 mm): Footprint TP5
+[footprint_symbol_field_mismatch]: Field 'Description' differs (PCB: '', Schematic: 'test point')
+    Local override; warning
+    @(206.3000 mm, 80.6000 mm): Footprint TP8
+[footprint_symbol_field_mismatch]: Missing symbol field 'VIN_MIN_V' in footprint
+    Local override; warning
+    @(204.1700 mm, 76.3000 mm): Footprint U3
+[footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
+    Local override; warning
+    @(202.5000 mm, 98.8000 mm): Footprint C32
+[footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
+    Local override; warning
+    @(204.0000 mm, 98.1000 mm): Footprint C33
+[footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
+    Local override; warning
+    @(205.4000 mm, 97.6000 mm): Footprint C35
+[footprint_symbol_field_mismatch]: Field 'Description' differs (PCB: '', Schematic: 'test point')
+    Local override; warning
+    @(192.5000 mm, 93.8000 mm): Footprint TP6
+[footprint_symbol_field_mismatch]: Field 'Description' differs (PCB: '', Schematic: 'test point')
+    Local override; warning
+    @(199.2000 mm, 59.0000 mm): Footprint TP7
+[footprint_symbol_field_mismatch]: Missing symbol field 'VIN_MIN_V' in footprint
+    Local override; warning
+    @(203.8500 mm, 94.9000 mm): Footprint U4
+[footprint_symbol_field_mismatch]: Missing symbol field 'Dielectric' in footprint
+    Local override; warning
+    @(204.6000 mm, 100.9000 mm): Footprint C36
+[footprint_symbol_field_mismatch]: Missing symbol field 'PARTREV' in footprint
+    Local override; warning
+    @(196.5618 mm, 106.0113 mm): Footprint J1
+[footprint_symbol_field_mismatch]: Missing symbol field 'Power_in_W' in footprint
+    Local override; warning
+    @(188.5000 mm, 100.9000 mm): Footprint R29
+[footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
+    Local override; warning
+    @(204.7000 mm, 92.6000 mm): Footprint C4
+[footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
+    Local override; warning
+    @(204.1500 mm, 88.2000 mm): Footprint C14
+[footprint_symbol_field_mismatch]: Missing symbol field 'Voltage_in_V' in footprint
+    Local override; warning
+    @(201.2000 mm, 93.5000 mm): Footprint C18
+[footprint_symbol_field_mismatch]: Field 'Description' differs (PCB: '', Schematic: 'test point')
+    Local override; warning
+    @(203.3500 mm, 90.3000 mm): Footprint TP4
+[footprint_symbol_field_mismatch]: Missing symbol field 'Frequency_Stability_in_ppm' in footprint
+    Local override; warning
+    @(204.7000 mm, 90.4000 mm): Footprint Y1
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - PTH inside courtyard
+    - NPTH inside courtyard
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **
