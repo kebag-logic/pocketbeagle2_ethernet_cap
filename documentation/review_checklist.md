@@ -7,24 +7,45 @@ Check items off here; details live in [library_additions.md](library_additions.m
 
 ## A. Library parts (before pushing the submodule)
 
-- [ ] **1.1 V LDO** — `TPS7A2011PDBVR` follows TI's numbering but no distributor
-  listing was found. Confirm the part, or decide to use the DP83867's internal core
-  LDO instead (frees one LDO). *(rev A used a DSBGA part number on SOT-23-5 pads for
-  both rails.)*
-- [ ] **RJ45 `1840888-1`** — manufacturer/datasheet unknown (SnapEDA import said
-  "BEL", the number format says TE Connectivity). Provide the datasheet used for
-  rev A; needed for the `Datasheet` field and MDI pin documentation.
-- [ ] **BSS138** — multi-sourced; onsemi `BSS138LT1G` was chosen. Confirm or name a
+- [ ] **1.1 V LDO — BLOCKING.** `TPS7A2011PDBVR` **is not a real part number**: TI's
+  `part-details` page 404s for it, Digi-Key returns no results, LCSC has no listing,
+  and Digi-Key's TPS7A20 SOT-23-5 range skips 1.1 V entirely. Supplier fields left
+  `TBD` on purpose. Decide between `TLV73311PDBVR` (real TI 1.1 V / 300 mA SOT-23-5,
+  LCSC C2865431 — **pinout differs from TPS7A20, needs a pin-by-pin check**) and
+  dropping U3 for the DP83867's internal core LDO. Detail in
+  [library_additions.md Q1](library_additions.md).
+- [x] **RJ45 `1840888-1`** — **RESOLVED: manufacturer is Bel Fuse Inc.** Digi-Key
+  `5923-1840888-1-ND` (same `5923-` Bel prefix as the house `0826-1X4T-43-F`), LCSC
+  `C5876366`. Shielded 10/100/1000 Base-T AutoMDIX MagJack with magnetics, no LEDs.
+  `Datasheet` now points at LCSC's mirror of the manufacturer PDF — **swap in a
+  belfuse.com URL if you have one**. Availability is poor: 26-week Digi-Key lead,
+  0 stock at LCSC.
+- [ ] **BSS138** — multi-sourced; onsemi `BSS138LT1G` chosen and now **verified**
+  (Digi-Key `BSS138LT1GOSCT-ND`, LCSC `C82045`, 982 k in stock). Confirm, or name a
   preferred source (e.g. Nexperia BSS138P).
-- [ ] **Capacitor specs** — derived choices: Murata GRM155, X7R/C0G/X5R, 50/16/6.3 V.
+- [ ] **Capacitor specs** — all five Murata GRM155 part numbers are now **verified**,
+  but the *choice* of X7R/C0G/X5R and 50/16/6.3 V is still derived, not from rev A.
   The 10 µF is only 6.3 V-rated on the 3V3 rail — check the derating policy, or
-  provide the rev A BOM to match exactly.
-- [ ] **Resistors** — Vishay CRCW0402 MPNs derived from the house family
-  (`CRCW0402…FKEDC`); spot-check one or two against a distributor.
-- [ ] **18x02 stacking header** — MPN `BHR-36-VUA` derived from the house
-  BHR-20-VUA (Adam Tech); confirm it is orderable.
-- [ ] **TBD supplier fields** — remaining Digikey/LCSC/some Mouser order numbers:
-  fill manually, or request a lookup pass.
+  provide the rev A BOM. **Sourcing risk:** `GRM155R60J106ME44D` (C15/C22/C26) is
+  **discontinued at Digi-Key** (LCSC stocks 1.1 M; Digi-Key suggests
+  `GRM155R60J106ME15D`), and `GRM155R61C105KA12D` is on a 17-week Digi-Key lead.
+- [x] **Resistors** — all seven Vishay `CRCW0402…EDC` MPNs **verified** against
+  Digi-Key product pages and LCSC; order numbers filled.
+- [ ] **18x02 stacking header** — `BHR-36-VUA` **is not orderable** (no Digi-Key, no
+  LCSC; the Adam Tech BHR series only comes in standard IDC counts …20, 34, 40) and
+  its datasheet describes a *shrouded box header*, not the plain 2x18 pin header the
+  footprint lays down. Left untouched on request; supplier fields stay `TBD`. Real
+  equivalent if wanted: Adam Tech `PH2-36-UA`, Digi-Key `2057-PH2-36-UA-ND`.
+- [x] **TBD supplier fields** — Digi-Key and LCSC filled for every part that exists
+  (21 MPNs, 205 field writes across the library and all six sheets). Four Mouser
+  fields remain `TBD`: mouser.com bot-walls automated lookup and its part numbers are
+  not derivable from the MPN. See library_additions.md for the confirmed Mouser
+  product-page links.
+- [ ] **LED LCSC fields were wrong** (now fixed) — all three 0805 LEDs carried the
+  0603 parts' LCSC values, so a JLCPCB order would have fitted the wrong LEDs. The
+  pre-existing house 0603 green symbol had the same defect (`LCSC` = the MPN string
+  `LTST-C190GKT`) and was corrected to `C125093` — **this one is an upstream fix,
+  confirm before pushing the submodule.**
 - [ ] **Upstream lib quirks** (found, deliberately not fixed): LED symbols carry the
   placeholder Value `LED_{color}_{U_F}_{I_F}`; the lib README library table names
   don't match the actual files (`KL_Ferrites` vs `KL_Ferrite_Bead`, …). Fix upstream?
@@ -79,10 +100,22 @@ Check items off here; details live in [library_additions.md](library_additions.m
 
 | Check | Result |
 |---|---|
-| ERC | 0 errors, 0 warnings (baseline was 35 violations) |
+| ERC (last commit) | 0 errors, 58 warnings — the warnings are `lib_symbol_mismatch`, expected while the submodule is ahead of the committed sheets |
+| ERC (working tree, 2026-07-27) | **6 errors, 3 warnings** — see the note below |
 | Netlist vs rev A | identical node-sets (incl. power flags); only net *names* re-scoped (pass-through nets now `/io/*`) |
 | IO pass-through | all 72 U1 pins match J2/J3 1:1 (scripted check) |
 | Connectivity | fully hierarchical: 0 global labels, GND via power symbols, inter-sheet via ports |
 | Libraries | 100 % `KL_*` + `power:` symbols, 100 % `KL_Footprints` footprints |
 | BOM export | grouped, with MPN/Mouser/Digikey/LCSC columns |
 | PCB file | byte-identical to tag `revA-routed` (rename only) |
+
+> **ERC regression in the uncommitted working tree.** `kicad-cli sch erc` on the current
+> tree reports 6 errors / 3 warnings, against 0 errors at `HEAD`. They are **not** from
+> the supplier-field pass — re-running ERC with every one of those 205 field writes
+> reverted gives the same 6 errors. They come from the uncommitted sheet edits that were
+> already in the tree: 4 × `pin_to_pin` "Power output connected to Power output",
+> 1 × `power_pin_not_driven`, 1 × `ground_pin_not_ground` (U1 pin 51 GND), plus
+> `unconnected_wire_endpoint`, `pin_not_connected` and a `lib_symbol_mismatch` on
+> `KL_Module:PocketBeagle2`. That last one is a one-character issue: the cached symbol
+> in `io.kicad_sch` now has `Reference` = `U1` where the library says `U` (`HEAD` still
+> says `U`). Worth resolving before the next commit.
