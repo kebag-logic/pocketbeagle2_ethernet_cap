@@ -1,5 +1,5 @@
 ** Drc report for pocketbeagle2_ethernet_cap.kicad_pcb **
-** Created on 2026-09-25T18:40:45 **
+** Created on 2026-09-25T18:43:25 **
 ** Report includes: Errors, Warnings, Exclusions **
 
 ** Found 80 DRC violations **
@@ -323,7 +323,7 @@
 ** Found 1 unconnected pads **
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(185.1300 mm, 89.0600 mm): PTH pad 24 [/io/VOUT] of J2
+    @(185.1300 mm, 89.0600 mm): PTH pad 24 [/io/VOUT] of U1
     @(207.9900 mm, 76.3600 mm): PTH pad 13 [/io/VOUT] of J3
 
 ** Found 84 Footprint errors **

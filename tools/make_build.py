@@ -16,6 +16,8 @@ OUT = os.environ.get("BUILD_OUT", os.path.join(PRJ, "build"))
 FAB, ASM, DOC = (os.path.join(OUT, d) for d in ("fabrication", "assembly", "docs"))
 KL = ["-D", f"KL_LIB={PRJ}/kebag_logic_kicad_library"]
 NOT_ASSEMBLED = {"U1", "J1"}   # PB2 module plugs onto J2/J3; J1 magjack is not stocked at LCSC: hand-solder
+# JLCPCB rotation corrections (their part model orientation differs from the KiCad footprint), degrees CCW
+ROT_FIX = {"J2": 90, "J3": 90}   # HC-PZ254-11.5L-2x18PZ model is drawn horizontal, the board headers run vertical
 LAYERS = "F.Cu,In1.Cu,In2.Cu,B.Cu,F.Paste,B.Paste,F.Silkscreen,B.Silkscreen,F.Mask,B.Mask,Edge.Cuts"
 nat = lambda s: [int(t) if t.isdigit() else t for t in re.split(r"(\d+)", s)]
 
@@ -121,8 +123,9 @@ def cpl(refs):
             if abs(cx - x) > 0.05 or abs(-cy - y) > 0.05:
                 moved.append(f'{r["Ref"]} ({x:.2f},{y:.2f})->({cx:.2f},{-cy:.2f})')
                 x, y = cx, -cy
+            rot = (float(r["Rot"]) + ROT_FIX.get(r["Ref"], 0)) % 360
             w.writerow([r["Ref"], f"{x:.4f}mm", f"{y:.4f}mm", "Top" if r["Side"] == "top" else "Bottom",
-                        f'{float(r["Rot"]):.1f}']); n += 1
+                        f"{rot:.1f}"]); n += 1
     print("assembly: CPL", n, "placements; centred off-origin parts:", moved)
 
 
