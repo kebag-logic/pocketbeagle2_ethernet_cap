@@ -1,4 +1,4 @@
-"""Simplified 3D model of the Bel 1840888-1 MagJack (own work, dimensions from KL_Footprints:BEL_1840888-1).
+"""Simplified 3D model of the Bel/TRP 1840888-1 MagJack (own work; envelope from the manufacturer drawing).
 Origin = footprint origin, +Z up from the mounting face, model Y = -footprint Y (KiCad convention)."""
 import sys
 from OCP.BRepPrimAPI import BRepPrimAPI_MakeBox, BRepPrimAPI_MakeCylinder
@@ -13,8 +13,10 @@ from OCP.STEPControl import STEPControl_AsIs
 from OCP.TDataStd import TDataStd_Name
 from OCP.IFSelect import IFSelect_RetDone
 
-H = 13.5                                  # body height (standard-height version)
-X0, X1, Y0, Y1 = -9.335, 9.335, -10.85, 10.8   # footprint fab outline; front (cable) face at footprint +Y
+# TRP/Bel 1840888-1 drawing (LCSC C5876366): 16.13 max wide, 21.65 max deep, 13.75 high; no LEDs; latch tab down.
+# The footprint fab outline (18.67 wide) includes the 1.27 mm EMI spring fingers on each side.
+H = 13.75
+X0, X1, Y0, Y1 = -8.065, 8.065, -10.85, 10.8   # front (cable) face at footprint +Y
 
 
 def box(x0, y0, z0, x1, y1, z1):
@@ -27,12 +29,13 @@ def cyl(x, y, d, z0, z1):
 
 
 body = box(X0, Y0, 0.0, X1, Y1, H)
-opening = box(-5.85, Y1 - 12.0, 2.6, 5.85, Y1 + 0.1, 2.6 + 8.2)      # RJ45 plug cavity, tab up
-body = BRepAlgoAPI_Cut(body, opening).Shape()
-cavity = box(-5.85, Y1 - 12.0, 2.6, 5.85, Y1 - 11.9, 2.6 + 8.2)       # dark back wall of the cavity
-contacts = box(-4.2, Y1 - 11.9, 2.6 + 6.6, 4.2, Y1 - 6.0, 2.6 + 8.2)  # contact block at the cavity top
-led_l = box(X0 + 0.9, Y1 - 0.05, H - 3.0, X0 + 3.4, Y1 + 0.2, H - 1.3)
-led_r = box(X1 - 3.4, Y1 - 0.05, H - 3.0, X1 - 0.9, Y1 + 0.2, H - 1.3)
+ZC0, ZC1 = 3.2, 3.2 + 8.3                                              # RJ45 plug cavity (11.7 x 8.3)
+opening = box(-5.85, Y1 - 12.0, ZC0, 5.85, Y1 + 0.1, ZC1)
+latch = box(-1.7, Y1 - 12.0, ZC0 - 1.6, 1.7, Y1 + 0.1, ZC0 + 0.1)       # latch notch, tab down (towards the PCB)
+body = BRepAlgoAPI_Cut(BRepAlgoAPI_Cut(body, opening).Shape(), latch).Shape()
+cavity = box(-5.85, Y1 - 12.0, ZC0, 5.85, Y1 - 11.9, ZC1)               # dark back wall of the cavity
+contacts = box(-4.2, Y1 - 11.9, ZC1 - 1.6, 4.2, Y1 - 6.0, ZC1)          # contact block at the cavity top
+fingers = [box(x0, Y1 - 5.0, 3.0, x1, Y1 - 1.5, 9.5) for x0, x1 in ((X0 - 1.27, X0), (X1, X1 + 1.27))]  # EMI springs
 pins = [cyl(x, y, 0.9, -3.3, 0.5) for x, y in (
     (-5.715, -8.89), (-4.445, -6.35), (-3.175, -8.89), (-1.905, -6.35), (-0.635, -8.89),
     (0.635, -6.35), (1.905, -8.89), (3.175, -6.35), (4.445, -8.89), (5.715, -6.35))]
@@ -53,8 +56,8 @@ def add(shape, name, rgb):
 add(body, "shield", (0.78, 0.78, 0.80))
 add(cavity, "cavity", (0.05, 0.05, 0.05))
 add(contacts, "contacts", (0.83, 0.69, 0.22))
-add(led_l, "led_green", (0.10, 0.85, 0.10))
-add(led_r, "led_yellow", (0.95, 0.80, 0.10))
+for i, f_ in enumerate(fingers):
+    add(f_, f"emi_finger{i + 1}", (0.78, 0.78, 0.80))
 for i, p in enumerate(pins):
     add(p, f"pin{i + 1}", (0.83, 0.69, 0.22))
 for i, p in enumerate(shield):
