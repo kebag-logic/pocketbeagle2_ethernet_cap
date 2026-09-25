@@ -17,3 +17,22 @@ Requirements: Python 3 with `shapely` and `kipy==0.8.0`. KiCad 10 must be runnin
 | `clear_copper.py` | **Destructive.** Removes every track, via and zone from the live board in one KiCad undo step. |
 
 `reference/board_before_respin.kicad_pcb` is the board just before the copper was cleared on 2026-09-25. It has the MDI, power, slow-net and LED routing.
+
+## `topside/`: all SMD parts moved to F.Cu (2026-09-25)
+
+These are archived as run. They also import the working-copy planners (`rg.py`, `d_*.py`, `meander.py`, `audit_angles.py`), which are not archived, so treat them as a record, not a ready-to-run tool.
+
+| Script | What it does |
+|--------|--------------|
+| `fpgeo.py` | Library footprint pads and courtyards for what-if placements. |
+| `prune.py` | Finds the copper that dangles once a set of footprints leaves; used to clear their old bottom-side routing. |
+| `ts.py` | The stage placement table (x, y, rot, side) plus courtyard and pad-clearance checks. |
+| `r_top.py` | Stage 1. LED drivers Q1–Q3, D-K lanes, rebuilt LED gate lanes, MDIO/INT pull-ups, and the TD0/TD2 series resistors with their re-matched accordions. |
+| `r_bot.py` | Stage 2. TD3 (R11) re-matched, TX_CLK (R14), R7 strap, CLK_OUT/1V1 test points moved to B.Cu. |
+| `router.py` | 2-layer grid router. It uses 8 directions with turns of 45° or less, places vias, and stays clear of other-net copper and keepouts. |
+| `capfit.py` | Greedy placement of U4 and the 30 caps nearest their pins. Each part is routed rail to copper and GND to a plane via. Results go to `cap_place.json` and `cap_routes.json`. |
+| `conn.py` | Per-net island check: pads, tracks and vias, with GND vias joining the planes. |
+| `apply_stage.py` | Checks live pads against the model, removes the pruned copper (exact endpoints), then pushes the plan. |
+| `silk_place.py` | Places reference designators and P1/P2 labels at 1.0/0.15 mm with no overlaps. |
+
+`../make_production.py` writes `production/`: the Gerber and drill zip, the JLCPCB BOM (LCSC part numbers) and the CPL.
