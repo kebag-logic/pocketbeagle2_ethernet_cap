@@ -180,11 +180,9 @@ bottom face, so the PB2 is component-side up. The J1 Bel STEP is **not** committ
 
 ## 5. Actions only the user can do
 
-1. **Close and reopen the project in KiCad.** Its in-memory project settings are stale (pre-rev-B netclasses) and rewrite `pocketbeagle2_ethernet_cap.kicad_pro` on save. Every script run so far restores the file with `git checkout -- pocketbeagle2_ethernet_cap.kicad_pro`.
+1. ~~Close and reopen the project in KiCad.~~ **Done.** `KL_LIB` is now a project text variable (`${KIPRJMOD}/kebag_logic_kicad_library`, `09816f6`). Its in-memory project settings are stale (pre-rev-B netclasses) and rewrite `pocketbeagle2_ethernet_cap.kicad_pro` on save. Every script run so far restores the file with `git checkout -- pocketbeagle2_ethernet_cap.kicad_pro`.
 2. **3D path:** Preferences → Configure Paths → add `KL_LIB` = `<project>/kebag_logic_kicad_library`. Without it, KiCad shows only pads.
-3. **Board Setup:**
-   - Minimum via annular width 0.2 → **0.1 mm**. The vias are 0.45/0.2 mm; JLC allows it.
-   - Zone minimum thermal spoke count → **1**.
+3. ~~Board Setup: via annular 0.1 mm, thermal spokes 1~~. **Done** (`6a96a4f`). DRC now has **0 errors**. Only warnings remain: J2/J3 on U1 holes, 4 library mismatches, the U4 silk clipped at J1.1, and J1's overhang.
 4. **Impedance:** order JLC impedance control and let them adjust the widths. On their 3313 stackup, 50 Ω may need about 0.17–0.19 mm.
 5. **J1 model:** download the Bel 1840888-1 STEP from belfuse.com (CC BY-ND, commit it unchanged).
 6. **Library:** push the `kebag_logic_kicad_library` commits and bump the submodule pointer.
