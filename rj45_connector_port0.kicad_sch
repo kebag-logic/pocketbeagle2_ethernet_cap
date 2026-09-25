@@ -1483,62 +1483,7 @@
 		)
 		(uuid "9b30432b-ab90-4670-8238-64c47cd4ceba")
 	)
-	(hierarchical_label "MDI2_PHY_RJ45_P"
-		(shape bidirectional)
-		(at 133.35 78.74 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "04e3193b-4f97-4992-9abe-b9a94fa25508")
-	)
-	(hierarchical_label "MDI2_PHY_RJ45_N"
-		(shape bidirectional)
-		(at 133.35 81.28 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "3744cfbb-fd88-4e54-b2ce-ce38e23d35a6")
-	)
-	(hierarchical_label "MDI1_PHY_RJ45_N"
-		(shape bidirectional)
-		(at 133.35 73.66 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "5ba8b7cf-561f-4731-a0b3-4f553e38d03e")
-	)
-	(hierarchical_label "MDI0_PHY_RJ45_N"
-		(shape bidirectional)
-		(at 133.35 66.04 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "62124005-df74-423b-9b0e-5534e76417a7")
-	)
-	(hierarchical_label "MDI1_PHY_RJ45_P"
-		(shape bidirectional)
-		(at 133.35 71.12 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "94f15ee4-8e2a-49ea-9d8b-07088e8c4e4d")
-	)
-	(hierarchical_label "MDI0_PHY_RJ45_P"
+	(hierarchical_label "MDI3_PHY_RJ45_N"
 		(shape bidirectional)
 		(at 133.35 63.5 180)
 		(effects
@@ -1547,9 +1492,64 @@
 			)
 			(justify right)
 		)
-		(uuid "aea45e36-1565-4371-9ede-e82b3f142865")
+		(uuid "f9964ebd-c497-4bcc-bb14-b2867d4071b5")
 	)
 	(hierarchical_label "MDI3_PHY_RJ45_P"
+		(shape bidirectional)
+		(at 133.35 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9b9e03b0-dd78-47f5-af2b-823bf5806286")
+	)
+	(hierarchical_label "MDI2_PHY_RJ45_N"
+		(shape bidirectional)
+		(at 133.35 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cf7f20d7-5a52-4ad7-a699-fdd27ad975b6")
+	)
+	(hierarchical_label "MDI2_PHY_RJ45_P"
+		(shape bidirectional)
+		(at 133.35 73.66 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "eb9469d5-40ed-481a-a1ff-413bcc0e5263")
+	)
+	(hierarchical_label "MDI1_PHY_RJ45_N"
+		(shape bidirectional)
+		(at 133.35 78.74 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "39dd7f52-488b-49a2-846b-4410eca632e1")
+	)
+	(hierarchical_label "MDI1_PHY_RJ45_P"
+		(shape bidirectional)
+		(at 133.35 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "af7f43ac-1d31-4d6c-a34b-8e494ef25cb1")
+	)
+	(hierarchical_label "MDI0_PHY_RJ45_N"
 		(shape bidirectional)
 		(at 133.35 86.36 180)
 		(effects
@@ -1558,9 +1558,9 @@
 			)
 			(justify right)
 		)
-		(uuid "cb29601f-441a-4aca-8588-3b899a9f5342")
+		(uuid "56c37a5b-816e-4bc6-8ad5-baa3c5f60b1a")
 	)
-	(hierarchical_label "MDI3_PHY_RJ45_N"
+	(hierarchical_label "MDI0_PHY_RJ45_P"
 		(shape bidirectional)
 		(at 133.35 88.9 180)
 		(effects
@@ -1569,8 +1569,13 @@
 			)
 			(justify right)
 		)
-		(uuid "dd5489b9-ce86-4c24-ad5d-a3a37fd31c61")
+		(uuid "5914f0a6-1ab4-4328-a77e-6f3fed241f44")
 	)
+  (text "J1 is mounted on B.Cu (bottom), so its pin row is mirrored.\nMDI pairs are mapped A<->D, B<->C with P/N swapped ON PURPOSE:\nthe DP83867 RJ45 mirror mode (LED_0 strap mode 3, R31/R32 on the\nPHY sheet; datasheet 7.4.6.6) undoes it inside the PHY.\nDo not \"fix\" this mapping without removing the strap."
+    (at 132.08 45.72 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "9cb7a89f-0b4e-4b6d-8d2b-a13988f13917")
+  )
 	(symbol
 		(lib_id "power:GND")
 		(at 140.97 107.95 0)

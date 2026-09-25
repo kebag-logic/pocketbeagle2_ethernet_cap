@@ -7226,6 +7226,20 @@
 		)
 		(uuid "5a7b1f5e-ffa5-4a3b-b1e8-4c55699b9538")
 	)
+	(wire
+		(pts
+			(xy 200.66 93.98)
+			(xy 214.63 93.98)
+		)
+		(uuid "6f08fc41-9ae7-4470-96d6-593e59000042")
+	)
+	(wire
+		(pts
+			(xy 214.63 86.36)
+			(xy 214.63 83.82)
+		)
+		(uuid "982ee132-4d21-4c22-9424-54619ab5b0b1")
+	)
 	(label "STRAP_RX_CTRL_PHY"
 		(at 114.3 83.82 0)
 		(effects
@@ -7375,6 +7389,16 @@
 			(justify left bottom)
 		)
 		(uuid "45ddb44d-24db-48e4-a6e5-cc350c0c741b")
+	)
+	(label "VDD_3V3"
+		(at 214.63 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "868161b8-00e9-4af7-87d4-7438ea7c6213")
 	)
 	(hierarchical_label "MDI2_PHY_RJ45_N"
 		(shape bidirectional)
@@ -18187,6 +18211,313 @@
 			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca/c7e86905-628b-42b3-8e2d-584619293fe7"
 					(reference "C40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "KL_R:R_5K76_0.063W_1pct_0402")
+		(at 214.63 90.17 180)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "13e7bae0-ee7d-4d58-9ca3-8e59c20191b2")
+		(property "Reference" "R31"
+			(at 212.598 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "5K76"
+			(at 214.63 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "KL_Footprints:R_0402"
+			(at 214.63 90.17 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/28773/crcwce3.pdf"
+			(at 214.63 90.17 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 214.63 90.17 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "pocketbeagle2_ethernet_cap"
+				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca/c7e86905-628b-42b3-8e2d-584619293fe7"
+					(reference "R31")
+					(unit 1)
+				)
+			)
+		)
+	
+		(property "Digikey" "541-5031-1-ND"
+			(at 214.63 90.17 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C4180495"
+			(at 214.63 90.17 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CRCW04025K76FKEDC"
+			(at 214.63 90.17 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "71-CRCW04025K76FKEDC"
+			(at 214.63 90.17 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package_in_inch" "0402"
+			(at 214.63 90.17 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power_in_W" "0.063"
+			(at 214.63 90.17 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance_in_pct" "1"
+			(at 214.63 90.17 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
+	(symbol
+		(lib_id "KL_R:R_2K49_0.063W_1pct_0402")
+		(at 218.44 93.98 90)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "15051549-92b0-41ba-a43a-45756edb824a")
+		(property "Reference" "R32"
+			(at 218.44 91.948 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2K49"
+			(at 218.44 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "KL_Footprints:R_0402"
+			(at 218.44 93.98 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/28773/crcwce3.pdf"
+			(at 218.44 93.98 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 218.44 93.98 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "pocketbeagle2_ethernet_cap"
+				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca/c7e86905-628b-42b3-8e2d-584619293fe7"
+					(reference "R32")
+					(unit 1)
+				)
+			)
+		)
+	
+		(property "Digikey" "541-4867-1-ND"
+			(at 218.44 93.98 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1730862"
+			(at 218.44 93.98 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CRCW04022K49FKEDC"
+			(at 218.44 93.98 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "71-CRCW04022K49FKEDC"
+			(at 218.44 93.98 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package_in_inch" "0402"
+			(at 218.44 93.98 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power_in_W" "0.063"
+			(at 218.44 93.98 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance_in_pct" "1"
+			(at 218.44 93.98 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
+	(symbol
+		(lib_id "power:GND")
+		(at 222.25 93.98 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "06062089-4d12-417d-ace7-8c6f2f2b13f0")
+		(property "Reference" "#PWR001"
+			(at 222.25 100.33 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 222.25 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 222.25 93.98 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 222.25 93.98 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 222.25 93.98 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "pocketbeagle2_ethernet_cap"
+				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca/c7e86905-628b-42b3-8e2d-584619293fe7"
+					(reference "#PWR001")
 					(unit 1)
 				)
 			)
