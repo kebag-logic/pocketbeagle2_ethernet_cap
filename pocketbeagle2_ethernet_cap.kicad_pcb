@@ -772,7 +772,7 @@
 				)
 			)
 		)
-		(property "Value" "TPS7A2011PDBVR"
+		(property "Value" "TLV73311PDBVR"
 			(at 0 2.4 0)
 			(unlocked yes)
 			(layer "F.SilkS")

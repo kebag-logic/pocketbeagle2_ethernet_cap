@@ -2223,7 +2223,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://content.kemet.com/datasheets/KEM_C1010_X7R_HV_SMD.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121737_KEMET-C1210C472KGRACTU_C2167834.pdf"
 			(at 140.97 101.6 0)
 			(hide yes)
 			(effects
@@ -2259,7 +2259,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C2167834"
 			(at 140.97 101.6 0)
 			(hide yes)
 			(effects

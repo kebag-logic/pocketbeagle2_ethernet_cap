@@ -6056,7 +6056,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203218/bhr-xx-v"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2408301436_Hong-Cheng-HC-PZ254-11-5L-2x18PZ_C41376109.pdf"
 			(at 78.74 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -6133,7 +6133,7 @@
 				)
 			)
 		)
-		(property "MPN" "BHR-36-VUA"
+		(property "MPN" "HC-PZ254-11.5L-2x18PZ"
 			(at 78.74 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -6144,7 +6144,7 @@
 				)
 			)
 		)
-		(property "Mouser" "737-BHR-36-VUA"
+		(property "Mouser" ""
 			(at 78.74 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -6155,7 +6155,7 @@
 				)
 			)
 		)
-		(property "Digikey" "TBD"
+		(property "Digikey" ""
 			(at 78.74 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -6166,7 +6166,7 @@
 				)
 			)
 		)
-		(property "LCSC" "TBD"
+		(property "LCSC" "C41376109"
 			(at 78.74 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -7266,7 +7266,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203218/bhr-xx-v"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2408301436_Hong-Cheng-HC-PZ254-11-5L-2x18PZ_C41376109.pdf"
 			(at 190.5 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -7343,7 +7343,7 @@
 				)
 			)
 		)
-		(property "MPN" "BHR-36-VUA"
+		(property "MPN" "HC-PZ254-11.5L-2x18PZ"
 			(at 190.5 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -7354,7 +7354,7 @@
 				)
 			)
 		)
-		(property "Mouser" "737-BHR-36-VUA"
+		(property "Mouser" ""
 			(at 190.5 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -7365,7 +7365,7 @@
 				)
 			)
 		)
-		(property "Digikey" "TBD"
+		(property "Digikey" ""
 			(at 190.5 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -7376,7 +7376,7 @@
 				)
 			)
 		)
-		(property "LCSC" "TBD"
+		(property "LCSC" "C41376109"
 			(at 190.5 78.74 0)
 			(hide yes)
 			(show_name no)

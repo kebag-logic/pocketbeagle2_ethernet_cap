@@ -8157,7 +8157,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_general_en.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KB54PNC_C307331.pdf"
 			(at 34.29 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -8179,7 +8179,7 @@
 				)
 			)
 		)
-		(property "Voltage_in_V" "35"
+		(property "Voltage_in_V" "50"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -8223,7 +8223,7 @@
 				)
 			)
 		)
-		(property "MPN" "CGA2B3X7R1V104K050BB"
+		(property "MPN" "CL05B104KB54PNC"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -8234,7 +8234,7 @@
 				)
 			)
 		)
-		(property "Mouser" "810-CGA2B3X7R1V104K"
+		(property "Mouser" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -8245,7 +8245,7 @@
 				)
 			)
 		)
-		(property "Digikey" "445-6901-1-ND"
+		(property "Digikey" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -8256,7 +8256,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2181802"
+		(property "LCSC" "C307331"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -8324,7 +8324,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/28773/crcwce3.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311900_UNI-ROYAL-Uniroyal-Elec-0402WGF220JTCE_C25092.pdf"
 			(at 95.25 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -8368,7 +8368,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW040222R0FKEDC"
+		(property "MPN" "0402WGF220JTCE"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -8379,7 +8379,7 @@
 				)
 			)
 		)
-		(property "Mouser" "71-CRCW040222R0FKEDC"
+		(property "Mouser" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -8390,7 +8390,7 @@
 				)
 			)
 		)
-		(property "Digikey" "541-3973-1-ND"
+		(property "Digikey" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -8401,7 +8401,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2076943"
+		(property "LCSC" "C25092"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -8558,7 +8558,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/28773/crcwce3.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311900_UNI-ROYAL-Uniroyal-Elec-0402WGF220JTCE_C25092.pdf"
 			(at 95.25 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -8602,7 +8602,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW040222R0FKEDC"
+		(property "MPN" "0402WGF220JTCE"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -8613,7 +8613,7 @@
 				)
 			)
 		)
-		(property "Mouser" "71-CRCW040222R0FKEDC"
+		(property "Mouser" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -8624,7 +8624,7 @@
 				)
 			)
 		)
-		(property "Digikey" "541-3973-1-ND"
+		(property "Digikey" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -8635,7 +8635,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2076943"
+		(property "LCSC" "C25092"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -8714,7 +8714,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/28773/crcwce3.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311900_UNI-ROYAL-Uniroyal-Elec-0402WGF220JTCE_C25092.pdf"
 			(at 107.95 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -8758,7 +8758,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW040222R0FKEDC"
+		(property "MPN" "0402WGF220JTCE"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -8769,7 +8769,7 @@
 				)
 			)
 		)
-		(property "Mouser" "71-CRCW040222R0FKEDC"
+		(property "Mouser" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -8780,7 +8780,7 @@
 				)
 			)
 		)
-		(property "Digikey" "541-3973-1-ND"
+		(property "Digikey" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -8791,7 +8791,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2076943"
+		(property "LCSC" "C25092"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -8951,7 +8951,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_general_en.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KB54PNC_C307331.pdf"
 			(at 59.69 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -8973,7 +8973,7 @@
 				)
 			)
 		)
-		(property "Voltage_in_V" "35"
+		(property "Voltage_in_V" "50"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -9017,7 +9017,7 @@
 				)
 			)
 		)
-		(property "MPN" "CGA2B3X7R1V104K050BB"
+		(property "MPN" "CL05B104KB54PNC"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -9028,7 +9028,7 @@
 				)
 			)
 		)
-		(property "Mouser" "810-CGA2B3X7R1V104K"
+		(property "Mouser" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -9039,7 +9039,7 @@
 				)
 			)
 		)
-		(property "Digikey" "445-6901-1-ND"
+		(property "Digikey" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -9050,7 +9050,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2181802"
+		(property "LCSC" "C307331"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -9619,7 +9619,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_general_en.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KB54PNC_C307331.pdf"
 			(at 21.59 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -9641,7 +9641,7 @@
 				)
 			)
 		)
-		(property "Voltage_in_V" "35"
+		(property "Voltage_in_V" "50"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -9685,7 +9685,7 @@
 				)
 			)
 		)
-		(property "MPN" "CGA2B3X7R1V104K050BB"
+		(property "MPN" "CL05B104KB54PNC"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -9696,7 +9696,7 @@
 				)
 			)
 		)
-		(property "Mouser" "810-CGA2B3X7R1V104K"
+		(property "Mouser" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -9707,7 +9707,7 @@
 				)
 			)
 		)
-		(property "Digikey" "445-6901-1-ND"
+		(property "Digikey" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -9718,7 +9718,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2181802"
+		(property "LCSC" "C307331"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -9956,7 +9956,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/28773/crcwce3.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311900_UNI-ROYAL-Uniroyal-Elec-0402WGF220JTCE_C25092.pdf"
 			(at 110.49 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -10000,7 +10000,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW040222R0FKEDC"
+		(property "MPN" "0402WGF220JTCE"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -10011,7 +10011,7 @@
 				)
 			)
 		)
-		(property "Mouser" "71-CRCW040222R0FKEDC"
+		(property "Mouser" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -10022,7 +10022,7 @@
 				)
 			)
 		)
-		(property "Digikey" "541-3973-1-ND"
+		(property "Digikey" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -10033,7 +10033,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2076943"
+		(property "LCSC" "C25092"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -10282,7 +10282,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/28773/crcwce3.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311900_UNI-ROYAL-Uniroyal-Elec-0402WGF220JTCE_C25092.pdf"
 			(at 124.46 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -10326,7 +10326,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW040222R0FKEDC"
+		(property "MPN" "0402WGF220JTCE"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -10337,7 +10337,7 @@
 				)
 			)
 		)
-		(property "Mouser" "71-CRCW040222R0FKEDC"
+		(property "Mouser" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -10348,7 +10348,7 @@
 				)
 			)
 		)
-		(property "Digikey" "541-3973-1-ND"
+		(property "Digikey" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -10359,7 +10359,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2076943"
+		(property "LCSC" "C25092"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -10441,7 +10441,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_general_en.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KB54PNC_C307331.pdf"
 			(at 34.29 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -10463,7 +10463,7 @@
 				)
 			)
 		)
-		(property "Voltage_in_V" "35"
+		(property "Voltage_in_V" "50"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -10507,7 +10507,7 @@
 				)
 			)
 		)
-		(property "MPN" "CGA2B3X7R1V104K050BB"
+		(property "MPN" "CL05B104KB54PNC"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -10518,7 +10518,7 @@
 				)
 			)
 		)
-		(property "Mouser" "810-CGA2B3X7R1V104K"
+		(property "Mouser" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -10529,7 +10529,7 @@
 				)
 			)
 		)
-		(property "Digikey" "445-6901-1-ND"
+		(property "Digikey" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -10540,7 +10540,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2181802"
+		(property "LCSC" "C307331"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -10767,7 +10767,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_general_en.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KB54PNC_C307331.pdf"
 			(at 21.59 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -10789,7 +10789,7 @@
 				)
 			)
 		)
-		(property "Voltage_in_V" "35"
+		(property "Voltage_in_V" "50"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -10833,7 +10833,7 @@
 				)
 			)
 		)
-		(property "MPN" "CGA2B3X7R1V104K050BB"
+		(property "MPN" "CL05B104KB54PNC"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -10844,7 +10844,7 @@
 				)
 			)
 		)
-		(property "Mouser" "810-CGA2B3X7R1V104K"
+		(property "Mouser" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -10855,7 +10855,7 @@
 				)
 			)
 		)
-		(property "Digikey" "445-6901-1-ND"
+		(property "Digikey" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -10866,7 +10866,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2181802"
+		(property "LCSC" "C307331"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -11140,7 +11140,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_general_en.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KB54PNC_C307331.pdf"
 			(at 46.99 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -11162,7 +11162,7 @@
 				)
 			)
 		)
-		(property "Voltage_in_V" "35"
+		(property "Voltage_in_V" "50"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -11206,7 +11206,7 @@
 				)
 			)
 		)
-		(property "MPN" "CGA2B3X7R1V104K050BB"
+		(property "MPN" "CL05B104KB54PNC"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -11217,7 +11217,7 @@
 				)
 			)
 		)
-		(property "Mouser" "810-CGA2B3X7R1V104K"
+		(property "Mouser" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -11228,7 +11228,7 @@
 				)
 			)
 		)
-		(property "Digikey" "445-6901-1-ND"
+		(property "Digikey" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -11239,7 +11239,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2181802"
+		(property "LCSC" "C307331"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -11901,7 +11901,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/28773/crcwce3.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311900_UNI-ROYAL-Uniroyal-Elec-0402WGF220JTCE_C25092.pdf"
 			(at 109.22 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -11945,7 +11945,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW040222R0FKEDC"
+		(property "MPN" "0402WGF220JTCE"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -11956,7 +11956,7 @@
 				)
 			)
 		)
-		(property "Mouser" "71-CRCW040222R0FKEDC"
+		(property "Mouser" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -11967,7 +11967,7 @@
 				)
 			)
 		)
-		(property "Digikey" "541-3973-1-ND"
+		(property "Digikey" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -11978,7 +11978,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2076943"
+		(property "LCSC" "C25092"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -12403,7 +12403,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/28773/crcwce3.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311900_UNI-ROYAL-Uniroyal-Elec-0402WGF220JTCE_C25092.pdf"
 			(at 95.25 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -12447,7 +12447,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW040222R0FKEDC"
+		(property "MPN" "0402WGF220JTCE"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -12458,7 +12458,7 @@
 				)
 			)
 		)
-		(property "Mouser" "71-CRCW040222R0FKEDC"
+		(property "Mouser" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -12469,7 +12469,7 @@
 				)
 			)
 		)
-		(property "Digikey" "541-3973-1-ND"
+		(property "Digikey" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -12480,7 +12480,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2076943"
+		(property "LCSC" "C25092"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -13041,7 +13041,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/28773/crcwce3.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311900_UNI-ROYAL-Uniroyal-Elec-0402WGF2000TCE_C25087.pdf"
 			(at 215.9 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -13085,7 +13085,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW0402200RFKEDC"
+		(property "MPN" "0402WGF2000TCE"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -13096,7 +13096,7 @@
 				)
 			)
 		)
-		(property "Mouser" "71-CRCW0402200RFKEDC"
+		(property "Mouser" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -13107,7 +13107,7 @@
 				)
 			)
 		)
-		(property "Digikey" "541-3995-1-ND"
+		(property "Digikey" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -13118,7 +13118,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C843896"
+		(property "LCSC" "C25087"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -13197,7 +13197,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/28773/crcwce3.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311900_UNI-ROYAL-Uniroyal-Elec-0402WGF2000TCE_C25087.pdf"
 			(at 243.84 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -13241,7 +13241,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW0402200RFKEDC"
+		(property "MPN" "0402WGF2000TCE"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -13252,7 +13252,7 @@
 				)
 			)
 		)
-		(property "Mouser" "71-CRCW0402200RFKEDC"
+		(property "Mouser" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -13263,7 +13263,7 @@
 				)
 			)
 		)
-		(property "Digikey" "541-3995-1-ND"
+		(property "Digikey" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -13274,7 +13274,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C843896"
+		(property "LCSC" "C25087"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -13431,7 +13431,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/28773/crcwce3.pdf"
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2308241009_FOJAN-FRC0402F1102TS_C2909313.pdf"
 			(at 208.28 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -13475,7 +13475,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW040211K0FKEDC"
+		(property "MPN" "FRC0402F1102TS"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -13486,7 +13486,7 @@
 				)
 			)
 		)
-		(property "Mouser" "71-CRCW040211K0FKEDC"
+		(property "Mouser" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -13497,7 +13497,7 @@
 				)
 			)
 		)
-		(property "Digikey" "541-4691-1-ND"
+		(property "Digikey" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -13508,7 +13508,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C1730800"
+		(property "LCSC" "C2909313"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -14116,7 +14116,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/28773/crcwce3.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311900_UNI-ROYAL-Uniroyal-Elec-0402WGF220JTCE_C25092.pdf"
 			(at 124.46 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -14160,7 +14160,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW040222R0FKEDC"
+		(property "MPN" "0402WGF220JTCE"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -14171,7 +14171,7 @@
 				)
 			)
 		)
-		(property "Mouser" "71-CRCW040222R0FKEDC"
+		(property "Mouser" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -14182,7 +14182,7 @@
 				)
 			)
 		)
-		(property "Digikey" "541-3973-1-ND"
+		(property "Digikey" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -14193,7 +14193,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2076943"
+		(property "LCSC" "C25092"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -14272,7 +14272,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/28773/crcwce3.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311900_UNI-ROYAL-Uniroyal-Elec-0402WGF220JTCE_C25092.pdf"
 			(at 124.46 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -14316,7 +14316,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW040222R0FKEDC"
+		(property "MPN" "0402WGF220JTCE"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -14327,7 +14327,7 @@
 				)
 			)
 		)
-		(property "Mouser" "71-CRCW040222R0FKEDC"
+		(property "Mouser" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -14338,7 +14338,7 @@
 				)
 			)
 		)
-		(property "Digikey" "541-3973-1-ND"
+		(property "Digikey" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -14349,7 +14349,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2076943"
+		(property "LCSC" "C25092"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -14428,7 +14428,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/28773/crcwce3.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311900_UNI-ROYAL-Uniroyal-Elec-0402WGF220JTCE_C25092.pdf"
 			(at 124.46 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -14472,7 +14472,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW040222R0FKEDC"
+		(property "MPN" "0402WGF220JTCE"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -14483,7 +14483,7 @@
 				)
 			)
 		)
-		(property "Mouser" "71-CRCW040222R0FKEDC"
+		(property "Mouser" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -14494,7 +14494,7 @@
 				)
 			)
 		)
-		(property "Digikey" "541-3973-1-ND"
+		(property "Digikey" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -14505,7 +14505,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2076943"
+		(property "LCSC" "C25092"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -15111,7 +15111,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/28773/crcwce3.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311900_UNI-ROYAL-Uniroyal-Elec-0402WGF220JTCE_C25092.pdf"
 			(at 95.25 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -15155,7 +15155,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW040222R0FKEDC"
+		(property "MPN" "0402WGF220JTCE"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -15166,7 +15166,7 @@
 				)
 			)
 		)
-		(property "Mouser" "71-CRCW040222R0FKEDC"
+		(property "Mouser" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -15177,7 +15177,7 @@
 				)
 			)
 		)
-		(property "Digikey" "541-3973-1-ND"
+		(property "Digikey" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -15188,7 +15188,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2076943"
+		(property "LCSC" "C25092"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -15270,7 +15270,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_general_en.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KB54PNC_C307331.pdf"
 			(at 46.99 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -15292,7 +15292,7 @@
 				)
 			)
 		)
-		(property "Voltage_in_V" "35"
+		(property "Voltage_in_V" "50"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -15336,7 +15336,7 @@
 				)
 			)
 		)
-		(property "MPN" "CGA2B3X7R1V104K050BB"
+		(property "MPN" "CL05B104KB54PNC"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -15347,7 +15347,7 @@
 				)
 			)
 		)
-		(property "Mouser" "810-CGA2B3X7R1V104K"
+		(property "Mouser" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -15358,7 +15358,7 @@
 				)
 			)
 		)
-		(property "Digikey" "445-6901-1-ND"
+		(property "Digikey" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -15369,7 +15369,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2181802"
+		(property "LCSC" "C307331"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -15640,7 +15640,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/28773/crcwce3.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311900_UNI-ROYAL-Uniroyal-Elec-0402WGF220JTCE_C25092.pdf"
 			(at 124.46 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -15684,7 +15684,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW040222R0FKEDC"
+		(property "MPN" "0402WGF220JTCE"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -15695,7 +15695,7 @@
 				)
 			)
 		)
-		(property "Mouser" "71-CRCW040222R0FKEDC"
+		(property "Mouser" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -15706,7 +15706,7 @@
 				)
 			)
 		)
-		(property "Digikey" "541-3973-1-ND"
+		(property "Digikey" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -15717,7 +15717,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2076943"
+		(property "LCSC" "C25092"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -16217,7 +16217,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_general_en.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KB54PNC_C307331.pdf"
 			(at 34.29 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -16239,7 +16239,7 @@
 				)
 			)
 		)
-		(property "Voltage_in_V" "35"
+		(property "Voltage_in_V" "50"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -16283,7 +16283,7 @@
 				)
 			)
 		)
-		(property "MPN" "CGA2B3X7R1V104K050BB"
+		(property "MPN" "CL05B104KB54PNC"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -16294,7 +16294,7 @@
 				)
 			)
 		)
-		(property "Mouser" "810-CGA2B3X7R1V104K"
+		(property "Mouser" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -16305,7 +16305,7 @@
 				)
 			)
 		)
-		(property "Digikey" "445-6901-1-ND"
+		(property "Digikey" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -16316,7 +16316,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2181802"
+		(property "LCSC" "C307331"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -16384,7 +16384,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/28773/crcwce3.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311900_UNI-ROYAL-Uniroyal-Elec-0402WGF2000TCE_C25087.pdf"
 			(at 270.51 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -16428,7 +16428,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW0402200RFKEDC"
+		(property "MPN" "0402WGF2000TCE"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -16439,7 +16439,7 @@
 				)
 			)
 		)
-		(property "Mouser" "71-CRCW0402200RFKEDC"
+		(property "Mouser" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -16450,7 +16450,7 @@
 				)
 			)
 		)
-		(property "Digikey" "541-3995-1-ND"
+		(property "Digikey" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -16461,7 +16461,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C843896"
+		(property "LCSC" "C25087"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -17026,7 +17026,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_general_en.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KB54PNC_C307331.pdf"
 			(at 21.59 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -17048,7 +17048,7 @@
 				)
 			)
 		)
-		(property "Voltage_in_V" "35"
+		(property "Voltage_in_V" "50"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -17092,7 +17092,7 @@
 				)
 			)
 		)
-		(property "MPN" "CGA2B3X7R1V104K050BB"
+		(property "MPN" "CL05B104KB54PNC"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -17103,7 +17103,7 @@
 				)
 			)
 		)
-		(property "Mouser" "810-CGA2B3X7R1V104K"
+		(property "Mouser" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -17114,7 +17114,7 @@
 				)
 			)
 		)
-		(property "Digikey" "445-6901-1-ND"
+		(property "Digikey" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -17125,7 +17125,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2181802"
+		(property "LCSC" "C307331"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -17590,7 +17590,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/28773/crcwce3.pdf"
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2308241947_FOJAN-FRC0402F5761TS_C5153969.pdf"
 			(at 45.72 76.2 0)
 			(hide yes)
 			(effects
@@ -17608,7 +17608,7 @@
 				)
 			)
 		)
-		(property "Digikey" "541-5031-1-ND"
+		(property "Digikey" ""
 			(at 45.72 76.2 0)
 			(hide yes)
 			(effects
@@ -17617,7 +17617,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C4180495"
+		(property "LCSC" "C5153969"
 			(at 45.72 76.2 0)
 			(hide yes)
 			(effects
@@ -17626,7 +17626,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW04025K76FKEDC"
+		(property "MPN" "FRC0402F5761TS"
 			(at 45.72 76.2 0)
 			(hide yes)
 			(effects
@@ -17635,7 +17635,7 @@
 				)
 			)
 		)
-		(property "Mouser" "71-CRCW04025K76FKEDC"
+		(property "Mouser" ""
 			(at 45.72 76.2 0)
 			(hide yes)
 			(effects
@@ -18249,7 +18249,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/28773/crcwce3.pdf"
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2308241947_FOJAN-FRC0402F5761TS_C5153969.pdf"
 			(at 214.63 90.17 0)
 			(hide yes)
 			(effects
@@ -18276,7 +18276,7 @@
 			)
 		)
 	
-		(property "Digikey" "541-5031-1-ND"
+		(property "Digikey" ""
 			(at 214.63 90.17 0)
 			(hide yes)
 			(effects
@@ -18285,7 +18285,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C4180495"
+		(property "LCSC" "C5153969"
 			(at 214.63 90.17 0)
 			(hide yes)
 			(effects
@@ -18294,7 +18294,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW04025K76FKEDC"
+		(property "MPN" "FRC0402F5761TS"
 			(at 214.63 90.17 0)
 			(hide yes)
 			(effects
@@ -18303,7 +18303,7 @@
 				)
 			)
 		)
-		(property "Mouser" "71-CRCW04025K76FKEDC"
+		(property "Mouser" ""
 			(at 214.63 90.17 0)
 			(hide yes)
 			(effects
