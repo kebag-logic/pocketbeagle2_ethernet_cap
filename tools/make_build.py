@@ -23,7 +23,6 @@ ROT_FIX = [
     (r"^HTQFP-", 270),                  # U2 DP83867: JLC pin 1 one corner clockwise of KiCad's
     (r"^SOT-23", 180),                  # Q1-Q3 (SOT-23), U3/U4 (SOT-23-5)
     (r"^ECS-2520MV", 270),              # Y1 oscillator
-    (r"^LED_0805", 180),                # D1-D3: JLC cathode bar on the other pad
 ]
 
 
