@@ -86,21 +86,44 @@ def boms():
     return {r for g in jlc.values() for r in g}
 
 
+def pad_centres():
+    """part centre = middle of the pad extents (KiCad THT footprints, e.g. pin headers, put the origin on pin 1;
+    JLCPCB places the part's centre on the CPL coordinate)"""
+    sys.path.insert(0, os.path.join(PRJ, "tools", "respin"))
+    from model import load
+    pads, _, _ = load(PCB)
+    ext = {}
+    for p in pads:
+        if not p.num:
+            continue                                  # mounting pegs / NPTH
+        x, y = p.center
+        e = ext.setdefault(p.ref, [x, y, x, y])
+        e[0], e[1], e[2], e[3] = min(e[0], x), min(e[1], y), max(e[2], x), max(e[3], y)
+    return {r: ((e[0] + e[2]) / 2, (e[1] + e[3]) / 2) for r, e in ext.items()}
+
+
 def cpl(refs):
     raw = os.path.join(ASM, "pos_raw.csv")
     run("kicad-cli", "pcb", "export", "pos", "--format", "csv", "--units", "mm", "--side", "both", "-o", raw, PCB)
     rows = list(csv.DictReader(open(raw)))
     os.remove(raw)
+    centres = pad_centres()
     path = os.path.join(ASM, f"{NAME}_cpl_jlcpcb.csv")
-    n = 0
+    n, moved = 0, []
     with open(path, "w", newline="") as f:
         w = csv.writer(f)
         w.writerow(["Designator", "Mid X", "Mid Y", "Layer", "Rotation"])
         for r in sorted(rows, key=lambda r: nat(r["Ref"])):
-            if r["Ref"] in refs:
-                w.writerow([r["Ref"], f'{float(r["PosX"]):.4f}mm', f'{float(r["PosY"]):.4f}mm',
-                            "Top" if r["Side"] == "top" else "Bottom", f'{float(r["Rot"]):.1f}']); n += 1
-    print("assembly: CPL", n, "placements")
+            if r["Ref"] not in refs:
+                continue
+            x, y = float(r["PosX"]), float(r["PosY"])      # pos file: Y up (negated board Y)
+            cx, cy = centres[r["Ref"]]
+            if abs(cx - x) > 0.05 or abs(-cy - y) > 0.05:
+                moved.append(f'{r["Ref"]} ({x:.2f},{y:.2f})->({cx:.2f},{-cy:.2f})')
+                x, y = cx, -cy
+            w.writerow([r["Ref"], f"{x:.4f}mm", f"{y:.4f}mm", "Top" if r["Side"] == "top" else "Bottom",
+                        f'{float(r["Rot"]):.1f}']); n += 1
+    print("assembly: CPL", n, "placements; centred off-origin parts:", moved)
 
 
 def drawing():
