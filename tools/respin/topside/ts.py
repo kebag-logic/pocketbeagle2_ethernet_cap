@@ -9,17 +9,15 @@ from prune import prune
 import fpgeo
 
 F, B = "F.Cu", "B.Cu"
-LIB = {'C': 'C_0402', 'R': 'R_0402', 'Q': 'SOT-23', 'U4': 'SOT-23-5', 'TP': 'TestPoint_SMD_1.0x1.0mm'}
+LIB = {'C': 'C_0402', 'R': 'R_0402', 'R29': 'R_1206', 'C36': 'C_1210', 'Q': 'SOT-23', 'U4': 'SOT-23-5', 'TP': 'TestPoint_SMD_1.0x1.0mm'}
 
 # ref: (x, y, rot, side)
 PLACE = {
-    # stage 2: TD3 / TX_CLK series resistors, RX_CTRL strap pull-down, 2V5 LDO, test points to the bottom
-    'R11': (205.2, 84.45, 180, F), 'R14': (179.95, 100.5, 90, F), 'R7': (188.85, 75.8, 0, F),
-    'U4': (203.85, 94.9, 180, F),
-    'TP2': (199.6, 85.55, 0, B), 'TP8': (206.3, 80.6, 0, B), 'TP1': (196.0, 91.9, 0, B),
+    # stage 3: chassis bridge parts off the J1 shield-pin holes (their chassis pads covered ~45 % of S1/S2)
+    'R29': (188.5, 99.8, 270, F), 'C36': (204.6, 99.85, 270, F),
+    'C33': (205.25, 97.075, 0, F),     # LDO output cap in the gap between U4 and C36
 }
-CAPS = ['C1', 'C2', 'C3', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C11', 'C12', 'C13', 'C15', 'C16', 'C17', 'C18', 'C19',
-        'C20', 'C21', 'C22', 'C23', 'C24', 'C25', 'C33', 'C37', 'C38', 'C39', 'C40', 'C35', 'C32']
+CAPS = ['C24', 'C40', 'C12', 'C35', 'C5', 'C32']      # in the way of the moved R29 / C36, re-fitted
 if os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'cap_place.json')):
     import json as _j
     for k, v in _j.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'cap_place.json'))).items():
@@ -30,7 +28,7 @@ MOVE_B = ['C1', 'C10', 'C11', 'C12', 'C13', 'C15', 'C16', 'C17', 'C18', 'C19', '
 TP_TO_B = ['TP1', 'TP2', 'TP8']
 EXTRA_GONE = set(CAPS)     # re-placed later in this stage (auto placer / by hand)
 # our GND stitching / old Q-source vias in the way of the new top-side copper
-REMOVE_VIAS = {(180.0, 101.0), (206.0, 96.0)}
+REMOVE_VIAS = {(188.5, 98.2), (204.6, 98.1), (206.0, 97.75), (205.0, 96.57), (204.43, 96.55)}
 GONE = set(PLACE) | EXTRA_GONE   # parts re-placed in this stage (their old pads / dangling copper go)
 
 board_pads, fps, board_tracks = load()
@@ -40,7 +38,7 @@ for p in board_pads:
 
 
 def libname(ref):
-    if ref == 'U4': return LIB['U4']
+    if ref in ('U4', 'R29', 'C36'): return LIB[ref]
     if ref.startswith('TP'): return LIB['TP']
     return LIB[ref[0]]
 
@@ -61,8 +59,11 @@ def state(place=None):
     """pads (board minus moved + placed), kept tracks, removed tracks, new courtyards"""
     kept, rem = prune(board_pads, board_tracks, GONE)
     rv = [t for t in kept if t['kind'] == 'via' and (t['x'], t['y']) in REMOVE_VIAS]
-    assert len(rv) == len(REMOVE_VIAS), (len(rv), len(REMOVE_VIAS))
+    missing = REMOVE_VIAS - {(t['x'], t['y']) for t in rv} - {(t['x'], t['y']) for t in rem if t['kind'] == 'via'}
+    assert not missing, missing
     kept = [t for t in kept if t not in rv]; rem = rem + rv
+    kept, rem2 = prune(board_pads, kept, GONE)       # chains left dangling by the removed vias
+    rem = rem + rem2
     np_, crt = new_pads(place)
     pads = [p for p in board_pads if p.ref not in GONE] + np_
     return pads, kept, rem, crt
