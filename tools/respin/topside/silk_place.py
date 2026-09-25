@@ -11,12 +11,13 @@ from sexp import parse, find, walk
 from model import load, outline, BOARD
 from crtyd import load_crtyd, placed
 
-H, TH = 1.0, 0.15          # JLCPCB legend: text >= 1.0 mm, line >= 0.15 mm
+H, TH = float(__import__('os').environ.get('SILK_H', '1.0')), 0.15          # JLCPCB legend: text >= 1.0 mm, line >= 0.15 mm
+WC = float(__import__('os').environ.get('SILK_W', '0.65'))   # narrow characters (width) so more references fit
 GAP = 0.15                      # JLCPCB pad-to-silkscreen 0.15 mm (also used silk-silk)
 EDGE = outline().buffer(-0.3)
 
 def text_box(s, x, y, angle):
-    w, h = H * (0.905 * len(s) + 0.37), H * 1.609
+    w, h = WC * 0.905 * len(s) + 0.37 * H, H + TH + 0.1     # refs/labels: caps + digits only
     if round(angle) % 180 == 90:
         w, h = h, w
     return box(x - w / 2, y - h / 2, x + w / 2, y + h / 2)
@@ -97,7 +98,17 @@ def main(apply):
             placed_txt["F.SilkS"].append(best[2].buffer(GAP)); labels.append((t, best[0], best[1], best[3]))
         else:
             print("label without room -> F.Fab:", t.value, x0, y0); to_fab.append(t)
-    footprints = [f for f in b.get_footprints() if f.reference_field.visible]
+    footprints = list(b.get_footprints())
+    for f in footprints:        # references left where they are (headers, module) are obstacles
+        t = f.reference_field.text
+        if t.value in ('U1', 'J2', 'J3') and f.reference_field.visible:
+            fh = t.attributes.size.y / 1e6
+            w_ = t.attributes.size.x / 1e6 * 0.905 * len(t.value) + 0.37 * fh
+            if round(t.attributes.angle) % 180 == 90:
+                w_, fh = fh, w_
+            x, y = t.position.x / 1e6, t.position.y / 1e6
+            layer = "B.SilkS" if t.layer == L.BL_B_SilkS else "F.SilkS"
+            placed_txt[layer].append(box(x - w_ / 2, y - fh, x + w_ / 2, y + fh).buffer(GAP))
     lname = lambda f: "B.SilkS" if f.reference_field.text.layer == L.BL_B_SilkS else "F.SilkS"
     # crowded parts first
     def crowd(f):
@@ -112,7 +123,7 @@ def main(apply):
         c = placed(cr[ref]); x0, y0, x1, y1 = c.bounds
         cx, cy = (x0 + x1) / 2, (y0 + y1) / 2
         best = None
-        for ring in (0.05, 0.4, 0.8, 1.3, 1.9):
+        for ring in (0.05, 0.3, 0.6, 0.9, 1.3, 1.9, 2.5, 3.0, 3.5):
             for ang in (0, 90):
                 s = text_box(ref, 0, 0, ang); w, h = s.bounds[2] - s.bounds[0], s.bounds[3] - s.bounds[1]
                 cands = [(cx, cy)]
@@ -141,8 +152,9 @@ def main(apply):
             x, y, ang = result[ref]
             tx = f.reference_field.text
             tx.position = Vector2.from_xy(int(round(x * 1e6)), int(round(y * 1e6)))
-            tx.attributes.size = Vector2.from_xy(int(H * 1e6), int(H * 1e6))
+            tx.attributes.size = Vector2.from_xy(int(WC * 1e6), int(H * 1e6))
             tx.attributes.stroke_width = int(TH * 1e6)
+            f.reference_field.visible = True
             tx.attributes.angle = ang
             upd.append(f)
         elif ref in hidden:
