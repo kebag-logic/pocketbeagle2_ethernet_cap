@@ -2,9 +2,9 @@
 
 Date: 2026-09-25. Project: PocketBeagle 2 Ethernet cape (DP83867, KiCad 10.0.6).
 
-This is the state at the checkpoint where the PCB copper was cleared for the re-spin.
-The schematic and library work is **done**. The PCB layout re-spin is **not started beyond the
-clear and the schematic sync**.
+**State (end of 2026-09-25):** the re-spin is **routed, DRC-clean on copper and committed** on branch
+`revb-respin`, with **every SMD part on the top side**. JLCPCB Gerbers, BOM and CPL are in `production/`.
+Sections 2.1–2.2 are the schematic/library history; 2.3 onward is the current board.
 
 ---
 
@@ -42,7 +42,7 @@ TD2 and TD3 each have "2 possibilities" (two SoC balls). The table uses the list
 
 ## 2. Done
 
-### 2.1 Schematic fixes (ERC: 0 violations, down from 8; not committed)
+### 2.1 Schematic fixes (ERC: 0 errors; committed)
 
 | Fix | Where | Why |
 |-----|-------|-----|
@@ -79,147 +79,123 @@ There are 3 local commits. They are **not pushed**, and the main repo's submodul
   - The library symbol now matches the schematic layout.
   - GND pin 15 is `power_out`; the other GND pins are `passive`.
 
-3D model notes:
+Later schematic changes (user-approved, committed):
 
-- **KiCad model rotation:** +Z is **clockwise** viewed from the top. This was verified with KiCad 10's STEP exporter.
-- **PB2 Z offset:** it assumes the PB2 SoC-side face is 10.1 mm below the cape top (1.6 mm cape plus 8.5 mm female header). With a 2.54 mm stack, the PB2 USB-C would hit the cape. **The real mechanical stack is an open question for the user.**
-- **Bel 1840888-1 (J1):** no model was committed. The file found had been downloaded by going around Bel's form and reCAPTCHA. Download it yourself from belfuse.com; it is licensed CC BY-ND, so commit it unchanged.
+- 1 µF added on PHY pins 4, 12, 41, 42 (C37–C40), per TI.
+- **DP83867 RJ45 mirror mode** (§7.4.6.6), so J1 can sit on B.Cu:
+  - J1 MDI pins are remapped: A↔D and B↔C, with polarity swapped.
+  - A LED_0 mode-3 strap enables it: R31 5k76 to 3V3, R32 2k49 to GND. LED0 stays active-high.
+- BOM swapped to in-stock LCSC parts. U3 is now **TLV73311PDBVR** (C2865431), same DBV pinout.
 
-### 2.3 PCB
+3D models (submodule `kebag_logic_kicad_library`): `PocketBeagle2.stpz` (lower-case extension, which KiCad 10 needs)
+sits 11 mm above the cape top: 2.5 mm male-header plastic plus the 8.5 mm PB2 female header, which is on the PB2's
+bottom face, so the PB2 is component-side up. The J1 Bel STEP is **not** committed; see section 5.
 
-- **Silkscreen:** `P1` and `P2` below each header, with pin numbers 1/2 and 35/36 at each header's corners.
-- **Board state:** a backup was taken, then all tracks, vias and zones were cleared (582 items, via kicad-python, approved). The board was then synced from the schematic.
-- **Placement:** 79 footprints. Positions are unchanged from the previous layout **except the three new parts, which are off-board and must be placed**:
-  - R29 (1206) at (7.3, 16.5) and C36 (1210) at (7.3, 8.7). Put them next to the J1 shield tabs, on a chassis island.
-  - R30 (0402) at (5.9, 1.1). Put it next to R7/R12 (about (188.9, 84.3)) on STRAP_RX_CTRL, close to U2 pin 53.
-- **Backup of the previous full routing:** `tools/respin/reference/board_before_respin.kicad_pcb`. It has the MDI, power, slow nets and LED routes, for reference.
+### 2.3 PCB (current)
+
+**Stackup:** F / 0.1 mm prepreg / **In1 GND** / 1.24 mm core / **In2 GND** / 0.1 mm prepreg / B, close to JLC04161H-3313.
+
+**Placement:**
+- **All SMD parts are on F.Cu.**
+- B.Cu holds only J1 (THT Bel 1840888-1, rotated 180° after the flip) and the unassembled test pads TP1/2/4/6/8.
+- The PB2 (U1) plugs onto J2/J3 (2×18 male headers on U1's holes).
+- LED drivers Q1–Q3 are under the 3V3 top bus.
+- The TX series resistors R8/R10/R11/R14 sit next to their header pins.
+- U4 (2V5 LDO) is at the bottom right.
+
+**Routing:** everything uses 45° corners, audited by script.
+- **RGMII:** 0.15 mm (≈50 Ω, estimate). Lengths are matched including the PB2 module side (module + cape, physical length, vias counted as 1.6 mm):
+
+  | Group | Lines | Total (mm) |
+  |-------|-------|------------|
+  | RX | RD0–3 | 84.76 |
+  | RX | RX_CLK | 98.86 (+14.1) |
+  | TX | TX_CTRL, TD0–3 | 99.671 |
+  | TX | TX_CLK | 115.07 (+15.4) |
+
+  - The clock offsets (≈ +95 ps RX, ≈ +103 ps TX) come from the routes and are absorbed by the delay settings. Use AM62x `phy-mode = "rgmii-rxid"` or `rgmii-id`, and tune with DP83867 RGMIIDCTL (0.25 ns steps) or `ti,rx/tx-internal-delay`.
+  - Measure with `tools/respin/rgmii_len.py`. It sums stubs as well, so strapped nets such as RX_CTRL read long.
+- **MDI:** 0.13 mm width, 0.2 mm gap, on F.Cu with no vias, P/N skew-matched.
+- **Chassis:** a CHASSIS island under J1 on F and B, with a 1 mm moat to GND. R29 (1M) and C36 (4n7 2 kV) bridge it.
+- **Stitching:** GND stitching fence plus interior grid. F/B GND pours are refilled.
+- **Decoupling:** placed and routed by `tools/respin/topside/capfit.py`, nearest free top-side spot to each pin.
+  - C7 sits on pin 8 in the MDI gap, and C9 on pin 23.
+  - Because of the single-sided constraint (user decision: "Everything on top anyway"), several caps are several mm from their pins. They connect over short B.Cu rail links.
+  - The 2V5/3V3 bulk caps C11/C8/C19/C15/C16/C20 sit on the right edge strip beyond J3. C22 sits on the left strip.
+
+**DRC (kicad-cli, `--refill-zones`):** 0 clearance, short, width, courtyard or silk-overlap errors. What remains:
+- `annular_width` and `starved_thermal`: Board Setup values the user has to change (section 5).
+- `holes_co_located`: J2/J3 on U1, by design.
+- 4 `lib_footprint_mismatch`.
+- U4 silk clipped by the J1.1 NC pad.
+- J1 B.Silk past the edge: J1 overhangs the edge by design.
+- VOUT U1.24 ↔ U1.49 unconnected: the PB2 joins them internally.
+- Schematic parity field mismatches.
+
+**Silkscreen:**
+- 1.0 mm text, 0.15 mm stroke, with no overlaps.
+- P1/P2 labels and pin numbers are kept.
+- 19 crowded references are hidden on silk; they're still on F.Fab.
+
+**Production:** `production/` holds the Gerber and drill zip, `*_bom_jlcpcb.csv` (LCSC #) and `*_cpl_jlcpcb.csv`. See `production/README.md`. Regenerate with `python tools/make_production.py`.
 
 ---
 
 ## 3. Decisions and approvals from the user (keep them)
 
-1. **Stackup:** F.Cu / 0.1 mm prepreg / **In1 GND** / 1.24 mm core / **In2 GND** / 0.1 mm prepreg / B.Cu.
-   - Both inner planes are solid GND, so every outer-layer signal references GND.
-   - 3V3, 1V1 and 2V5 go on **outer-layer pours and wide traces**.
-   - Every signal via that changes layer gets a **GND stitching via within about 1 mm**.
-2. **Tools:** kicad-python (kipy 0.8.0, socket `ipc:///tmp/kicad/api.sock`) is allowed for **bulk adding** planned tracks and vias in undoable batches, and it was used for the bulk clear. Everything else goes through **Konnect MCP**. Never hand-edit `.kicad_pcb`/`.kicad_sch`/`.kicad_pro`.
-   - The one exception already used: approved direct `.kicad_sym` edits in the library.
-3. **Commits:** small and incremental, one-line messages of at most 10 words, author and committer `hackerman-kl <alexandremalki89@gmail.com>`, **no co-author trailer**.
-   - Use `git -c user.name=hackerman-kl -c user.email=alexandremalki89@gmail.com commit -m "..."`.
-   - The main repo is on `main`. **Nothing in the main repo is committed yet.**
-4. **Pours:** F/B GND pours go on last.
-5. **Corners:** 45° routing only, never 90° corners.
+1. **Stackup:** In1 and In2 are both GND. Power runs on outer-layer traces.
+2. **Tools:**
+   - Konnect MCP is used for part moves, flips, saves, refills and footprint updates.
+   - kicad-python (kipy 0.8.0, `ipc:///tmp/kicad/api.sock`) is approved for:
+     - bulk clear or add of planned tracks and vias in undoable batches;
+     - zone outline and spoke edits;
+     - silkscreen text placement;
+     - one-off 3D model entries.
+   - Never hand-edit `.kicad_pcb`, `.kicad_sch` or `.kicad_pro`.
+3. **Commits:**
+   - One line, at most 10 words.
+   - Author and committer `hackerman-kl <alexandremalki89@gmail.com>`, with **no co-author trailer**.
+   - Branch `revb-respin`.
+   - Never commit the untracked `.gitprep-hackerman-kl`, `Requirements`, `konnect/` or the PDF.
+4. **Layout:**
+   - F/B GND pours go on last.
+   - 45° corners only.
+   - Every SMD part on the top side, **"Everything on top anyway"**: decoupling can sit farther from the pins.
+   - J1 is the only part on the bottom.
+5. **Schematic changes need explicit approval.**
 
 ---
 
-## 4. Next steps (in order)
+## 4. Open items
 
-### 4.1 Placement touch-ups
-
-- Place R30, R29 and C36 (see 2.3).
-- R29 and C36 bridge the J1 `CHASSIS` pads (S1/S2) to GND. Keep a 2 mm or more gap between the chassis copper and the GND pours.
-
-### 4.2 Planes and power
-
-- Add In1 GND and In2 GND full-board zones (Konnect `add_zone`).
-- Void all planes under the magjack's cable-side and MDI area per TI §9.4 ("no metal under the transformer"). In rev A, In2 was voided under J1. The GND plane under the PHY side stays.
-- Power on outer layers:
-  - **3V3:** U2 VDDIO pins 23/41/57, U3/U4 inputs, pull-ups, oscillator. Use a B.Cu 3V3 pour region plus 0.3 mm or wider traces.
-  - **1V1:** U3 output to U2 VDD1P1 pins 8/29/42/58.
-  - **2V5:** U4 output to U2 VDDA2P5 pins 4/12. It was a B.Cu pour before.
-  - Each decoupling cap gets its own GND via.
-
-### 4.3 MDI and LEDs (ready to push)
-
-- `tools/respin/plan_mdi.py 1.2745 1.2745 1.2745 1.3455` gives 0 issues. P/N are matched to 0.001 mm with 0.13 mm traces and a 0.2 mm gap (≈100 Ω diff); confirm with the fab's calculator.
-- `tools/respin/plan_led.py` gives 0 issues. The LED0–2 gates run on B.Cu up the left strip and around the top-left arc, necked to 0.10 mm (board minimum).
-  - **Check:** it assumes B.Cu at the left strip is free.
-- Both scripts build a `Plan` object. Push it with a kipy batch (see 4.7).
-
-### 4.4 RGMII re-route with length matching (main work)
-
-- **Impedance:** 0.15 mm traces over GND at 0.1 mm prepreg ≈ 51 Ω on both F.Cu and B.Cu (Hammerstad estimate; confirm with the fab calculator).
-- **Series resistors:** RX resistors (R15–R19, R12) stay at the PHY. TX resistors (R8–R11, R13, R14) stay at the PB2 pins.
-- **Target:** total length (module + cape) matched within each group to **±2.5 mm** (≈ ±17 ps). The clock is matched too, so the standard 2 ns RGMII-ID delays work.
-- **Meanders:** ≥ 3W spacing (0.45 mm gap) and 45° corners. Keep them 3W or more from other nets. No meanders under U2 or near J1.
-- **Layer changes:** keep them to one per net, each with an adjacent GND stitching via.
-
-Suggested targets. `rgmii_len.py` measures the cape side: PHY pin → series R → PB2 pad, both nets summed.
-
-| Group | Line    | Module mm | Target total | Cape target mm | Old cape (rev B) |
-|-------|---------|-----------|--------------|----------------|------------------|
-| RX    | RX_CLK  | 56.00     | ≈91          | ≈35 (shortest possible) | 58.6 |
-| RX    | RD0     | 45.94     | 91           | 45.1           | 43.4 |
-| RX    | RD1     | 38.61     | 91           | 52.4           | 37.1 |
-| RX    | RD2     | 38.39     | 91           | 52.6           | 30.9 |
-| RX    | RD3     | 37.08     | 91           | 53.9           | 25.0 |
-| RX    | RX_CTRL | 34.31     | 91           | 56.7           | 9.7  |
-| TX    | TX_CTRL | 74.32     | 100          | 25.7 (≈ shortest) | 25.0 |
-| TX    | TX_CLK  | 62.03     | 100          | 38.0           | 40.3 |
-| TX    | TD0     | 30.03     | 100          | 70.0           | 21.6 |
-| TX    | TD1     | 50.59     | 100          | 49.4           | 32.5 |
-| TX    | TD2     | 19.95     | 100          | 80.0           | 14.7 |
-| TX    | TD3     | 8.35      | 100          | 91.6           | 14.7 |
-
-- **Meander length:** about 115 mm extra on RX and 210 mm on TX.
-- **Space:** B.Cu above U2 (about x 187.5–204, y 62–76) is the largest free region. The F.Cu left strip carries the RX lanes. RX_CLK should get a shorter route than the old detour around the header.
-- **Velocity caveat:** the matching above is by physical length. If the PB2 routes are stripline (≈6.9 ps/mm) and the cape is microstrip (≈6.0 ps/mm), a residual ≤ 50 ps offset between groups is possible. It's within the delay-trim range.
-- **After routing:**
-  - Report the per-line totals and skew in ps.
-  - Recommend the DT and DP83867 settings: RGMIICTL 0x32 and RGMIIDCTL 0x86, 0.25 ns steps; `ti,rx-internal-delay` / `ti,tx-internal-delay`.
-
-### 4.5 Slow nets
-
-Use Freerouting 2.1.0 (headless, `-de X.dsn -do X.ses --router.max_passes=150 --gui.enabled=false`):
-
-- Export the DSN with `pcbnew.ExportSpecctraDSN` from a **copy** of the board with J2/J3 removed (they are co-located with U1 pads).
-- Change `(type route)` to `(type protect)` to lock the copper already placed.
-- Restrict routing to F/B only; with In1 and In2 both GND, mark the inner layers unusable.
-- Parse the SES with `tools/respin/ses_parse.py`, filter it, then push with kipy.
-
-### 4.6 EMC finish
-
-- GND via fence along the board edge, ≤ 2.5 mm pitch, 0.5 mm from the edge.
-- Stitching vias next to every signal layer change and around the PHY.
-- Then F/B GND pours with no floating islands, refill, and final DRC.
-- Angle audit: no 90° corners.
-
-### 4.7 Pushing geometry with kipy
-
-This follows the pattern in `clear_copper.py`:
-
-- `KiCad(socket_path=...)`, then `board.begin_commit()`.
-- Create `Track` / `Via` items with nets from `board.get_nets()` and positions in nm.
-- `board.create_items([...])`, then `board.push_commit(c, "message")`.
-- Save with Konnect `save_project`.
-
-Before pushing, always run `Plan.check()` (`tools/respin/model.py`, shapely) against the saved board.
+- **J1 sourcing:** C5876366 isn't stocked at LCSC or in the JLC catalogue, so J1 is left out of the JLC BOM/CPL. Either hand-solder it (DigiKey 5923-1840888-1-ND), or switch to HanRun HR911130A (C54408), which needs a new footprint and placement.
+- **Low stock:** U2 C477933 has 18 pcs; order early.
+- **Firmware / DT:**
+  - Set the PHY address with `reg = <0>`.
+  - RGMII delays per 2.3.
+  - Mirror mode is strap-enabled; nothing to do in software.
+  - PB2 shared pins: keep the second SoC balls and the MSPM0 pins Hi-Z.
 
 ---
 
 ## 5. Actions only the user can do
 
-1. **3D path variable:** KiCad → Preferences → Configure Paths → add `KL_LIB` = `<project>/kebag_logic_kicad_library`. Without it, no KL 3D model resolves.
-2. **Footprint refresh:** KiCad → Tools → **Update Footprints from Library** (all, include 3D models). Konnect can't do it losslessly, because of the `unlocked` clauses on U1, U2, Y1, J1 and the TPs.
-3. **Annular ring:** Board Setup → min via annular width 0.2 → **0.1 mm**. The vias are 0.45/0.2 mm, which gives a 0.125 mm ring. JLC 4-layer allows 0.075 mm, and Konnect can't set this.
-4. **Impedance:** confirm 50 Ω SE and 100 Ω diff trace sizes with the fab's stackup calculator.
-5. **Mechanical stack:** decide the PB2 to cape height (PB2 USB-C clearance) and adjust the U1 model Z offset.
-6. **J1 model:** download the Bel 1840888-1 STEP from Bel's site.
-7. **C36 fields:** fill in the distributor numbers.
-8. **Pushes:** push the library commits and bump the submodule pointer.
+1. **Close and reopen the project in KiCad.** Its in-memory project settings are stale (pre-rev-B netclasses) and rewrite `pocketbeagle2_ethernet_cap.kicad_pro` on save. Every script run so far restores the file with `git checkout -- pocketbeagle2_ethernet_cap.kicad_pro`.
+2. **3D path:** Preferences → Configure Paths → add `KL_LIB` = `<project>/kebag_logic_kicad_library`. Without it, KiCad shows only pads.
+3. **Board Setup:**
+   - Minimum via annular width 0.2 → **0.1 mm**. The vias are 0.45/0.2 mm; JLC allows it.
+   - Zone minimum thermal spoke count → **1**.
+4. **Impedance:** order JLC impedance control and let them adjust the widths. On their 3313 stackup, 50 Ω may need about 0.17–0.19 mm.
+5. **J1 model:** download the Bel 1840888-1 STEP from belfuse.com (CC BY-ND, commit it unchanged).
+6. **Library:** push the `kebag_logic_kicad_library` commits and bump the submodule pointer.
+7. **JLC order:** check part rotations in the placement preview (SOT-23, SOT-23-5, HTQFP, LEDs).
 
 ---
 
 ## 6. Tooling and gotchas
 
-- **Scripts** are in `tools/respin/` (see its README). They need Python with `shapely` and `kipy==0.8.0`.
-- **Konnect cannot:**
-  - delete vias or zones;
-  - set DNP;
-  - create `extends`-derived symbols;
-  - import SES on 4-layer or rounded-outline boards.
-- **Konnect symbol edits:**
-  - `replace_component` keeps the **old** instance fields, so re-set Value, MPN and so on afterwards.
-  - `add_schematic_component` doesn't copy custom fields; add them with `edit_schematic_component`.
-- **kicad-cli ERC JSON:** coordinates and lengths are scaled by 100.
-- **Earlier notes:** see `documentation/library_additions.md` and `documentation/review_checklist.md`.
+- Scripts live in `tools/respin/` (see its README), including `topside/`: the router, the cap fitter and the stage plans.
+- `kicad-cli pcb render` / `export` need `-D KL_LIB=<repo>/kebag_logic_kicad_library`.
+- KiCad re-nets a dangling via or stub when a footprint it touched is flipped. Check for orphan vias and duplicate tracks after pushes.
+- **Konnect cannot:** delete vias or zones, set DNP, or import SES on 4-layer or rounded boards.
+- `kicad-cli` ERC JSON coordinates are scaled by 100.
