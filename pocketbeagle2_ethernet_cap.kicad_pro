@@ -1562,7 +1562,9 @@
       "oscillator"
     ]
   ],
-  "text_variables": {},
+  "text_variables": {
+    "KL_LIB": "${KIPRJMOD}/kebag_logic_kicad_library"
+  },
   "tuning_profiles": {
     "meta": {
       "version": 0
