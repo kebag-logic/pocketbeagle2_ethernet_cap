@@ -159,9 +159,9 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.2,
-        "min_track_width": 0.1524,
+        "min_track_width": 0.1,
         "min_via_annular_width": 0.2,
-        "min_via_diameter": 0.4,
+        "min_via_diameter": 0.45,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -513,7 +513,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.3,
+        "clearance": 0.15,
         "diff_pair_gap": 0.1,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.1,
@@ -526,12 +526,12 @@
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
         "tuning_profile": "",
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
+        "via_diameter": 0.45,
+        "via_drill": 0.2,
         "wire_width": 6
       },
       {
-        "clearance": 0.1,
+        "clearance": 0.15,
         "diff_pair_gap": 0.25,
         "diff_pair_width": 0.2,
         "microvia_diameter": 0.3,
@@ -540,21 +540,24 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.35,
+        "track_width": 0.3,
         "tuning_profile": "",
-        "via_diameter": 0.8,
-        "via_drill": 0.4
+        "via_diameter": 0.45,
+        "via_drill": 0.2
       },
       {
+        "clearance": 0.15,
         "name": "3V3",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 3,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.3,
-        "tuning_profile": ""
+        "tuning_profile": "",
+        "via_diameter": 0.45,
+        "via_drill": 0.2
       },
       {
-        "clearance": 0.1,
+        "clearance": 0.15,
         "diff_pair_gap": 0.25,
         "diff_pair_width": 0.2,
         "microvia_diameter": 0.3,
@@ -563,31 +566,51 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.35,
+        "track_width": 0.3,
         "tuning_profile": "",
-        "via_diameter": 0.8,
-        "via_drill": 0.4
+        "via_diameter": 0.45,
+        "via_drill": 0.2
       },
       {
+        "clearance": 0.15,
         "name": "MDI",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "tuning_profile": ""
+        "track_width": 0.13,
+        "tuning_profile": "",
+        "via_diameter": 0.45,
+        "via_drill": 0.2
       },
       {
+        "clearance": 0.15,
         "name": "RGMII_RX",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 4,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "tuning_profile": ""
+        "track_width": 0.15,
+        "tuning_profile": "",
+        "via_diameter": 0.45,
+        "via_drill": 0.2
       },
       {
+        "clearance": 0.15,
         "name": "RGMII_TX",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 5,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "tuning_profile": ""
+        "track_width": 0.15,
+        "tuning_profile": "",
+        "via_diameter": 0.45,
+        "via_drill": 0.2
+      },
+      {
+        "clearance": 0.15,
+        "name": "1V1",
+        "priority": -1,
+        "track_width": 0.3,
+        "via_diameter": 0.45,
+        "via_drill": 0.2
       }
     ],
     "meta": {
@@ -971,6 +994,146 @@
       {
         "netclass": "Default",
         "pattern": "VIN.BAT"
+      },
+      {
+        "netclass": "RGMII_TX",
+        "pattern": "/RGMII_TD0_CPU_to_PHY"
+      },
+      {
+        "netclass": "RGMII_TX",
+        "pattern": "/RGMII_TD1_CPU_to_PHY"
+      },
+      {
+        "netclass": "RGMII_TX",
+        "pattern": "/RGMII_TD2_CPU_to_PHY"
+      },
+      {
+        "netclass": "RGMII_TX",
+        "pattern": "/RGMII_TD3_CPU_to_PHY"
+      },
+      {
+        "netclass": "RGMII_TX",
+        "pattern": "/RGMII_TX_CLK_CPU_to_PHY"
+      },
+      {
+        "netclass": "RGMII_TX",
+        "pattern": "/RGMII_TX_CTRL_CPU_to_PHY"
+      },
+      {
+        "netclass": "RGMII_TX",
+        "pattern": "Net-(U2-TX_D0)"
+      },
+      {
+        "netclass": "RGMII_TX",
+        "pattern": "Net-(U2-TX_D1)"
+      },
+      {
+        "netclass": "RGMII_TX",
+        "pattern": "Net-(U2-TX_D2)"
+      },
+      {
+        "netclass": "RGMII_TX",
+        "pattern": "Net-(U2-TX_D3)"
+      },
+      {
+        "netclass": "RGMII_TX",
+        "pattern": "Net-(U2-GTX_CLK)"
+      },
+      {
+        "netclass": "RGMII_TX",
+        "pattern": "Net-(U2-TX_EN_TX_CTRL)"
+      },
+      {
+        "netclass": "RGMII_RX",
+        "pattern": "/RGMII_RD0_PHY_to_CPU"
+      },
+      {
+        "netclass": "RGMII_RX",
+        "pattern": "/RGMII_RD1_PHY_to_CPU"
+      },
+      {
+        "netclass": "RGMII_RX",
+        "pattern": "/RGMII_RD2_PHY_to_CPU"
+      },
+      {
+        "netclass": "RGMII_RX",
+        "pattern": "/RGMII_RD3_PHY_to_CPU"
+      },
+      {
+        "netclass": "RGMII_RX",
+        "pattern": "/RGMII_RX_CLK_PHY_to_CPU"
+      },
+      {
+        "netclass": "RGMII_RX",
+        "pattern": "/RGMII_RX_CTRL_PHY_to_CPU"
+      },
+      {
+        "netclass": "RGMII_RX",
+        "pattern": "Net-(U2-RX_D0)"
+      },
+      {
+        "netclass": "RGMII_RX",
+        "pattern": "Net-(U2-RX_D1)"
+      },
+      {
+        "netclass": "RGMII_RX",
+        "pattern": "Net-(U2-RX_D2)"
+      },
+      {
+        "netclass": "RGMII_RX",
+        "pattern": "Net-(U2-RX_D3)"
+      },
+      {
+        "netclass": "RGMII_RX",
+        "pattern": "Net-(U2-RX_CLK)"
+      },
+      {
+        "netclass": "RGMII_RX",
+        "pattern": "/network/phy/STRAP_RX_CTRL_PHY"
+      },
+      {
+        "netclass": "MDI",
+        "pattern": "/network/phy/MDI0_PHY_RJ45_P"
+      },
+      {
+        "netclass": "MDI",
+        "pattern": "/network/phy/MDI0_PHY_RJ45_N"
+      },
+      {
+        "netclass": "MDI",
+        "pattern": "/network/phy/MDI1_PHY_RJ45_P"
+      },
+      {
+        "netclass": "MDI",
+        "pattern": "/network/phy/MDI1_PHY_RJ45_N"
+      },
+      {
+        "netclass": "MDI",
+        "pattern": "/network/phy/MDI2_PHY_RJ45_P"
+      },
+      {
+        "netclass": "MDI",
+        "pattern": "/network/phy/MDI2_PHY_RJ45_N"
+      },
+      {
+        "netclass": "MDI",
+        "pattern": "/network/phy/MDI3_PHY_RJ45_P"
+      },
+      {
+        "netclass": "MDI",
+        "pattern": "/network/phy/MDI3_PHY_RJ45_N"
+      },
+      {
+        "netclass": "3V3",
+        "pattern": "/VDD_3V3"
+      },
+      {
+        "netclass": "2V5",
+        "pattern": "/VDD_2V5"
+      },
+      {
+        "netclass": "1V1",
+        "pattern": "/VDD_1V1"
       }
     ]
   },

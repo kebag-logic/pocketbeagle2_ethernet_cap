@@ -1,9 +1,28 @@
 (version 1)
-(rule "skew matching RGMII_TX"
-(constraint length (min 3mm) (max 3mm))
-(condition "A.NetClass == 'RGMII_TX'")
-(severity error))
-(rule "skew matching RGMII_RX"
-(constraint length (min 3mm) (max 3mm))
-(condition "A.NetClass == 'RGMII_RX'")
-(severity error))
+
+# U1 is the PocketBeagle 2 module sitting under the cape: its courtyard is the
+# whole PB2 outline, so every cape part overlaps it by design.
+(rule "PB2 host body under cape"
+  (severity ignore)
+  (condition "A.Reference == 'U1' || B.Reference == 'U1'")
+  (constraint courtyard_clearance (min -60mm)))
+
+# 0.45/0.2 mm vias and the DP83867 PAP0064 exposed-pad thermal vias (0.5/0.2 mm)
+# leave a 0.125-0.15 mm ring; JLCPCB 4-layer capability is 0.075 mm.
+(rule "via and thermal-via annular ring"
+  (condition "A.Type == 'Via' || (A.Type == 'Pad' && A.Parent.Reference == 'U2')")
+  (constraint annular_width (min 0.1mm)))
+
+# MDI pairs PHY -> magjack: 100 ohm edge-coupled microstrip on F.Cu over In1 GND
+# (0.13 mm / 0.2 mm gap). Pairs split at J1 (P on the lower row, N on the upper).
+(rule "MDI differential pairs"
+  (condition "A.inDiffPair('/network/phy/MDI*')")
+  (constraint diff_pair_gap (min 0.18mm) (opt 0.2mm) (max 0.25mm))
+  (constraint diff_pair_uncoupled (max 4mm))
+  (constraint skew (max 1.27mm)))
+
+# RGMII RX group (PHY -> PB2): the PB2 module side is matched to +/-3.5 mm
+# (LENGTH_OFFICIAL.ods), keep the cape side matched too.
+(rule "RGMII RX group skew"
+  (condition "A.NetClass == 'RGMII_RX' && A.NetName == '/RGMII_R*'")
+  (constraint skew (max 5mm)))
