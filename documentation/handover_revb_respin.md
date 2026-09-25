@@ -141,6 +141,24 @@ bottom face, so the PB2 is component-side up. The J1 Bel STEP is **not** committ
 
 ---
 
+## 2.4 JLCPCB order (2026-09-25)
+
+- The order was submitted to JLCPCB from `build/` at commit `bfe32f5`: Gerber zip, JLC BOM, JLC CPL.
+- It's a top-side assembly with JLC-chosen rotations: U2 0°, Q1–Q3 270°, U3 180°, U4 0°, Y1 90°, J2/J3 90°, LEDs 0°.
+- **Not assembled:**
+  - J1: hand-solder it and **leave pin 1 (NC) unsoldered**. It sits 0.17–0.23 mm from U4, C5, C32 and C33.
+  - U1: the PocketBeagle 2, plugged on.
+  - TP1–TP8: test pads only.
+- **Late fixes before the order:**
+  - R29 and C36 chassis pads moved off the J1 shield-pin holes.
+  - C33 placed under U4.
+  - J1.10 ground reconnected.
+  - CPL rotations and centroid corrections.
+- **Bring-up:**
+  - Set the RGMII delays: RX clock is +14.1 mm (+95 ps) and TX clock +15.4 mm (+103 ps) versus data. Start with `rgmii-rxid` / `rgmii-id` and a DP83867 RX delay of 1.75 ns.
+  - RJ45 mirror mode is strap-enabled (LED_0 mode 3).
+  - PHY address `reg = <0>`.
+
 ## 3. Decisions and approvals from the user (keep them)
 
 1. **Stackup:** In1 and In2 are both GND. Power runs on outer-layer traces.
