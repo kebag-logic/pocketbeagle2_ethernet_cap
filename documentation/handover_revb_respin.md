@@ -147,6 +147,15 @@ bottom face, so the PB2 is component-side up. The J1 Bel STEP is **not** committ
 - It's a top-side assembly with JLC-chosen rotations: U2 0°, Q1–Q3 270°, U3 180°, U4 0°, Y1 90°, J2/J3 90°, LEDs 0°.
 - **Not assembled:**
   - J1: hand-solder it and **leave pin 1 (NC) unsoldered**. It sits 0.17–0.23 mm from U4, C5, C32 and C33.
+    - **Part: TE 5-2301994-7** (tray; DigiKey stock 2,653 on 2026-09-27). The Bel 1840888-1 through -5 have no stock anywhere.
+    - The TE drawing matches the Bel in every way that matters here:
+      - holes Ø0.90 on a 1.27/2.54 stagger, rows 8.89/6.35, pegs Ø3.25 at 11.43;
+      - pin 1 = centre-tap common, with 4 × 0.1 µF to pin 10 (GND);
+      - pairs 2/3→RJ1/2, 4/5→RJ3/6, 6/7→RJ4/5, 8/9→RJ7/8;
+      - the 1000 pF Bob-Smith capacitor goes to the shield.
+    - The shield tabs are 15.71 mm apart against 15.49 on the board, 0.11 mm off per side in the 1.65 mm holes. If the tabs don't go in, squeeze them in slightly.
+    - Other drop-ins, same wiring: Halo HFJ11-(E)1G16E-L12RL, Molex 0936268520 / 0936263508, Pulse (J)XKM-0013NL. For their LED pins (which land 0.2 mm inside the board edge), clip flush before fitting.
+    - **Don't use** HanRun HR911130A-style jacks (and their clones). The holes match but the middle pairs are crossed (4/7, 5/6). The same goes for TE 2301994-6, 1-2301994-0 and 3-2301994-1, and Molex 0936263006 / 0936268020.
   - U1: the PocketBeagle 2, plugged on.
   - TP1–TP8: test pads only.
 - **Late fixes before the order:**
@@ -186,7 +195,7 @@ bottom face, so the PB2 is component-side up. The J1 Bel STEP is **not** committ
 
 ## 4. Open items
 
-- **J1 sourcing:** C5876366 isn't stocked at LCSC or in the JLC catalogue, so J1 is left out of the JLC BOM/CPL. Either hand-solder it (DigiKey 5923-1840888-1-ND), or switch to HanRun HR911130A (C54408), which needs a new footprint and placement.
+- **J1 sourcing:** the Bel 1840888-x has no stock anywhere, so hand-solder the **TE 5-2301994-7** instead (drop-in; see 2.4). J1 stays out of the JLC BOM/CPL. The schematic MPN still says Bel.
 - **Low stock:** U2 C477933 has 18 pcs; order early.
 - **Firmware / DT:**
   - Set the PHY address with `reg = <0>`.

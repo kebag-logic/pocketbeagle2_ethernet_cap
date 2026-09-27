@@ -48,7 +48,7 @@ build/
 - J2/J3 (HC-PZ254-11.5L-2x18PZ, C41376109) are THT on the top. JLC fits them as through-hole assembly.
 - **Not in the JLC BOM/CPL** (all are in `bom_full.csv`):
   - U1: the PocketBeagle 2 plugs onto J2/J3.
-  - J1: Bel Fuse 1840888-1 magjack, THT on the bottom. It isn't stocked at LCSC/JLC, so hand-solder it (DigiKey 5923-1840888-1-ND).
+  - J1: magjack, THT on the bottom, hand-soldered. The schematic says Bel 1840888-1, which has no stock anywhere. Fit the drop-in **TE 5-2301994-7** instead (DigiKey). Leave pin 1 unsoldered. See handover 2.4.
   - TP1–TP8: test pads only.
 - Every LCSC number was in stock when the files were generated. Low stock to watch:
   - U2 DP83867IRPAPR (C477933)
