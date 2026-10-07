@@ -51,12 +51,47 @@ only the 17 cap-used signals leave the sheet as ports.
 
 ## Board state
 
-The **rev A** routed board (as manufactured) is preserved at git tag `revA-routed`
-(flight-time matching on the RGMII still open there). The current schematic rework is
-library/structure only — the `.kicad_pcb` is untouched and will be re-synced when
-routing resumes.
+**Rev B** (branch `revb-respin`) is manufactured and assembled by JLCPCB. All SMD parts are on the
+top side; the RJ45 magjack J1 (TE 5-2301994-7, pin 1 left unsoldered) is hand-soldered on the bottom
+and runs through the DP83867 RJ45 mirror mode. RGMII lengths are matched including the PocketBeagle 2
+module side. Design and order details: [documentation/handover_revb_respin.md](documentation/handover_revb_respin.md).
 
-Rev A pictures:
+Bring-up status (2026-10-07):
+
+| Step | Result |
+|------|--------|
+| Visual inspection, rail-to-GND shorts | OK |
+| Bench 3.3 V on P1.14, cape alone: VDD_2V5 / VDD_1V1 | OK |
+| PocketBeagle 2 on USB-C, no SD card: rails | OK |
+| Ethernet link LED on cable plug/unplug (PHY out of reset, auto-negotiation) | OK |
+| Link speed on the switch side: 1000 Mb/s (all 4 pairs and mirror mode work) | OK |
+| Linux: PHY detected over MDIO, 1000/Full, iperf3, RGMII delay tuning | to do (needs SD card) |
+
+### Software
+
+A Linux image for the PocketBeagle 2 with this cape is built from the
+ti-am64 BSP. The device tree needs the PHY at `reg = <0>` and
+`phy-mode = "rgmii-rxid"` (start with a 1.75 ns RX delay); see section 2.4 of the handover.
+
+### Rev B pictures
+
+Assembled board on the PocketBeagle 2:
+
+![Rev B assembled, side](res/images/pocketbeagle2_revB_20261007_real_00.jpg)
+![Rev B assembled, RJ45 side](res/images/pocketbeagle2_revB_20261007_real_01.jpg)
+![Rev B assembled, PocketBeagle 2 on top](res/images/pocketbeagle2_revB_20261007_real_02.jpg)
+
+Layout and 3D views:
+
+![Rev B routing](res/images/pocketbeagle2_revB_20261007_route_PCB.png)
+![Rev B 3D front](res/images/pocketbeagle2_revB_20261007_font_angled_PCB.png)
+![Rev B 3D side](res/images/pocketbeagle2_revB_20261007_side_PCB.png)
+![Rev B 3D bottom](res/images/pocketbeagle2_revB_20261007_bot_PCB.png)
+
+### Rev A
+
+The **rev A** routed board is preserved at git tag `revA-routed` (flight-time matching on the RGMII was
+still open there).
 
 ![PCB layout](res/images/pocketbeagle2_revA_241205_PCB.png)
 ![3D front](res/images/pocketbeagle2_revA_241205.png)
