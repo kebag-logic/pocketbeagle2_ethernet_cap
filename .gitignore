@@ -37,6 +37,8 @@ fp-info-cache
 # Exported BOM files
 *.xml
 *.csv
+# ...except the manufacturing BOM / pick-and-place outputs
+!build/**/*.csv
 
 # Archived Backups (KiCad 6.0)
 **/*-backups/*.zip
@@ -46,3 +48,6 @@ fp-info-cache
 
 # Local git identity prep
 .gitprep
+
+# Python caches
+__pycache__/

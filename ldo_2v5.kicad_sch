@@ -2080,7 +2080,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_general_en.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KB54PNC_C307331.pdf"
 			(at 119.38 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -2104,7 +2104,7 @@
 				(justify left)
 			)
 		)
-		(property "Voltage_in_V" "35"
+		(property "Voltage_in_V" "50"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -2148,7 +2148,7 @@
 				)
 			)
 		)
-		(property "MPN" "CGA2B3X7R1V104K050BB"
+		(property "MPN" "CL05B104KB54PNC"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -2159,7 +2159,7 @@
 				)
 			)
 		)
-		(property "Mouser" "810-CGA2B3X7R1V104K"
+		(property "Mouser" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -2170,7 +2170,7 @@
 				)
 			)
 		)
-		(property "Digikey" "445-6901-1-ND"
+		(property "Digikey" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -2181,7 +2181,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2181802"
+		(property "LCSC" "C307331"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)

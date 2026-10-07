@@ -463,7 +463,12 @@
 			(symbol "PWR_FLAG_0_1"
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+						(xy 0 0)
+						(xy 0 1.27)
+						(xy -1.016 1.905)
+						(xy 0 2.54)
+						(xy 1.016 1.905)
+						(xy 0 1.27)
 					)
 					(stroke
 						(width 0)
@@ -775,7 +780,12 @@
 			(symbol "GND_0_1"
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+						(xy 0 0)
+						(xy 0 -1.27)
+						(xy 1.27 -1.27)
+						(xy 0 -2.54)
+						(xy -1.27 -1.27)
+						(xy 0 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -808,26 +818,482 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "KL_R:R_1M_0.25W_1pct_1206"
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1M"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "KL_Footprints:R_1206"
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Power_in_W" "0.25"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Tolerance_in_pct" "1"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "CRCW12061M00FKEA"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Mouser" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Digikey" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C844869"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Package_in_inch" "1206"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(embedded_fonts no)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(symbol "R_1M_0.25W_1pct_1206_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1M_0.25W_1pct_1206_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "KL_C:C_4n7_2kV_10pct_X7R_1210"
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "4n7"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "KL_Footprints:C_1210"
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://content.kemet.com/datasheets/KEM_C1010_X7R_HV_SMD.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Voltage_in_V" "2000"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Tolerance_in_pct" "10"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Dielectric" "X7R"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Package_in_inch" "1210"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "C1210C472KGRACTU"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Mouser" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Digikey" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(embedded_fonts no)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(symbol "C_4n7_2kV_10pct_X7R_1210_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762)
+						(xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762)
+						(xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_4n7_2kV_10pct_X7R_1210_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 	)
 	(junction
-		(at 140.97 58.42)
+		(at 140.97 93.98)
 		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "323fb2c3-3dc1-4533-931c-3782fabdb56b")
+		(uuid "6a18c80d-8742-4ac8-8394-4265df7e09d1")
+	)
+	(no_connect
+		(at 149.86 58.42)
+		(uuid "9be82974-44c7-487b-a34d-17bc2d5f546f")
 	)
 	(wire
 		(pts
-			(xy 140.97 58.42) (xy 140.97 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "04ac435b-7f8b-43c0-8fb2-88d17a9f21ef")
-	)
-	(wire
-		(pts
-			(xy 149.86 93.98) (xy 133.35 93.98)
+			(xy 149.86 93.98)
+			(xy 133.35 93.98)
 		)
 		(stroke
 			(width 0)
@@ -837,7 +1303,8 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 86.36) (xy 133.35 86.36)
+			(xy 149.86 86.36)
+			(xy 133.35 86.36)
 		)
 		(stroke
 			(width 0)
@@ -847,7 +1314,8 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 105.41) (xy 133.35 107.95)
+			(xy 133.35 105.41)
+			(xy 133.35 107.95)
 		)
 		(stroke
 			(width 0)
@@ -857,7 +1325,8 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 93.98) (xy 133.35 97.79)
+			(xy 133.35 93.98)
+			(xy 133.35 97.79)
 		)
 		(stroke
 			(width 0)
@@ -867,17 +1336,8 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 48.26) (xy 140.97 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4412061a-8602-45fa-b32a-f50cc1b2da80")
-	)
-	(wire
-		(pts
-			(xy 149.86 66.04) (xy 133.35 66.04)
+			(xy 149.86 66.04)
+			(xy 133.35 66.04)
 		)
 		(stroke
 			(width 0)
@@ -887,7 +1347,8 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 71.12) (xy 133.35 71.12)
+			(xy 149.86 71.12)
+			(xy 133.35 71.12)
 		)
 		(stroke
 			(width 0)
@@ -897,7 +1358,8 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 105.41) (xy 140.97 107.95)
+			(xy 140.97 105.41)
+			(xy 140.97 107.95)
 		)
 		(stroke
 			(width 0)
@@ -907,7 +1369,8 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 63.5) (xy 133.35 63.5)
+			(xy 149.86 63.5)
+			(xy 133.35 63.5)
 		)
 		(stroke
 			(width 0)
@@ -917,7 +1380,8 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 78.74) (xy 133.35 78.74)
+			(xy 149.86 78.74)
+			(xy 133.35 78.74)
 		)
 		(stroke
 			(width 0)
@@ -927,7 +1391,8 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 99.06) (xy 144.78 99.06)
+			(xy 149.86 99.06)
+			(xy 144.78 99.06)
 		)
 		(stroke
 			(width 0)
@@ -937,7 +1402,8 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 99.06) (xy 144.78 109.22)
+			(xy 144.78 99.06)
+			(xy 144.78 109.22)
 		)
 		(stroke
 			(width 0)
@@ -947,17 +1413,8 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 58.42) (xy 140.97 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cc31e478-9f8b-4304-8fb6-ff67c982693c")
-	)
-	(wire
-		(pts
-			(xy 149.86 73.66) (xy 133.35 73.66)
+			(xy 149.86 73.66)
+			(xy 133.35 73.66)
 		)
 		(stroke
 			(width 0)
@@ -967,7 +1424,8 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 96.52) (xy 140.97 97.79)
+			(xy 140.97 96.52)
+			(xy 140.97 97.79)
 		)
 		(stroke
 			(width 0)
@@ -977,7 +1435,8 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 81.28) (xy 133.35 81.28)
+			(xy 149.86 81.28)
+			(xy 133.35 81.28)
 		)
 		(stroke
 			(width 0)
@@ -987,7 +1446,8 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 88.9) (xy 133.35 88.9)
+			(xy 149.86 88.9)
+			(xy 133.35 88.9)
 		)
 		(stroke
 			(width 0)
@@ -997,7 +1457,8 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 96.52) (xy 140.97 96.52)
+			(xy 149.86 96.52)
+			(xy 140.97 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1005,73 +1466,24 @@
 		)
 		(uuid "fd5482e8-5610-446b-8a50-466b2a2a77fa")
 	)
-	(hierarchical_label "MDI2_PHY_RJ45_P"
-		(shape bidirectional)
-		(at 133.35 78.74 180)
+	(wire
+		(pts
+			(xy 140.97 93.98)
+			(xy 140.97 96.52)
+		)
+		(uuid "bd4cfce6-e65b-4f9a-8d15-d74bc160dcb8")
+	)
+	(label "CHASSIS"
+		(at 137.16 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left bottom)
 		)
-		(uuid "04e3193b-4f97-4992-9abe-b9a94fa25508")
+		(uuid "9b30432b-ab90-4670-8238-64c47cd4ceba")
 	)
-	(hierarchical_label "MDI2_PHY_RJ45_N"
-		(shape bidirectional)
-		(at 133.35 81.28 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "3744cfbb-fd88-4e54-b2ce-ce38e23d35a6")
-	)
-	(hierarchical_label "VDD_2V5"
-		(shape input)
-		(at 140.97 45.72 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3d362593-4874-42b1-b590-8b9b2d26a12e")
-	)
-	(hierarchical_label "MDI1_PHY_RJ45_N"
-		(shape bidirectional)
-		(at 133.35 73.66 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "5ba8b7cf-561f-4731-a0b3-4f553e38d03e")
-	)
-	(hierarchical_label "MDI0_PHY_RJ45_N"
-		(shape bidirectional)
-		(at 133.35 66.04 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "62124005-df74-423b-9b0e-5534e76417a7")
-	)
-	(hierarchical_label "MDI1_PHY_RJ45_P"
-		(shape bidirectional)
-		(at 133.35 71.12 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "94f15ee4-8e2a-49ea-9d8b-07088e8c4e4d")
-	)
-	(hierarchical_label "MDI0_PHY_RJ45_P"
+	(hierarchical_label "MDI3_PHY_RJ45_N"
 		(shape bidirectional)
 		(at 133.35 63.5 180)
 		(effects
@@ -1080,9 +1492,64 @@
 			)
 			(justify right)
 		)
-		(uuid "aea45e36-1565-4371-9ede-e82b3f142865")
+		(uuid "f9964ebd-c497-4bcc-bb14-b2867d4071b5")
 	)
 	(hierarchical_label "MDI3_PHY_RJ45_P"
+		(shape bidirectional)
+		(at 133.35 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9b9e03b0-dd78-47f5-af2b-823bf5806286")
+	)
+	(hierarchical_label "MDI2_PHY_RJ45_N"
+		(shape bidirectional)
+		(at 133.35 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cf7f20d7-5a52-4ad7-a699-fdd27ad975b6")
+	)
+	(hierarchical_label "MDI2_PHY_RJ45_P"
+		(shape bidirectional)
+		(at 133.35 73.66 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "eb9469d5-40ed-481a-a1ff-413bcc0e5263")
+	)
+	(hierarchical_label "MDI1_PHY_RJ45_N"
+		(shape bidirectional)
+		(at 133.35 78.74 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "39dd7f52-488b-49a2-846b-4410eca632e1")
+	)
+	(hierarchical_label "MDI1_PHY_RJ45_P"
+		(shape bidirectional)
+		(at 133.35 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "af7f43ac-1d31-4d6c-a34b-8e494ef25cb1")
+	)
+	(hierarchical_label "MDI0_PHY_RJ45_N"
 		(shape bidirectional)
 		(at 133.35 86.36 180)
 		(effects
@@ -1091,9 +1558,9 @@
 			)
 			(justify right)
 		)
-		(uuid "cb29601f-441a-4aca-8588-3b899a9f5342")
+		(uuid "56c37a5b-816e-4bc6-8ad5-baa3c5f60b1a")
 	)
-	(hierarchical_label "MDI3_PHY_RJ45_N"
+	(hierarchical_label "MDI0_PHY_RJ45_P"
 		(shape bidirectional)
 		(at 133.35 88.9 180)
 		(effects
@@ -1102,17 +1569,20 @@
 			)
 			(justify right)
 		)
-		(uuid "dd5489b9-ce86-4c24-ad5d-a3a37fd31c61")
+		(uuid "5914f0a6-1ab4-4328-a77e-6f3fed241f44")
 	)
+  (text "J1 is mounted on B.Cu (bottom), so its pin row is mirrored.\nMDI pairs are mapped A<->D, B<->C with P/N swapped ON PURPOSE:\nthe DP83867 RJ45 mirror mode (LED_0 strap mode 3, R31/R32 on the\nPHY sheet; datasheet 7.4.6.6) undoes it inside the PHY.\nDo not \"fix\" this mapping without removing the strap."
+    (at 132.08 45.72 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "9cb7a89f-0b4e-4b6d-8d2b-a13988f13917")
+  )
 	(symbol
 		(lib_id "power:GND")
 		(at 140.97 107.95 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "0d601b5b-37a8-49f1-92bc-517b92ef8274")
 		(property "Reference" "#PWR0931"
@@ -1174,6 +1644,8 @@
 				(justify left)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "eb76b7df-ec03-41ba-8b88-aef210e873a8")
 		)
@@ -1190,11 +1662,9 @@
 		(lib_id "power:GND")
 		(at 133.35 107.95 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "1f9c0296-8e38-4771-ac2b-f214c17fbd67")
 		(property "Reference" "#PWR0930"
@@ -1256,6 +1726,8 @@
 				(justify left)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "c3de9004-d3b7-4a75-beb7-f7ff3832a84f")
 		)
@@ -1269,88 +1741,12 @@
 		)
 	)
 	(symbol
-		(lib_id "KL_Flags:PWR_FLAG")
-		(at 140.97 58.42 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "405cbe99-3dd1-4e2c-aceb-dacc435bfd65")
-		(property "Reference" "#FLG0901"
-			(at 140.97 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 140.97 55.88 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 140.97 58.42 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 140.97 58.42 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 140.97 58.42 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d12419f0-fab5-441d-9a0a-dca21e9de851")
-		)
-		(instances
-			(project "pocketbeagle2_ethernet_cap"
-				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca/6786a9e9-fc1f-412e-8bde-ca5bbe700e5d"
-					(reference "#FLG0901")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "KL_R:R_0R_0.063W_5pct_0402")
+		(lib_id "KL_R:R_1M_0.25W_1pct_1206")
 		(at 133.35 101.6 180)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "a2c25393-604d-47a7-9aa4-42f4617637c9")
 		(property "Reference" "R29"
@@ -1364,7 +1760,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "0R"
+		(property "Value" "1M"
 			(at 131.45 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1375,7 +1771,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "KL_Footprints:R_0402"
+		(property "Footprint" "KL_Footprints:R_1206"
 			(at 147.32 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -1387,7 +1783,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/28773/crcwce3.pdf"
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 147.32 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -1411,7 +1807,7 @@
 				(justify left)
 			)
 		)
-		(property "Power_in_W" "0.063"
+		(property "Power_in_W" "0.25"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -1422,7 +1818,7 @@
 				)
 			)
 		)
-		(property "Tolerance_in_pct" "5"
+		(property "Tolerance_in_pct" "1"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -1433,7 +1829,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW04020000Z0EDC"
+		(property "MPN" "CRCW12061M00FKEA"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -1444,7 +1840,7 @@
 				)
 			)
 		)
-		(property "Mouser" "71-CRCW04020000Z0EDC"
+		(property "Mouser" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -1455,7 +1851,7 @@
 				)
 			)
 		)
-		(property "Digikey" "541-4062-1-ND"
+		(property "Digikey" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -1466,7 +1862,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C844710"
+		(property "LCSC" "C844869"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -1477,7 +1873,7 @@
 				)
 			)
 		)
-		(property "Package_in_inch" "0402"
+		(property "Package_in_inch" "1206"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -1488,6 +1884,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "e3cad79b-d2cf-4108-962a-e7632f21efe7")
 		)
@@ -1504,336 +1902,12 @@
 		)
 	)
 	(symbol
-		(lib_id "KL_R:R_0R_0.063W_5pct_0402")
-		(at 140.97 52.07 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp yes)
-		(uuid "cfe8fc95-aa3f-419a-8f20-77c648edbe42")
-		(property "Reference" "R25"
-			(at 144.78 48.26 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0R"
-			(at 144.78 50.8 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KL_Footprints:R_0402"
-			(at 144.78 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/28773/crcwce3.pdf"
-			(at 144.78 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 144.78 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Power_in_W" "0.063"
-			(at 0 0 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance_in_pct" "5"
-			(at 0 0 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "CRCW04020000Z0EDC"
-			(at 0 0 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser" "71-CRCW04020000Z0EDC"
-			(at 0 0 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Digikey" "541-4062-1-ND"
-			(at 0 0 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C844710"
-			(at 0 0 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package_in_inch" "0402"
-			(at 0 0 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9c995dca-7834-4842-913c-942e5b89c152")
-		)
-		(pin "2"
-			(uuid "d5cc4176-1540-443f-874d-decbc554798e")
-		)
-		(instances
-			(project "pocketbeagle2_ethernet_cap"
-				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca/6786a9e9-fc1f-412e-8bde-ca5bbe700e5d"
-					(reference "R25")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "KL_R:R_0R_0.063W_5pct_0402")
-		(at 140.97 101.6 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d1728477-1c41-4fbe-8a65-aaaf92c8f5e6")
-		(property "Reference" "R26"
-			(at 139.07 100.33 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "0R"
-			(at 139.07 102.87 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "KL_Footprints:R_0402"
-			(at 149.86 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/28773/crcwce3.pdf"
-			(at 149.86 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 149.86 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Power_in_W" "0.063"
-			(at 0 0 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance_in_pct" "5"
-			(at 0 0 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "CRCW04020000Z0EDC"
-			(at 0 0 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser" "71-CRCW04020000Z0EDC"
-			(at 0 0 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Digikey" "541-4062-1-ND"
-			(at 0 0 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C844710"
-			(at 0 0 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package_in_inch" "0402"
-			(at 0 0 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "574366c5-a6ec-48e9-9e1a-efb671a1ffd0")
-		)
-		(pin "2"
-			(uuid "eb9c1cf1-8781-48ca-8076-9dd84c53d4bd")
-		)
-		(instances
-			(project "pocketbeagle2_ethernet_cap"
-				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca/6786a9e9-fc1f-412e-8bde-ca5bbe700e5d"
-					(reference "R26")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 144.78 109.22 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "de1e68e9-aae9-4a70-8ff7-34ee32b5e3b1")
 		(property "Reference" "#PWR0932"
@@ -1894,6 +1968,8 @@
 				(justify left)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "4637a35b-6c64-4f1c-8c9c-d170ac1d792f")
 		)
@@ -1910,11 +1986,9 @@
 		(lib_id "KL_Conn_Data:RJ45_1840888-1")
 		(at 165.1 76.2 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "fe523c0a-f6ec-419a-8beb-b42387913c74")
 		(property "Reference" "J1"
@@ -2067,6 +2141,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "5ff1deda-fc78-4107-a467-50b0ca7419b3")
 		)
@@ -2107,6 +2183,140 @@
 			(project "pocketbeagle2_ethernet_cap"
 				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca/6786a9e9-fc1f-412e-8bde-ca5bbe700e5d"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "KL_C:C_4n7_2kV_10pct_X7R_1210")
+		(at 140.97 101.6 180)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "61784a2b-9610-44da-a8d7-0537eab7fbcc")
+		(property "Reference" "C36"
+			(at 140.335 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4n7"
+			(at 140.335 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "KL_Footprints:C_1210"
+			(at 140.97 101.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121737_KEMET-C1210C472KGRACTU_C2167834.pdf"
+			(at 140.97 101.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 140.97 101.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 140.97 101.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" ""
+			(at 140.97 101.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2167834"
+			(at 140.97 101.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "C1210C472KGRACTU"
+			(at 140.97 101.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" ""
+			(at 140.97 101.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package_in_inch" "1210"
+			(at 140.97 101.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance_in_pct" "10"
+			(at 140.97 101.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage_in_V" "2000"
+			(at 140.97 101.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "pocketbeagle2_ethernet_cap"
+				(path "/82320ebb-b624-4fc9-8d5a-3bc164182d09/1a5f5f50-6711-4dc3-8e4f-1634784841ca/6786a9e9-fc1f-412e-8bde-ca5bbe700e5d"
+					(reference "C36")
 					(unit 1)
 				)
 			)

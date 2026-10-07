@@ -223,16 +223,6 @@
 	)
 	(wire
 		(pts
-			(xy 127 63.5) (xy 152.4 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a41cffdc-7272-4da8-8bc8-109ed245eeda")
-	)
-	(wire
-		(pts
 			(xy 114.3 45.72) (xy 152.4 45.72)
 		)
 		(stroke
@@ -340,16 +330,6 @@
 			(justify left bottom)
 		)
 		(uuid "1d15c41d-d738-44c5-b2a2-62783d70b999")
-	)
-	(label "VDD_2V5"
-		(at 127 63.5 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "63de4bfe-4e93-4e08-b767-6266f113fc98")
 	)
 	(hierarchical_label "RGMII_RX_CLK_PHY_to_CPU"
 		(shape output)
@@ -629,11 +609,11 @@
 	(sheet
 		(at 152.4 38.1)
 		(size 38.1 27.94)
+		(fields_autoplaced)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -666,93 +646,83 @@
 		)
 		(pin "MDI0_PHY_RJ45_P" bidirectional
 			(at 152.4 43.18 180)
-			(uuid "8536ece1-5692-4c5f-b54b-5be08d992f2f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
+			(uuid "8536ece1-5692-4c5f-b54b-5be08d992f2f")
 		)
 		(pin "MDI0_PHY_RJ45_N" bidirectional
 			(at 152.4 45.72 180)
-			(uuid "d52a40fb-bf50-4057-950e-44b0342d3077")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
+			(uuid "d52a40fb-bf50-4057-950e-44b0342d3077")
 		)
 		(pin "MDI1_PHY_RJ45_P" bidirectional
 			(at 152.4 48.26 180)
-			(uuid "eab0cbff-d369-4baa-9482-9208fa642929")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
+			(uuid "eab0cbff-d369-4baa-9482-9208fa642929")
 		)
 		(pin "MDI1_PHY_RJ45_N" bidirectional
 			(at 152.4 50.8 180)
-			(uuid "0f1bdd08-c7f2-4f9d-aeea-8b01d273cb0c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
+			(uuid "0f1bdd08-c7f2-4f9d-aeea-8b01d273cb0c")
 		)
 		(pin "MDI2_PHY_RJ45_P" bidirectional
 			(at 152.4 53.34 180)
-			(uuid "200b1848-1ffa-43f6-88ae-830cf3131347")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
+			(uuid "200b1848-1ffa-43f6-88ae-830cf3131347")
 		)
 		(pin "MDI2_PHY_RJ45_N" bidirectional
 			(at 152.4 55.88 180)
-			(uuid "0e0165c8-0f40-46a4-8603-da5051f0acc5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
+			(uuid "0e0165c8-0f40-46a4-8603-da5051f0acc5")
 		)
 		(pin "MDI3_PHY_RJ45_P" bidirectional
 			(at 152.4 58.42 180)
-			(uuid "7a9888aa-fba6-4142-a1be-8bcffb51a8cd")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
+			(uuid "7a9888aa-fba6-4142-a1be-8bcffb51a8cd")
 		)
 		(pin "MDI3_PHY_RJ45_N" bidirectional
 			(at 152.4 60.96 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
 			(uuid "fa28f892-6456-4416-919c-3e8503d56165")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "VDD_2V5" input
-			(at 152.4 63.5 180)
-			(uuid "65a5dc93-fb11-4bbc-9b7a-18fa9d340553")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
 		)
 		(instances
 			(project "pocketbeagle2_ethernet_cap"

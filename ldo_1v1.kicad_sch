@@ -1555,7 +1555,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_general_en.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KB54PNC_C307331.pdf"
 			(at 119.38 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -1579,7 +1579,7 @@
 				(justify left)
 			)
 		)
-		(property "Voltage_in_V" "35"
+		(property "Voltage_in_V" "50"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -1623,7 +1623,7 @@
 				)
 			)
 		)
-		(property "MPN" "CGA2B3X7R1V104K050BB"
+		(property "MPN" "CL05B104KB54PNC"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -1634,7 +1634,7 @@
 				)
 			)
 		)
-		(property "Mouser" "810-CGA2B3X7R1V104K"
+		(property "Mouser" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -1645,7 +1645,7 @@
 				)
 			)
 		)
-		(property "Digikey" "445-6901-1-ND"
+		(property "Digikey" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -1656,7 +1656,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2181802"
+		(property "LCSC" "C307331"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -1703,7 +1703,7 @@
 				)
 			)
 		)
-		(property "Value" "TPS7A2011PDBVR"
+		(property "Value" "TLV73311PDBVR"
 			(at 140.97 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1725,7 +1725,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/gpn/tps7a20"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv733p.pdf"
 			(at 144.78 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -1804,7 +1804,7 @@
 				)
 			)
 		)
-		(property "MPN" "TPS7A2011PDBVR"
+		(property "MPN" "TLV73311PDBVR"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -1815,7 +1815,7 @@
 				)
 			)
 		)
-		(property "Mouser" "595-TPS7A2011PDBVR"
+		(property "Mouser" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -1826,7 +1826,7 @@
 				)
 			)
 		)
-		(property "Digikey" "TBD"
+		(property "Digikey" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -1837,7 +1837,7 @@
 				)
 			)
 		)
-		(property "LCSC" "TBD"
+		(property "LCSC" "C2865431"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
