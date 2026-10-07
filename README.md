@@ -70,7 +70,7 @@ Bring-up status (2026-10-07):
 ### Software
 
 A Linux image for the PocketBeagle 2 with this cape is built from the
-ti-am64 BSP. The device tree needs the PHY at `reg = <0>` and
+[ti-sitara-am65x-bsp](https://github.com/kebag-logic/ti-sitara-am65x-bsp). The device tree needs the PHY at `reg = <0>` and
 `phy-mode = "rgmii-rxid"` (start with a 1.75 ns RX delay); see section 2.4 of the handover.
 
 ### Rev B pictures
